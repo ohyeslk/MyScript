@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head><link rel="icon" href="../images/favicon.ico" />
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+<title>MyScript GEW (iOS)</title>
+    <link rel="stylesheet" href="../css/MySBuilder.css" type="text/css">
+  </head>
+  <body bgcolor="#FFFFFF" text="#000000">
+      <h1>Geometry Widget</h1>
+  <h2>Supported constraints</h2>
+  <ul>
+       <p>A defined set of geometric constraints is supported by the Geometry Widget. Most constraints can be applied in two ways:</p>
+    <ul>
+         <li><strong>implicit:</strong> The constraint is automatically detected when a shape is created.</li>
+         <li><strong>explicit: </strong>The user draws a gesture to set a constraint.</li>
+    </ul>
+       <li>Explicit constraints are stronger than implicit constraints. By combining the shape creation and geometric constraints, the user can create a complex geometric construction.</li>
+       <p>Implicit and explicit constraints can be shown on the figure with specific symbols. and are displayed with a different color:</p>
+       <ul>
+         <li>blue for implicit right angle</li>
+         <li>one from a set of 10 colors for explicit constraints (by pair for same length/angle).</li>
+       </ul>
+    <p>The following table shows which constraints are supported and the various ways to define them:</p>
+
+    <table width="100%" border="1">
+      <tr>
+        <th scope="col">Constraint</th>
+        <th scope="col">Implicit creation</th>
+        <th scope="col">Explicit creation</th>
+        <th scope="col">Figure</th>
+      </tr>
+      <tr>
+        <td><strong>Equality of length</strong></td>
+        <td><p>Any shape that has two or more equal segments.</p></td>
+        <td><p><a name="equality_length">Short line gesture on a segment or circle:</a></p>
+          <ul>
+            <li>two times (one time on two different shapes), to indicate that their lengths are equal.</li>
+          </ul></td>
+        <td><p align="center"><img src="../images/same_length.png"></p></td>
+      </tr>
+      <tr>
+        <td><strong>Equality of angles</strong></td>
+        <td><p>Any shape that has two or more equal angles.</p>
+          <p>Remarkable lines:</p>
+          <ul>
+            <li>Bisector</li>
+          </ul></td>
+        <td><p>Angle mark gesture (arc of circle) on two segments:</p>
+          <ul>
+            <li>two times (one time on two different angles), to indicate that they are equal.</li>
+          </ul></td>
+        <td><p align="center"><img src="../images/same_angle.png"></p></td>
+      </tr>
+      <tr>
+        <td><strong>Perpendicularity</strong></td>
+        <td><p>Any shape that has at least one right angle.</p>
+          <p>Remarkable lines :</p>
+          <ul>
+            <li>Altitude</li><li>Perpendicular bisector</li>
+          </ul></td>
+        <td>Right angle gesture (chevron) in one stroke on two segments.</td>
+        <td><p align="center"><img src="../images/perpendicularity.png"></p></td>
+      </tr>
+      <tr>
+        <td><strong>Parallelism</strong></td>
+        <td>Any shape that has two or more parallel segments.</td>
+        <td>One chevron on two different segments, to indicate that they are parallel.</td>
+        <td><p align="center"><img src="../images/parallelism.png"></p></td>
+      </tr>
+      <tr>
+        <td><strong>Junction</strong></td>
+        <td><p>Extremities of shapes or segments that have been drawn very close.</p>
+        <p>Note that points are regarded as extremities here.</p></td>
+        <td><p>Small ellipse on the two shapes or segments to join.</p>
+          <br>
+          <p>You can also circle:</p>
+          <p>- a point inside a circle to indicate it is the center          </p>
+          <p>- a segment inside a circle to indicate it is a radius</p></td>
+        <td><p align="center"><img src="../images/junction1.png"><img src="../images/junction2.png"><img src="../images/junction3.png"></td></p>
+      </tr>
+      <tr>
+        <td><strong>Connection</strong></td>
+        <td>An extremity or point connected to another shape or point</td>
+        <td><p>Small circle on the two shapes or segments to join.</p>
+          <p><br>
+          </p>
+          <p>You can also circle:</p>
+        <p>- a segment crossing a circle to indicate it is the diameter</p></td>
+        <td><p align="center"><img src="../images/connection1.png"><img src="../images/connection2.png"></p></td>
+      </tr>
+      <tr>
+        <td><strong>Concentricity</strong></td>
+        <td>Two circles whose centers are close</td>
+        <td><p>Circle two circles' centers</p></td>
+        <td><p align="center"><img src="../images/concentricity.png"></p></td>
+      </tr>
+      <tr>
+        <td><strong>Horizontal</strong></td>
+        <td>An almost horizontal segment</td>
+        <td>n/a</td>
+        <td><p align="center"><img src="../images/horizontal.png"></p></td>
+      </tr>
+      <tr>
+        <td><strong>Vertical</strong></td>
+        <td>An almost vertical segment</td>
+        <td>n/a</td>
+        <td><p align="center"><img src="../images/vertical.png"></p></td>
+      </tr>
+           <tr>
+        <td><strong>Length value</strong></td>
+        <td>n/a</td>
+        <td>Input the segment length</td>
+        <td><p align="center"><img src="../images/length_value.png"></p></td>
+      </tr>
+      <tr>
+        <td><strong>Radius equality</strong></td>
+        <td>Two circles with two similar diameters</td>
+        <td>see <a href="supp_constraints.html#equality_length">Equality of length</a></td>
+        <td><p align="center"><img src="../images/radius_equality.png"></p></td>
+      </tr>
+      <tr>
+        <td><strong>Angle value</strong></td>
+        <td>n/a</td>
+        <td>Input the angle value</td>
+        <td><p align="center"><img src="../images/angle_value.png"></p></td>
+      </tr>
+    </table>
+    <p>&nbsp;</p>
+
+  </ul>
+
+  </body>
+</html>

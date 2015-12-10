@@ -1,0 +1,1584 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>SCWSingleCharView Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 961)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">SingleCharWidget </a></h1>
+				<a id="developerHome" href="../index.html">MyScript</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">SCWSingleCharView Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/autoCommitDelay">&nbsp;&nbsp;&nbsp;&nbsp;autoCommitDelay</option>
+	
+	<option value="//api/name/autoFreezeDelay">&nbsp;&nbsp;&nbsp;&nbsp;autoFreezeDelay</option>
+	
+	<option value="//api/name/completionEnabled">&nbsp;&nbsp;&nbsp;&nbsp;completionEnabled</option>
+	
+	<option value="//api/name/gesturesEnabled">&nbsp;&nbsp;&nbsp;&nbsp;gesturesEnabled</option>
+	
+	<option value="//api/name/inkColor">&nbsp;&nbsp;&nbsp;&nbsp;inkColor</option>
+	
+	<option value="//api/name/inkFadeOutDelay">&nbsp;&nbsp;&nbsp;&nbsp;inkFadeOutDelay</option>
+	
+	<option value="//api/name/inkFadeOutDuration">&nbsp;&nbsp;&nbsp;&nbsp;inkFadeOutDuration</option>
+	
+	<option value="//api/name/inkWidth">&nbsp;&nbsp;&nbsp;&nbsp;inkWidth</option>
+	
+	<option value="//api/name/maxResourcesSize">&nbsp;&nbsp;&nbsp;&nbsp;maxResourcesSize</option>
+	
+	<option value="//api/name/maxWordCandidates">&nbsp;&nbsp;&nbsp;&nbsp;maxWordCandidates</option>
+	
+	<option value="//api/name/speedQualityCompromise">&nbsp;&nbsp;&nbsp;&nbsp;speedQualityCompromise</option>
+	
+	<option value="//api/name/userLexicon">&nbsp;&nbsp;&nbsp;&nbsp;userLexicon</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/clear">&nbsp;&nbsp;&nbsp;&nbsp;- clear</option>
+	
+	<option value="//api/name/configureWithLanguage:resources:certificate:">&nbsp;&nbsp;&nbsp;&nbsp;- configureWithLanguage:resources:certificate:</option>
+	
+	<option value="//api/name/errorCode">&nbsp;&nbsp;&nbsp;&nbsp;- errorCode</option>
+	
+	<option value="//api/name/errorString">&nbsp;&nbsp;&nbsp;&nbsp;- errorString</option>
+	
+	<option value="//api/name/getCharacterCandidatesAtIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- getCharacterCandidatesAtIndex:</option>
+	
+	<option value="//api/name/getWordCandidatesAtIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- getWordCandidatesAtIndex:</option>
+	
+	<option value="//api/name/insertIndex">&nbsp;&nbsp;&nbsp;&nbsp;- insertIndex</option>
+	
+	<option value="//api/name/replaceCharactersInRange:withText:">&nbsp;&nbsp;&nbsp;&nbsp;- replaceCharactersInRange:withText:</option>
+	
+	<option value="//api/name/setInsertIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- setInsertIndex:</option>
+	
+	<option value="//api/name/setText:">&nbsp;&nbsp;&nbsp;&nbsp;- setText:</option>
+	
+	<option value="//api/name/text">&nbsp;&nbsp;&nbsp;&nbsp;- text</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/autoCommitDelay">autoCommitDelay</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/autoFreezeDelay">autoFreezeDelay</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/completionEnabled">completionEnabled</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/gesturesEnabled">gesturesEnabled</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/inkColor">inkColor</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/inkFadeOutDelay">inkFadeOutDelay</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/inkFadeOutDuration">inkFadeOutDuration</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/inkWidth">inkWidth</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/maxResourcesSize">maxResourcesSize</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/maxWordCandidates">maxWordCandidates</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/speedQualityCompromise">speedQualityCompromise</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/userLexicon">userLexicon</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/clear">clear</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/configureWithLanguage:resources:certificate:">configureWithLanguage:resources:certificate:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/errorCode">errorCode</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/errorString">errorString</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getCharacterCandidatesAtIndex:">getCharacterCandidatesAtIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getWordCandidatesAtIndex:">getWordCandidatesAtIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/insertIndex">insertIndex</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/replaceCharactersInRange:withText:">replaceCharactersInRange:withText:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setInsertIndex:">setInsertIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setText:">setText:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/text">text</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="SCWSingleCharView Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">SCWSingleCharView Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">UIView</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">SCWSingleCharView.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Interface SCWSingleCharView.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/inkColor">&nbsp;&nbsp;inkColor</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/inkWidth">&nbsp;&nbsp;inkWidth</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/inkFadeOutDelay">&nbsp;&nbsp;inkFadeOutDelay</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/inkFadeOutDuration">&nbsp;&nbsp;inkFadeOutDuration</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/completionEnabled">&nbsp;&nbsp;completionEnabled</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/gesturesEnabled">&nbsp;&nbsp;gesturesEnabled</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/speedQualityCompromise">&nbsp;&nbsp;speedQualityCompromise</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/userLexicon">&nbsp;&nbsp;userLexicon</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/maxResourcesSize">&nbsp;&nbsp;maxResourcesSize</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/autoCommitDelay">&nbsp;&nbsp;autoCommitDelay</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/autoFreezeDelay">&nbsp;&nbsp;autoFreezeDelay</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/maxWordCandidates">&nbsp;&nbsp;maxWordCandidates</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/clear">&ndash;&nbsp;clear</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setText:">&ndash;&nbsp;setText:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/text">&ndash;&nbsp;text</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/replaceCharactersInRange:withText:">&ndash;&nbsp;replaceCharactersInRange:withText:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getWordCandidatesAtIndex:">&ndash;&nbsp;getWordCandidatesAtIndex:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getCharacterCandidatesAtIndex:">&ndash;&nbsp;getCharacterCandidatesAtIndex:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setInsertIndex:">&ndash;&nbsp;setInsertIndex:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/insertIndex">&ndash;&nbsp;insertIndex</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/configureWithLanguage:resources:certificate:">&ndash;&nbsp;configureWithLanguage:resources:certificate:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/errorCode">&ndash;&nbsp;errorCode</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/errorString">&ndash;&nbsp;errorString</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/autoCommitDelay" title="autoCommitDelay"></a>
+	<h3 class="subsubtitle method-title">autoCommitDelay</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Set the delay after which handwriting recognition starts
+for the character being written (in isolated mode).</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite) NSTimeInterval autoCommitDelay</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>autoCommitDelay Auto-commit delay in seconds.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SCWSingleCharView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/autoFreezeDelay" title="autoFreezeDelay"></a>
+	<h3 class="subsubtitle method-title">autoFreezeDelay</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Set the delay after which strokes are automatically frozen.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite) NSTimeInterval autoFreezeDelay</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>autoFreezeDelay Auto-freeze delay in seconds.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SCWSingleCharView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/completionEnabled" title="completionEnabled"></a>
+	<h3 class="subsubtitle method-title">completionEnabled</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Enable or disable handwriting recognition completion.</p>
+
+<p><p>
+Handwriting recognition must be configured again for this
+setting to take effect. Note that enabling handwriting
+recognition completion significantly slows down handwriting
+recognition. This feature is disabled by default.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite) BOOL completionEnabled</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>completionEnabled Enable handwriting recognition completion
+if <code>YES</code>, disable if <code>NO</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SCWSingleCharView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/gesturesEnabled" title="gesturesEnabled"></a>
+	<h3 class="subsubtitle method-title">gesturesEnabled</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Enable/disable handwriting gestures recognition.</p>
+
+<p><p>
+Handwriting recognition must be configured again for this
+setting to take effect.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite) BOOL gesturesEnabled</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>gesturesEnabled Enable gestures if <code>YES</code>, disable
+if <code>NO</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SCWSingleCharView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/inkColor" title="inkColor"></a>
+	<h3 class="subsubtitle method-title">inkColor</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Set the color of the ink.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite) UIColor *inkColor</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SCWSingleCharView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/inkFadeOutDelay" title="inkFadeOutDelay"></a>
+	<h3 class="subsubtitle method-title">inkFadeOutDelay</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Set the delay after which strokes start fading out.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite) NSTimeInterval inkFadeOutDelay</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SCWSingleCharView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/inkFadeOutDuration" title="inkFadeOutDuration"></a>
+	<h3 class="subsubtitle method-title">inkFadeOutDuration</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Set the duration of the strokes fade-out animation.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite) NSTimeInterval inkFadeOutDuration</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SCWSingleCharView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/inkWidth" title="inkWidth"></a>
+	<h3 class="subsubtitle method-title">inkWidth</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Set the width of the ink.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite) CGFloat inkWidth</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SCWSingleCharView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/maxResourcesSize" title="maxResourcesSize"></a>
+	<h3 class="subsubtitle method-title">maxResourcesSize</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Set maximum size of the handwriting resources cache.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite) unsigned long long maxResourcesSize</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>maxResourcesSize Maximum size of the cache in bytes.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SCWSingleCharView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/maxWordCandidates" title="maxWordCandidates"></a>
+	<h3 class="subsubtitle method-title">maxWordCandidates</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Set the maximum number of word candidates.</p>
+
+<p><p>
+Handwriting recognition must be configured again for this
+setting to take effect.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite) int maxWordCandidates</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>maxWordCandidates Maximum number of word candidates.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SCWSingleCharView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/speedQualityCompromise" title="speedQualityCompromise"></a>
+	<h3 class="subsubtitle method-title">speedQualityCompromise</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Set speed/quality compromise of the handwriting recognition engine.</p>
+
+<p><p>
+Handwriting recognition must be configured again for this
+setting to take effect.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite) int speedQualityCompromise</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>speedQualityCompromise Speed/quality compromise rating.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SCWSingleCharView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/userLexicon" title="userLexicon"></a>
+	<h3 class="subsubtitle method-title">userLexicon</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Set user lexicon (array of words) for handwriting recognition.</p>
+
+<p><p>
+Handwriting recognition must be configured again for this
+setting to take effect.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite) NSArray *userLexicon</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>userLexicon User lexicon.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SCWSingleCharView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/clear" title="clear"></a>
+	<h3 class="subsubtitle method-title">clear</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Clear ink and <a href="#//api/name/text">text</a> contained in the widget.</p>
+
+<p><p>
+This function does not call the <a href="#//api/name/text">text</a> changed callback after the <a href="#//api/name/text">text</a>
+has been updated.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)clear</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SCWSingleCharView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/configureWithLanguage:resources:certificate:" title="configureWithLanguage:resources:certificate:"></a>
+	<h3 class="subsubtitle method-title">configureWithLanguage:resources:certificate:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Configure the handwriting recognition engine to use the MyScript
+Builder engine running on the device.</p>
+
+<p><p>
+This function is non-blocking and returns immediately.
+<p>
+Configuration is a lengthy process that may take up to several
+seconds, depending on the handwriting resources to be configured.
+It is recommended to setup a configuration listener to detect the end
+of the configuration process.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)configureWithLanguage:(NSString *)<em>language</em> resources:(NSArray *)<em>resources</em> certificate:(NSData *)<em>certificate</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>language</em></dt>
+			<dd><p>NSString Handwriting recognition language (locale).</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>resources</em></dt>
+			<dd><p>Array of paths to handwriting resource files.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>certificate</em></dt>
+			<dd><p>Byte array containing the handwriting recognition
+certificate.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SCWSingleCharView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/errorCode" title="errorCode"></a>
+	<h3 class="subsubtitle method-title">errorCode</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Return an error code describing the error that happened during the
+configuration, if any.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (int)errorCode</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Error code describing the error or 0 if no error.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SCWSingleCharView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/errorString" title="errorString"></a>
+	<h3 class="subsubtitle method-title">errorString</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Return a string describing the error that happened during the
+configuration, if any.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)errorString</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>String describing the error.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SCWSingleCharView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getCharacterCandidatesAtIndex:" title="getCharacterCandidatesAtIndex:"></a>
+	<h3 class="subsubtitle method-title">getCharacterCandidatesAtIndex:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns alternate candidate information for the character at
+specified index.</p>
+
+<p><p>
+Alternate candidates can be selected by calling the
+<a href="#//api/name/replaceCharactersInRange:withText:">replaceCharactersInRange:withText:</a> function with
+parameters from the candidate information.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (SCWCandidateInfo *)getCharacterCandidatesAtIndex:(NSUInteger)<em>index</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>index</em></dt>
+			<dd><p>of the specified character.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Candidate information for the character at specified index
+or <code>nil</code> if index is out of bounds.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/SCWCandidateInfo.html">SCWCandidateInfo</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SCWSingleCharView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getWordCandidatesAtIndex:" title="getWordCandidatesAtIndex:"></a>
+	<h3 class="subsubtitle method-title">getWordCandidatesAtIndex:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns alternate candidate information for the word at
+specified index.</p>
+
+<p><p>
+This function computes the character range of the word at specified
+index, and provides alternate candidates and possible completions.
+<p>
+Alternate candidates can be selected by calling the
+<a href="#//api/name/replaceCharactersInRange:withText:">replaceCharactersInRange:withText:</a> function with
+parameters from the candidate information.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (SCWCandidateInfo *)getWordCandidatesAtIndex:(NSUInteger)<em>index</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>index</em></dt>
+			<dd><p>Character index within or before the word.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Candidate information for the word at specified index
+or <code>nil</code> if index is out of bounds.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/SCWCandidateInfo.html">SCWCandidateInfo</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SCWSingleCharView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/insertIndex" title="insertIndex"></a>
+	<h3 class="subsubtitle method-title">insertIndex</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the index of the insertion point.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSUInteger)insertIndex</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Character index of the insertion point.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SCWSingleCharView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/replaceCharactersInRange:withText:" title="replaceCharactersInRange:withText:"></a>
+	<h3 class="subsubtitle method-title">replaceCharactersInRange:withText:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Replace characters in the <a href="#//api/name/text">text</a>.</p>
+
+<p><p>
+This function can be used to select an alternate handwriting
+recognition candidate for any word or character. The specified
+character range shall span a word or a single character, and the
+provided replacement <a href="#//api/name/text">text</a> shall be one of the possible candidates
+to trigger a word or character candidate change.
+<p>
+Characters may be inserted at any location in the <a href="#//api/name/text">text</a> by calling
+this function with the same start and end character indices and a
+non-empty replacement string.
+<p>
+Characters may be deleted from the <a href="#//api/name/text">text</a> by calling this function
+with a non-empty characters range and an empty or <code>nil</code>
+replacement string.
+<p>
+This function calls the <a href="#//api/name/text">text</a> changed callback synchronously
+after characters have been replaced.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)replaceCharactersInRange:(NSRange)<em>range</em> withText:(NSString *)<em>text</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>range</em></dt>
+			<dd><p>NSRange of character index of the first character to the last character to replace.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>text</em></dt>
+			<dd><p>Replacement <a href="#//api/name/text">text</a> NSString (may be <code>nil</code>).</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/getWordCandidatesAtIndex:">- getWordCandidatesAtIndex:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/getCharacterCandidatesAtIndex:">- getCharacterCandidatesAtIndex:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SCWSingleCharView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setInsertIndex:" title="setInsertIndex:"></a>
+	<h3 class="subsubtitle method-title">setInsertIndex:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Set the index of the insertion point.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setInsertIndex:(NSUInteger)<em>index</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>index</em></dt>
+			<dd><p>Character index of the insertion point.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SCWSingleCharView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setText:" title="setText:"></a>
+	<h3 class="subsubtitle method-title">setText:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Set the <a href="#//api/name/text">text</a> managed by this widget.</p>
+
+<p><p>
+This function calls the <a href="#//api/name/text">text</a> changed callback synchronously after
+the <a href="#//api/name/text">text</a> has been updated.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setText:(NSString *)<em>text</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>text</em></dt>
+			<dd><p>NSString representation of the <a href="#//api/name/text">text</a> (may be <code>nil</code>).</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SCWSingleCharView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/text" title="text"></a>
+	<h3 class="subsubtitle method-title">text</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the text managed by this widget.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)text</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Representation of the text.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SCWSingleCharView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2015 MyScript. All rights reserved. (Last updated: 2015-07-27)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

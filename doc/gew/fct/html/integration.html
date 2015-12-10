@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html>
+<head><link rel="icon" href="../images/favicon.ico" />
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+<title>MyScript GEW (iOS)</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+<link rel="stylesheet" href="../css/MySBuilder.css" type="text/css">
+
+<script src="../js/prism.js"></script>
+		<meta name="generator" content="appledoc 2.1 (build 858)" />
+	</head>
+	<body>
+
+<h1>Geometry Widget</h1>
+<p class="remark">To install and integrate the <strong>Geometry Widget </strong>on iOS, you must be using the latest version of Xcode and iOS SDK. Minimum deployment target is 7.0.</p>
+
+<ul><h2>Integration</h2></ul>
+ <ul>
+   <h3>Links between projects</h3>
+<p>The Geometry Widget for iOS is a framework that you add to your Xcode project.</p>
+
+<ul>
+<li>Click on your project in the project navigator.</li>
+<li>Choose the relevant target.</li>
+<li>Open the <b>Build Phases</b> tab.</li>
+</ul></ul>
+
+
+<p align="center"><img src="../images/integration1.png"></p>
+<ul><ul><li>In the <strong>Link Binary With Libraries</strong> section, click on the <strong>+</strong> sign and add SystemConfiguration.framework.</li>
+<li>Click again on the <strong>+</strong> sign add the following MyScript framework and libraries: </li>
+<ul><li>AtkGew.framework</li>
+<li>libAtkInw.a</li>
+<li>libMyScript2D.a</li>
+<li>libMyScriptDocument.a</li>
+<li>libMyScriptEngine.a</li>
+<li>libMyScriptInk.a</li>
+<li>libMyScriptShape.a</li>
+<li>libMyScriptText.a</li>
+<li>libStylusCore.a</li>
+</ul>
+</ul></ul>
+
+<p align="center"><img src="../images/integration2.png"></p>
+
+<ul><ul>
+<li>In the <b>Build Settings</b> tab of your target, look for <b>Other Linker Flags</b> and add the following flags:<br>
+ <ul>
+    <li>-ObjC</li>
+    <li>/usr/lib/libstdc++.dylib</li>
+	<li>-Wl,-U,_MyScript2D</li>
+	<li>-Wl,-U,_MyScriptAnalyzer</li>
+	<li>-Wl,-U,_MyScriptDocument</li>
+	<li>-Wl,-U,_MyScriptGesture</li>
+	<li>-Wl,-U,_MyScriptInk</li>
+	<li>-Wl,-U,_MyScriptInkSearch</li>
+	<li>-Wl,-U,_MyScriptMath</li>
+	<li>-Wl,-U,_MyScriptMusic</li>
+	<li>-Wl,-U,_MyScriptPrediction</li>
+	<li>-Wl,-U,_MyScriptShape</li>
+	<li>-Wl,-U,_MyScriptText</li>
+	<li>-Wl,-U,_MyScriptWriterAdaptation</li>
+  </ul>
+</ul></ul>
+
+<p align="center"><img src="../images/integration3.png"></p>
+
+<ul>
+  <h3>Bundle Resources</h3>
+
+<p>The Geometry Widget requires some specific resources like images and fonts. To link these resources, add <b>GeometryWidget.bundle</b> to your project.</p></ul>
+
+<p align="center"><img src="../images/integration4a.png"> <img src="../images/integration4b.png"></p>
+
+<ul>
+  <h3>Recognition resource and certificate</h3></ul>
+
+<ul>
+<li>The following resource is necessary and need to be added: <b>shk-standard.res</b>. 
+  It is used by the recognition engine and  can be found in the <b>Resources</b> directory of the sample app:</li>
+<li>If you are using the Math Widget, you also need the following resources (from the <b>Resources</b> directory of the sample app):</li>
+<li>
+  <ul>
+    <li>equation-ak.res</li>
+    <li>equation-grm-mathwidget.res</li>
+    <li>point-grm-mathwidget.res</li>
+    <li>angle-grm-mathwidget.res</li>
+    <li>segmentarc-grm-mathwidget.res</li>
+    </ul>
+</li>
+<li>Add <b>MyCertificate.h</b>.</li>
+</ul>
+<ul>
+  <h3>Code sample</h3></ul>
+<ul>
+<p>To use the Geometry Widget in your app, add the following import instructions:</p>
+
+<pre class="language-objectivec"><code>#import &lt;AtkGew/GeometryWidget.h>
+#import "MyCertificate.h"</code></pre>
+
+<p>You can instantiate a <a href="../../ref/Classes/GWGeometryView.html"><b>GWGeometryView</b></a> with a few lines:</p>
+
+<pre class="language-objectivec"><code>// Create the GeometryWidget View
+GWGeometryView *geometryView = [[GWGeometryView alloc] init];
+
+// Recognition resources
+NSArray *resources = @[@"shk-standard.res"];
+
+// Certificate
+NSData *certificate = [NSData dataWithBytes:myCertificate.bytes length:myCertificate.length];
+
+// Configure the GeometryWidget View with the recognition resources and the certificate
+[geometryView configureWithResources:resources
+                                certificate:certificate];</code></pre>
+
+<p>You can then use the <a href="../../ref/Classes/GWGeometryView.html"><b>GWGeometryView</b></a> as any <b>UIView</b>.</p>
+<p>&nbsp;</p></ul>
+
+	</body>
+</html>

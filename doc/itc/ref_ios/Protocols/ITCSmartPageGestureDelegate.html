@@ -1,0 +1,821 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>ITCSmartPageGestureDelegate Protocol Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 961)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">InteractiveTextComponent </a></h1>
+				<a id="developerHome" href="../index.html">MyScript</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">ITCSmartPageGestureDelegate Protocol Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/eraseGestureWithinPage:gestureStrokes:wordRange:">&nbsp;&nbsp;&nbsp;&nbsp;- eraseGestureWithinPage:gestureStrokes:wordRange:</option>
+	
+	<option value="//api/name/insertGestureWithinPage:gestureStrokes:x:nearestWord:charIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- insertGestureWithinPage:gestureStrokes:x:nearestWord:charIndex:</option>
+	
+	<option value="//api/name/joinGestureWithinPage:gestureStrokes:x:nearestWord:charIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- joinGestureWithinPage:gestureStrokes:x:nearestWord:charIndex:</option>
+	
+	<option value="//api/name/overwriteGestureWithinPage:wordRange:">&nbsp;&nbsp;&nbsp;&nbsp;- overwriteGestureWithinPage:wordRange:</option>
+	
+	<option value="//api/name/returnGestureWithinPage:gestureStrokes:x:nearestWord:charIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- returnGestureWithinPage:gestureStrokes:x:nearestWord:charIndex:</option>
+	
+	<option value="//api/name/selectionGestureWithinPage:gestureStrokes:wordRange:">&nbsp;&nbsp;&nbsp;&nbsp;- selectionGestureWithinPage:gestureStrokes:wordRange:</option>
+	
+	<option value="//api/name/singleTapGestureWithinPage:gestureStrokes:x:y:">&nbsp;&nbsp;&nbsp;&nbsp;- singleTapGestureWithinPage:gestureStrokes:x:y:</option>
+	
+	<option value="//api/name/underlineGestureWithinPage:gestureStrokes:wordRange:">&nbsp;&nbsp;&nbsp;&nbsp;- underlineGestureWithinPage:gestureStrokes:wordRange:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/eraseGestureWithinPage:gestureStrokes:wordRange:">eraseGestureWithinPage:gestureStrokes:wordRange:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/insertGestureWithinPage:gestureStrokes:x:nearestWord:charIndex:">insertGestureWithinPage:gestureStrokes:x:nearestWord:charIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/joinGestureWithinPage:gestureStrokes:x:nearestWord:charIndex:">joinGestureWithinPage:gestureStrokes:x:nearestWord:charIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/overwriteGestureWithinPage:wordRange:">overwriteGestureWithinPage:wordRange:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/returnGestureWithinPage:gestureStrokes:x:nearestWord:charIndex:">returnGestureWithinPage:gestureStrokes:x:nearestWord:charIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/selectionGestureWithinPage:gestureStrokes:wordRange:">selectionGestureWithinPage:gestureStrokes:wordRange:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/singleTapGestureWithinPage:gestureStrokes:x:y:">singleTapGestureWithinPage:gestureStrokes:x:y:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/underlineGestureWithinPage:gestureStrokes:wordRange:">underlineGestureWithinPage:gestureStrokes:wordRange:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="ITCSmartPageGestureDelegate Protocol Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">ITCSmartPageGestureDelegate Protocol Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">ITCSmartPageGestureDelegate.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>The ITCSmartPageGestureDelegate protocol defines the methods you can implement to be notified of
+the activity in a <a href="../Classes/ITCSmartPage.html">ITCSmartPage</a>.
+These methods allow to monitor events related to the gestures.</p>
+
+<p>All the methods in this protocol are optional.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/insertGestureWithinPage:gestureStrokes:x:nearestWord:charIndex:">&ndash;&nbsp;insertGestureWithinPage:gestureStrokes:x:nearestWord:charIndex:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/joinGestureWithinPage:gestureStrokes:x:nearestWord:charIndex:">&ndash;&nbsp;joinGestureWithinPage:gestureStrokes:x:nearestWord:charIndex:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/eraseGestureWithinPage:gestureStrokes:wordRange:">&ndash;&nbsp;eraseGestureWithinPage:gestureStrokes:wordRange:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/overwriteGestureWithinPage:wordRange:">&ndash;&nbsp;overwriteGestureWithinPage:wordRange:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/singleTapGestureWithinPage:gestureStrokes:x:y:">&ndash;&nbsp;singleTapGestureWithinPage:gestureStrokes:x:y:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/selectionGestureWithinPage:gestureStrokes:wordRange:">&ndash;&nbsp;selectionGestureWithinPage:gestureStrokes:wordRange:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/underlineGestureWithinPage:gestureStrokes:wordRange:">&ndash;&nbsp;underlineGestureWithinPage:gestureStrokes:wordRange:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/returnGestureWithinPage:gestureStrokes:x:nearestWord:charIndex:">&ndash;&nbsp;returnGestureWithinPage:gestureStrokes:x:nearestWord:charIndex:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/eraseGestureWithinPage:gestureStrokes:wordRange:" title="eraseGestureWithinPage:gestureStrokes:wordRange:"></a>
+	<h3 class="subsubtitle method-title">eraseGestureWithinPage:gestureStrokes:wordRange:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Notifies that an erase gesture has been detected.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)eraseGestureWithinPage:(ITCSmartPage *)<em>page</em> gestureStrokes:(NSArray *)<em>gestureStrokes</em> wordRange:(ITCWordRange *)<em>wordRange</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>page</em></dt>
+			<dd><p>The page where the gesture has been detected.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>gestureStrokes</em></dt>
+			<dd><p>The strokes written to perform a gesture. They may not be in the model.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>wordRange</em></dt>
+			<dd><p>The word range.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ITCSmartPageGestureDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/insertGestureWithinPage:gestureStrokes:x:nearestWord:charIndex:" title="insertGestureWithinPage:gestureStrokes:x:nearestWord:charIndex:"></a>
+	<h3 class="subsubtitle method-title">insertGestureWithinPage:gestureStrokes:x:nearestWord:charIndex:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Notifies that an insert gesture has been detected.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)insertGestureWithinPage:(ITCSmartPage *)<em>page</em> gestureStrokes:(NSArray *)<em>gestureStrokes</em> x:(float)<em>x</em> nearestWord:(ITCSmartWord *)<em>nearestWord</em> charIndex:(NSInteger)<em>charIndex</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>page</em></dt>
+			<dd><p>The page where the gesture has been detected.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>gestureStrokes</em></dt>
+			<dd><p>The strokes written to perform a gesture. They may not be in the model.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>x</em></dt>
+			<dd><p>The abscissa of the gesture.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>nearestWord</em></dt>
+			<dd><p>The nearest word.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>charIndex</em></dt>
+			<dd><p>The character index next to the gesture in the writing direction.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ITCSmartPageGestureDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/joinGestureWithinPage:gestureStrokes:x:nearestWord:charIndex:" title="joinGestureWithinPage:gestureStrokes:x:nearestWord:charIndex:"></a>
+	<h3 class="subsubtitle method-title">joinGestureWithinPage:gestureStrokes:x:nearestWord:charIndex:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Notifies that a join gesture has been detected.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)joinGestureWithinPage:(ITCSmartPage *)<em>page</em> gestureStrokes:(NSArray *)<em>gestureStrokes</em> x:(float)<em>x</em> nearestWord:(ITCSmartWord *)<em>nearestWord</em> charIndex:(NSInteger)<em>charIndex</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>page</em></dt>
+			<dd><p>The page where the gesture has been detected.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>gestureStrokes</em></dt>
+			<dd><p>The strokes written to perform a gesture. They may not be in the model.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>x</em></dt>
+			<dd><p>The abscissa of the gesture.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>nearestWord</em></dt>
+			<dd><p>The nearest word.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>charIndex</em></dt>
+			<dd><p>The character index next to the gesture in the writing direction.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ITCSmartPageGestureDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/overwriteGestureWithinPage:wordRange:" title="overwriteGestureWithinPage:wordRange:"></a>
+	<h3 class="subsubtitle method-title">overwriteGestureWithinPage:wordRange:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Notifies that an overwrite gesture has been detected.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)overwriteGestureWithinPage:(ITCSmartPage *)<em>page</em> wordRange:(ITCWordRange *)<em>wordRange</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>page</em></dt>
+			<dd><p>The page where the gesture has been detected.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>wordRange</em></dt>
+			<dd><p>The word range.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ITCSmartPageGestureDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/returnGestureWithinPage:gestureStrokes:x:nearestWord:charIndex:" title="returnGestureWithinPage:gestureStrokes:x:nearestWord:charIndex:"></a>
+	<h3 class="subsubtitle method-title">returnGestureWithinPage:gestureStrokes:x:nearestWord:charIndex:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Notifies that a return gesture has been detected.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)returnGestureWithinPage:(ITCSmartPage *)<em>page</em> gestureStrokes:(NSArray *)<em>gestureStrokes</em> x:(float)<em>x</em> nearestWord:(ITCSmartWord *)<em>nearestWord</em> charIndex:(NSInteger)<em>charIndex</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>page</em></dt>
+			<dd><p>The page where the gesture has been detected.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>gestureStrokes</em></dt>
+			<dd><p>The strokes written to perform a gesture. They may not be in the model.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>x</em></dt>
+			<dd><p>The abscissa of the gesture.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>nearestWord</em></dt>
+			<dd><p>The nearest word.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>charIndex</em></dt>
+			<dd><p>The character index next to the gesture in the writing direction.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ITCSmartPageGestureDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/selectionGestureWithinPage:gestureStrokes:wordRange:" title="selectionGestureWithinPage:gestureStrokes:wordRange:"></a>
+	<h3 class="subsubtitle method-title">selectionGestureWithinPage:gestureStrokes:wordRange:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Notifies that a selection gesture has been detected.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)selectionGestureWithinPage:(ITCSmartPage *)<em>page</em> gestureStrokes:(NSArray *)<em>gestureStrokes</em> wordRange:(ITCWordRange *)<em>wordRange</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>page</em></dt>
+			<dd><p>The page where the gesture has been detected.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>gestureStrokes</em></dt>
+			<dd><p>The strokes written to perform a gesture. They may not be in the model.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>wordRange</em></dt>
+			<dd><p>The word range.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ITCSmartPageGestureDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/singleTapGestureWithinPage:gestureStrokes:x:y:" title="singleTapGestureWithinPage:gestureStrokes:x:y:"></a>
+	<h3 class="subsubtitle method-title">singleTapGestureWithinPage:gestureStrokes:x:y:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Notifies that a single tap gesture has been detected.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)singleTapGestureWithinPage:(ITCSmartPage *)<em>page</em> gestureStrokes:(NSArray *)<em>gestureStrokes</em> x:(float)<em>x</em> y:(float)<em>y</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>page</em></dt>
+			<dd><p>The page where the gesture has been detected.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>gestureStrokes</em></dt>
+			<dd><p>The strokes written to perform a gesture. They may not be in the model.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>x</em></dt>
+			<dd><p>The abscissa of the gesture.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>y</em></dt>
+			<dd><p>The ordinate of the gesture.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ITCSmartPageGestureDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/underlineGestureWithinPage:gestureStrokes:wordRange:" title="underlineGestureWithinPage:gestureStrokes:wordRange:"></a>
+	<h3 class="subsubtitle method-title">underlineGestureWithinPage:gestureStrokes:wordRange:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Notifies that an underline gesture has been detected.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)underlineGestureWithinPage:(ITCSmartPage *)<em>page</em> gestureStrokes:(NSArray *)<em>gestureStrokes</em> wordRange:(ITCWordRange *)<em>wordRange</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>page</em></dt>
+			<dd><p>The page where the gesture has been detected.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>gestureStrokes</em></dt>
+			<dd><p>The strokes written to perform a gesture. They may not be in the model.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>wordRange</em></dt>
+			<dd><p>The word range.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ITCSmartPageGestureDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2015 MyScript. All rights reserved. (Last updated: 2015-07-27)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

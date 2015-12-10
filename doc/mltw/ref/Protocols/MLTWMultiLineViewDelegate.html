@@ -1,0 +1,1542 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>MLTWMultiLineViewDelegate Protocol Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 961)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">MultiLineTextWidget </a></h1>
+				<a id="developerHome" href="../index.html">MyScript</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">MLTWMultiLineViewDelegate Protocol Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/multiLineView:autoScrollDidMove:">&nbsp;&nbsp;&nbsp;&nbsp;- multiLineView:autoScrollDidMove:</option>
+	
+	<option value="//api/name/multiLineView:didChangeModeWithPreviousMode:newMode:">&nbsp;&nbsp;&nbsp;&nbsp;- multiLineView:didChangeModeWithPreviousMode:newMode:</option>
+	
+	<option value="//api/name/multiLineView:didChangeText:">&nbsp;&nbsp;&nbsp;&nbsp;- multiLineView:didChangeText:</option>
+	
+	<option value="//api/name/multiLineView:didDetectInsertGestureForWord:atIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- multiLineView:didDetectInsertGestureForWord:atIndex:</option>
+	
+	<option value="//api/name/multiLineView:didDetectJoinGestureForWord:atIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- multiLineView:didDetectJoinGestureForWord:atIndex:</option>
+	
+	<option value="//api/name/multiLineView:didDetectReturnGestureForWord:atIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- multiLineView:didDetectReturnGestureForWord:atIndex:</option>
+	
+	<option value="//api/name/multiLineView:didDetectSelectionGestureForWords:">&nbsp;&nbsp;&nbsp;&nbsp;- multiLineView:didDetectSelectionGestureForWords:</option>
+	
+	<option value="//api/name/multiLineView:didDetectSingleTapGestureForWord:atIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- multiLineView:didDetectSingleTapGestureForWord:atIndex:</option>
+	
+	<option value="//api/name/multiLineView:didDetectUnderlineGestureForWords:">&nbsp;&nbsp;&nbsp;&nbsp;- multiLineView:didDetectUnderlineGestureForWords:</option>
+	
+	<option value="//api/name/multiLineView:didFailConfigurationWithError:">&nbsp;&nbsp;&nbsp;&nbsp;- multiLineView:didFailConfigurationWithError:</option>
+	
+	<option value="//api/name/multiLineView:didSelectionWord:isHighlighted:">&nbsp;&nbsp;&nbsp;&nbsp;- multiLineView:didSelectionWord:isHighlighted:</option>
+	
+	<option value="//api/name/multiLineView:scrollDidMove:">&nbsp;&nbsp;&nbsp;&nbsp;- multiLineView:scrollDidMove:</option>
+	
+	<option value="//api/name/multiLineViewAutoScrollDidEnd:">&nbsp;&nbsp;&nbsp;&nbsp;- multiLineViewAutoScrollDidEnd:</option>
+	
+	<option value="//api/name/multiLineViewAutoScrollWillBegin:">&nbsp;&nbsp;&nbsp;&nbsp;- multiLineViewAutoScrollWillBegin:</option>
+	
+	<option value="//api/name/multiLineViewDidBeginConfiguration:">&nbsp;&nbsp;&nbsp;&nbsp;- multiLineViewDidBeginConfiguration:</option>
+	
+	<option value="//api/name/multiLineViewDidEndConfiguration:">&nbsp;&nbsp;&nbsp;&nbsp;- multiLineViewDidEndConfiguration:</option>
+	
+	<option value="//api/name/multiLineViewDidEndRecognition:">&nbsp;&nbsp;&nbsp;&nbsp;- multiLineViewDidEndRecognition:</option>
+	
+	<option value="//api/name/multiLineViewDidStartRecognition:">&nbsp;&nbsp;&nbsp;&nbsp;- multiLineViewDidStartRecognition:</option>
+	
+	<option value="//api/name/multiLineViewScrollDidEnd:">&nbsp;&nbsp;&nbsp;&nbsp;- multiLineViewScrollDidEnd:</option>
+	
+	<option value="//api/name/multiLineViewScrollWillBegin:">&nbsp;&nbsp;&nbsp;&nbsp;- multiLineViewScrollWillBegin:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Monitoring Configuration">Monitoring Configuration</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Monitoring Gestures">Monitoring Gestures</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Monitoring recognition">Monitoring recognition</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Monitoring text changes">Monitoring text changes</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Monitoring scroll event">Monitoring scroll event</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/multiLineView:autoScrollDidMove:">multiLineView:autoScrollDidMove:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/multiLineView:didChangeModeWithPreviousMode:newMode:">multiLineView:didChangeModeWithPreviousMode:newMode:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/multiLineView:didChangeText:">multiLineView:didChangeText:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/multiLineView:didDetectInsertGestureForWord:atIndex:">multiLineView:didDetectInsertGestureForWord:atIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/multiLineView:didDetectJoinGestureForWord:atIndex:">multiLineView:didDetectJoinGestureForWord:atIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/multiLineView:didDetectReturnGestureForWord:atIndex:">multiLineView:didDetectReturnGestureForWord:atIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/multiLineView:didDetectSelectionGestureForWords:">multiLineView:didDetectSelectionGestureForWords:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/multiLineView:didDetectSingleTapGestureForWord:atIndex:">multiLineView:didDetectSingleTapGestureForWord:atIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/multiLineView:didDetectUnderlineGestureForWords:">multiLineView:didDetectUnderlineGestureForWords:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/multiLineView:didFailConfigurationWithError:">multiLineView:didFailConfigurationWithError:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/multiLineView:didSelectionWord:isHighlighted:">multiLineView:didSelectionWord:isHighlighted:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/multiLineView:scrollDidMove:">multiLineView:scrollDidMove:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/multiLineViewAutoScrollDidEnd:">multiLineViewAutoScrollDidEnd:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/multiLineViewAutoScrollWillBegin:">multiLineViewAutoScrollWillBegin:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/multiLineViewDidBeginConfiguration:">multiLineViewDidBeginConfiguration:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/multiLineViewDidEndConfiguration:">multiLineViewDidEndConfiguration:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/multiLineViewDidEndRecognition:">multiLineViewDidEndRecognition:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/multiLineViewDidStartRecognition:">multiLineViewDidStartRecognition:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/multiLineViewScrollDidEnd:">multiLineViewScrollDidEnd:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/multiLineViewScrollWillBegin:">multiLineViewScrollWillBegin:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="MLTWMultiLineViewDelegate Protocol Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">MLTWMultiLineViewDelegate Protocol Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">MLTWMultiLineViewDelegate.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>The main delegate of the multi line text widget.
+This protocol is heavily used for configuration, recognition, gestures and other user actions&hellip;
+Each methods may be implemented or not depending of the needs.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Monitoring Configuration" name="task_Monitoring Configuration"></a>
+						<h3 class="subsubtitle task-title">Monitoring Configuration</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/multiLineViewDidBeginConfiguration:">&ndash;&nbsp;multiLineViewDidBeginConfiguration:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/multiLineViewDidEndConfiguration:">&ndash;&nbsp;multiLineViewDidEndConfiguration:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/multiLineView:didFailConfigurationWithError:">&ndash;&nbsp;multiLineView:didFailConfigurationWithError:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Monitoring Gestures" name="task_Monitoring Gestures"></a>
+						<h3 class="subsubtitle task-title">Monitoring Gestures</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/multiLineView:didDetectInsertGestureForWord:atIndex:">&ndash;&nbsp;multiLineView:didDetectInsertGestureForWord:atIndex:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/multiLineView:didDetectJoinGestureForWord:atIndex:">&ndash;&nbsp;multiLineView:didDetectJoinGestureForWord:atIndex:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/multiLineView:didDetectReturnGestureForWord:atIndex:">&ndash;&nbsp;multiLineView:didDetectReturnGestureForWord:atIndex:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/multiLineView:didDetectSelectionGestureForWords:">&ndash;&nbsp;multiLineView:didDetectSelectionGestureForWords:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/multiLineView:didDetectSingleTapGestureForWord:atIndex:">&ndash;&nbsp;multiLineView:didDetectSingleTapGestureForWord:atIndex:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/multiLineView:didDetectUnderlineGestureForWords:">&ndash;&nbsp;multiLineView:didDetectUnderlineGestureForWords:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Monitoring recognition" name="task_Monitoring recognition"></a>
+						<h3 class="subsubtitle task-title">Monitoring recognition</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/multiLineViewDidStartRecognition:">&ndash;&nbsp;multiLineViewDidStartRecognition:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/multiLineViewDidEndRecognition:">&ndash;&nbsp;multiLineViewDidEndRecognition:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Monitoring text changes" name="task_Monitoring text changes"></a>
+						<h3 class="subsubtitle task-title">Monitoring text changes</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/multiLineView:didChangeText:">&ndash;&nbsp;multiLineView:didChangeText:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/multiLineView:didSelectionWord:isHighlighted:">&ndash;&nbsp;multiLineView:didSelectionWord:isHighlighted:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/multiLineView:didChangeModeWithPreviousMode:newMode:">&ndash;&nbsp;multiLineView:didChangeModeWithPreviousMode:newMode:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Monitoring scroll event" name="task_Monitoring scroll event"></a>
+						<h3 class="subsubtitle task-title">Monitoring scroll event</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/multiLineViewAutoScrollWillBegin:">&ndash;&nbsp;multiLineViewAutoScrollWillBegin:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/multiLineView:autoScrollDidMove:">&ndash;&nbsp;multiLineView:autoScrollDidMove:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/multiLineViewAutoScrollDidEnd:">&ndash;&nbsp;multiLineViewAutoScrollDidEnd:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/multiLineViewScrollWillBegin:">&ndash;&nbsp;multiLineViewScrollWillBegin:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/multiLineView:scrollDidMove:">&ndash;&nbsp;multiLineView:scrollDidMove:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/multiLineViewScrollDidEnd:">&ndash;&nbsp;multiLineViewScrollDidEnd:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/multiLineView:autoScrollDidMove:" title="multiLineView:autoScrollDidMove:"></a>
+	<h3 class="subsubtitle method-title">multiLineView:autoScrollDidMove:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called after an auto scroll.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)multiLineView:(MLTWMultiLineView *)<em>view</em> autoScrollDidMove:(CGFloat)<em>offsetY</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>view</em></dt>
+			<dd><p>The current <a href="../Classes/MLTWMultiLineView.html">MLTWMultiLineView</a>, managing the delegate</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>offsetY</em></dt>
+			<dd><p>The new Y offset of the scroll bar</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Autoscroll is fired with the writing mode or with the <code>setCorrectionMode:</code> or when calling
+<code>scrollWordToTop:</code> or a <code>scrollWordToCenter:</code></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MLTWMultiLineViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/multiLineView:didChangeModeWithPreviousMode:newMode:" title="multiLineView:didChangeModeWithPreviousMode:newMode:"></a>
+	<h3 class="subsubtitle method-title">multiLineView:didChangeModeWithPreviousMode:newMode:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called every time a new mode is used.
+There are currently 3 modes: Writing, Correction, Insertion. The writing mode is the  default
+mode and is also called after <code>setWritingMode:</code>. Use for writing texts, no highlight of word with
+automatic scroll. The correction is used after a gesture (except insertGesture) or a
+<code>setCorrectionMode:</code>. The insertion mode is used after a <code>setInsertMode:</code>, it will create a
+insertion zone before or after the word, according to the character index.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)multiLineView:(MLTWMultiLineView *)<em>view</em> didChangeModeWithPreviousMode:(MLTWMultilineMode)<em>previousMode</em> newMode:(MLTWMultilineMode)<em>newMode</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>view</em></dt>
+			<dd><p>The current <a href="../Classes/MLTWMultiLineView.html">MLTWMultiLineView</a>, managing the delegate</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>previousMode</em></dt>
+			<dd><p>The previous mode used</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>newMode</em></dt>
+			<dd><p>The new mode</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MLTWMultiLineViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/multiLineView:didChangeText:" title="multiLineView:didChangeText:"></a>
+	<h3 class="subsubtitle method-title">multiLineView:didChangeText:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called every time the recognition changes.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)multiLineView:(MLTWMultiLineView *)<em>view</em> didChangeText:(NSString *)<em>text</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>view</em></dt>
+			<dd><p>The current <a href="../Classes/MLTWMultiLineView.html">MLTWMultiLineView</a>, managing the delegate.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>text</em></dt>
+			<dd><p>The new text in the page
+recognition. This is used to get a feedback for management of large data.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MLTWMultiLineViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/multiLineView:didDetectInsertGestureForWord:atIndex:" title="multiLineView:didDetectInsertGestureForWord:atIndex:"></a>
+	<h3 class="subsubtitle method-title">multiLineView:didDetectInsertGestureForWord:atIndex:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when an insert gesture is detected.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)multiLineView:(MLTWMultiLineView *)<em>view</em> didDetectInsertGestureForWord:(MLTWWord *)<em>word</em> atIndex:(NSUInteger)<em>characterIndex</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>view</em></dt>
+			<dd><p>The current <a href="../Classes/MLTWMultiLineView.html">MLTWMultiLineView</a>, managing the delegate</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>word</em></dt>
+			<dd><p>The word inside which the gesture is detected</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>characterIndex</em></dt>
+			<dd><p>The character index of the word where the gesture is detected.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MLTWMultiLineViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/multiLineView:didDetectJoinGestureForWord:atIndex:" title="multiLineView:didDetectJoinGestureForWord:atIndex:"></a>
+	<h3 class="subsubtitle method-title">multiLineView:didDetectJoinGestureForWord:atIndex:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when a join gesture is detected.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)multiLineView:(MLTWMultiLineView *)<em>view</em> didDetectJoinGestureForWord:(MLTWWord *)<em>word</em> atIndex:(NSUInteger)<em>characterIndex</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>view</em></dt>
+			<dd><p>The current <a href="../Classes/MLTWMultiLineView.html">MLTWMultiLineView</a>, managing the delegate</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>word</em></dt>
+			<dd><p>The word inside which the gesture is detected</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>characterIndex</em></dt>
+			<dd><p>The character index of the word where the gesture is detected.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MLTWMultiLineViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/multiLineView:didDetectReturnGestureForWord:atIndex:" title="multiLineView:didDetectReturnGestureForWord:atIndex:"></a>
+	<h3 class="subsubtitle method-title">multiLineView:didDetectReturnGestureForWord:atIndex:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when a return gesture is detected.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)multiLineView:(MLTWMultiLineView *)<em>view</em> didDetectReturnGestureForWord:(MLTWWord *)<em>word</em> atIndex:(NSUInteger)<em>characterIndex</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>view</em></dt>
+			<dd><p>The current <a href="../Classes/MLTWMultiLineView.html">MLTWMultiLineView</a>, managing the delegate</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>word</em></dt>
+			<dd><p>The word inside which the gesture is detected</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>characterIndex</em></dt>
+			<dd><p>The character index of the word where the gesture is detected.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MLTWMultiLineViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/multiLineView:didDetectSelectionGestureForWords:" title="multiLineView:didDetectSelectionGestureForWords:"></a>
+	<h3 class="subsubtitle method-title">multiLineView:didDetectSelectionGestureForWords:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when a selection gesture is detected.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)multiLineView:(MLTWMultiLineView *)<em>view</em> didDetectSelectionGestureForWords:(NSArray *)<em>words</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>view</em></dt>
+			<dd><p>The current <a href="../Classes/MLTWMultiLineView.html">MLTWMultiLineView</a>, managing the delegate.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>words</em></dt>
+			<dd><p>The words impacted by the selection gesture.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MLTWMultiLineViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/multiLineView:didDetectSingleTapGestureForWord:atIndex:" title="multiLineView:didDetectSingleTapGestureForWord:atIndex:"></a>
+	<h3 class="subsubtitle method-title">multiLineView:didDetectSingleTapGestureForWord:atIndex:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when a single tap gesture is detected.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)multiLineView:(MLTWMultiLineView *)<em>view</em> didDetectSingleTapGestureForWord:(MLTWWord *)<em>word</em> atIndex:(NSUInteger)<em>characterIndex</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>view</em></dt>
+			<dd><p>The current <a href="../Classes/MLTWMultiLineView.html">MLTWMultiLineView</a>, managing the delegate.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>word</em></dt>
+			<dd><p>The word inside which the gesture is detected.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>characterIndex</em></dt>
+			<dd><p>The character index of the word where the gesture is detected.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MLTWMultiLineViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/multiLineView:didDetectUnderlineGestureForWords:" title="multiLineView:didDetectUnderlineGestureForWords:"></a>
+	<h3 class="subsubtitle method-title">multiLineView:didDetectUnderlineGestureForWords:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when an underline tap gesture is detected.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)multiLineView:(MLTWMultiLineView *)<em>view</em> didDetectUnderlineGestureForWords:(NSArray *)<em>words</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>view</em></dt>
+			<dd><p>The current <a href="../Classes/MLTWMultiLineView.html">MLTWMultiLineView</a>, managing the delegate.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>words</em></dt>
+			<dd><p>The words impacted by the selection gesture.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MLTWMultiLineViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/multiLineView:didFailConfigurationWithError:" title="multiLineView:didFailConfigurationWithError:"></a>
+	<h3 class="subsubtitle method-title">multiLineView:didFailConfigurationWithError:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Fired when the configuration has failed. If so, an other configuration
+is required.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)multiLineView:(MLTWMultiLineView *)<em>view</em> didFailConfigurationWithError:(NSError *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>view</em></dt>
+			<dd><p>The current <a href="../Classes/MLTWMultiLineView.html">MLTWMultiLineView</a>, managing the delegate.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p>The error causing the configuration to fail.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MLTWMultiLineViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/multiLineView:didSelectionWord:isHighlighted:" title="multiLineView:didSelectionWord:isHighlighted:"></a>
+	<h3 class="subsubtitle method-title">multiLineView:didSelectionWord:isHighlighted:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The selection is fired each time a word is highlighted.
+This is not the same notification that <a href="#//api/name/multiLineView:didDetectSelectionGestureForWords:">multiLineView:didDetectSelectionGestureForWords:</a> which
+will be fired after a selection gesture.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)multiLineView:(MLTWMultiLineView *)<em>view</em> didSelectionWord:(MLTWWord *)<em>word</em> isHighlighted:(BOOL)<em>isHighlighted</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>view</em></dt>
+			<dd><p>The current <a href="../Classes/MLTWMultiLineView.html">MLTWMultiLineView</a>, managing the delegate.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>word</em></dt>
+			<dd><p>The selected word</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>isHighlighted</em></dt>
+			<dd><p><code>YES</code> if the word has been highlighted, <code>NO</code> otherwise.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MLTWMultiLineViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/multiLineView:scrollDidMove:" title="multiLineView:scrollDidMove:"></a>
+	<h3 class="subsubtitle method-title">multiLineView:scrollDidMove:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called after a manual scroll.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)multiLineView:(MLTWMultiLineView *)<em>view</em> scrollDidMove:(CGFloat)<em>offsetY</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>view</em></dt>
+			<dd><p>The current <a href="../Classes/MLTWMultiLineView.html">MLTWMultiLineView</a>, managing the delegate</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>offsetY</em></dt>
+			<dd><p>The new offset Y of the scroll bar</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MLTWMultiLineViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/multiLineViewAutoScrollDidEnd:" title="multiLineViewAutoScrollDidEnd:"></a>
+	<h3 class="subsubtitle method-title">multiLineViewAutoScrollDidEnd:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called after an auto scroll has stopped.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)multiLineViewAutoScrollDidEnd:(MLTWMultiLineView *)<em>view</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>view</em></dt>
+			<dd><p>The current <a href="../Classes/MLTWMultiLineView.html">MLTWMultiLineView</a>, managing the delegate</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Autoscroll is fired with the writing mode or with the <code>setCorrectionMode:</code> or when calling
+<code>scrollWordToTop:</code> or a <code>scrollWordToCenter:</code></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MLTWMultiLineViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/multiLineViewAutoScrollWillBegin:" title="multiLineViewAutoScrollWillBegin:"></a>
+	<h3 class="subsubtitle method-title">multiLineViewAutoScrollWillBegin:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called just before an auto scroll.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)multiLineViewAutoScrollWillBegin:(MLTWMultiLineView *)<em>view</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>view</em></dt>
+			<dd><p>The current <a href="../Classes/MLTWMultiLineView.html">MLTWMultiLineView</a>, managing the delegate</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Autoscroll is fired with the writing mode or with the <code>setCorrectionMode:</code> or when calling
+<code>scrollWordToTop:</code> or a <code>scrollWordToCenter:</code></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MLTWMultiLineViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/multiLineViewDidBeginConfiguration:" title="multiLineViewDidBeginConfiguration:"></a>
+	<h3 class="subsubtitle method-title">multiLineViewDidBeginConfiguration:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Fired when the configuration starts. This is the first step to active recognition. In order
+for the recognition to work, a <a href="#//api/name/multiLineViewDidEndConfiguration:">multiLineViewDidEndConfiguration:</a> will be fired soon after.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)multiLineViewDidBeginConfiguration:(MLTWMultiLineView *)<em>view</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>view</em></dt>
+			<dd><p>The current <a href="../Classes/MLTWMultiLineView.html">MLTWMultiLineView</a>, managing the delegate</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MLTWMultiLineViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/multiLineViewDidEndConfiguration:" title="multiLineViewDidEndConfiguration:"></a>
+	<h3 class="subsubtitle method-title">multiLineViewDidEndConfiguration:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Fired when the configuration ends. The recognition mecanism has now started and other
+notifications can be fired.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)multiLineViewDidEndConfiguration:(MLTWMultiLineView *)<em>view</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>view</em></dt>
+			<dd><p>The current <a href="../Classes/MLTWMultiLineView.html">MLTWMultiLineView</a>, managing the delegate</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MLTWMultiLineViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/multiLineViewDidEndRecognition:" title="multiLineViewDidEndRecognition:"></a>
+	<h3 class="subsubtitle method-title">multiLineViewDidEndRecognition:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called every time after the recognition ends.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)multiLineViewDidEndRecognition:(MLTWMultiLineView *)<em>view</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>view</em></dt>
+			<dd><p>The current <a href="../Classes/MLTWMultiLineView.html">MLTWMultiLineView</a>, managing the delegate.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MLTWMultiLineViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/multiLineViewDidStartRecognition:" title="multiLineViewDidStartRecognition:"></a>
+	<h3 class="subsubtitle method-title">multiLineViewDidStartRecognition:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called every time before the recognition is launched.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)multiLineViewDidStartRecognition:(MLTWMultiLineView *)<em>view</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>view</em></dt>
+			<dd><p>The current <a href="../Classes/MLTWMultiLineView.html">MLTWMultiLineView</a>, managing the delegate.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MLTWMultiLineViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/multiLineViewScrollDidEnd:" title="multiLineViewScrollDidEnd:"></a>
+	<h3 class="subsubtitle method-title">multiLineViewScrollDidEnd:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called after a manual scroll has stopped.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)multiLineViewScrollDidEnd:(MLTWMultiLineView *)<em>view</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>view</em></dt>
+			<dd><p>The current <a href="../Classes/MLTWMultiLineView.html">MLTWMultiLineView</a>, managing the delegate</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MLTWMultiLineViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/multiLineViewScrollWillBegin:" title="multiLineViewScrollWillBegin:"></a>
+	<h3 class="subsubtitle method-title">multiLineViewScrollWillBegin:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called just before a manual scroll.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)multiLineViewScrollWillBegin:(MLTWMultiLineView *)<em>view</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>view</em></dt>
+			<dd><p>The current <a href="../Classes/MLTWMultiLineView.html">MLTWMultiLineView</a>, managing the delegate</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MLTWMultiLineViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2015 MyScript. All rights reserved. (Last updated: 2015-07-27)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,841 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>SCWSingleCharViewDelegate Protocol Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 961)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">SingleCharWidget </a></h1>
+				<a id="developerHome" href="../index.html">MyScript</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">SCWSingleCharViewDelegate Protocol Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/singleCharWidget:didChangeText:intermediate:">&nbsp;&nbsp;&nbsp;&nbsp;- singleCharWidget:didChangeText:intermediate:</option>
+	
+	<option value="//api/name/singleCharWidget:didDetectBackspaceGesture:">&nbsp;&nbsp;&nbsp;&nbsp;- singleCharWidget:didDetectBackspaceGesture:</option>
+	
+	<option value="//api/name/singleCharWidget:didDetectLongPressAtPoint:">&nbsp;&nbsp;&nbsp;&nbsp;- singleCharWidget:didDetectLongPressAtPoint:</option>
+	
+	<option value="//api/name/singleCharWidget:didDetectSingleTapAtPoint:">&nbsp;&nbsp;&nbsp;&nbsp;- singleCharWidget:didDetectSingleTapAtPoint:</option>
+	
+	<option value="//api/name/singleCharWidget:didEndConfigurationWithSuccess:">&nbsp;&nbsp;&nbsp;&nbsp;- singleCharWidget:didEndConfigurationWithSuccess:</option>
+	
+	<option value="//api/name/singleCharWidgetDidBeginConfiguration:">&nbsp;&nbsp;&nbsp;&nbsp;- singleCharWidgetDidBeginConfiguration:</option>
+	
+	<option value="//api/name/singleCharWidgetDidBeginRecognition:">&nbsp;&nbsp;&nbsp;&nbsp;- singleCharWidgetDidBeginRecognition:</option>
+	
+	<option value="//api/name/singleCharWidgetDidDetectReturnGesture:">&nbsp;&nbsp;&nbsp;&nbsp;- singleCharWidgetDidDetectReturnGesture:</option>
+	
+	<option value="//api/name/singleCharWidgetDidEndRecognition:">&nbsp;&nbsp;&nbsp;&nbsp;- singleCharWidgetDidEndRecognition:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/singleCharWidget:didChangeText:intermediate:">singleCharWidget:didChangeText:intermediate:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/singleCharWidget:didDetectBackspaceGesture:">singleCharWidget:didDetectBackspaceGesture:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/singleCharWidget:didDetectLongPressAtPoint:">singleCharWidget:didDetectLongPressAtPoint:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/singleCharWidget:didDetectSingleTapAtPoint:">singleCharWidget:didDetectSingleTapAtPoint:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/singleCharWidget:didEndConfigurationWithSuccess:">singleCharWidget:didEndConfigurationWithSuccess:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/singleCharWidgetDidBeginConfiguration:">singleCharWidgetDidBeginConfiguration:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/singleCharWidgetDidBeginRecognition:">singleCharWidgetDidBeginRecognition:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/singleCharWidgetDidDetectReturnGesture:">singleCharWidgetDidDetectReturnGesture:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/singleCharWidgetDidEndRecognition:">singleCharWidgetDidEndRecognition:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="SCWSingleCharViewDelegate Protocol Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">SCWSingleCharViewDelegate Protocol Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">SCWSingleCharViewDelegate.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Protocol SCWSingleCharViewDelegate.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/singleCharWidget:didChangeText:intermediate:">&ndash;&nbsp;singleCharWidget:didChangeText:intermediate:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/singleCharWidgetDidBeginConfiguration:">&ndash;&nbsp;singleCharWidgetDidBeginConfiguration:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/singleCharWidget:didEndConfigurationWithSuccess:">&ndash;&nbsp;singleCharWidget:didEndConfigurationWithSuccess:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/singleCharWidgetDidBeginRecognition:">&ndash;&nbsp;singleCharWidgetDidBeginRecognition:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/singleCharWidgetDidEndRecognition:">&ndash;&nbsp;singleCharWidgetDidEndRecognition:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/singleCharWidget:didDetectSingleTapAtPoint:">&ndash;&nbsp;singleCharWidget:didDetectSingleTapAtPoint:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/singleCharWidget:didDetectLongPressAtPoint:">&ndash;&nbsp;singleCharWidget:didDetectLongPressAtPoint:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/singleCharWidget:didDetectBackspaceGesture:">&ndash;&nbsp;singleCharWidget:didDetectBackspaceGesture:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/singleCharWidgetDidDetectReturnGesture:">&ndash;&nbsp;singleCharWidgetDidDetectReturnGesture:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/singleCharWidget:didChangeText:intermediate:" title="singleCharWidget:didChangeText:intermediate:"></a>
+	<h3 class="subsubtitle method-title">singleCharWidget:didChangeText:intermediate:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when the text changes.</p>
+
+<p><p>
+The text returned by this callback may be intermediate, which
+means that it can change again in the near future. Text is
+intermediate when the widget has some ink that has not been
+processed yet.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)singleCharWidget:(SCWSingleCharView *)<em>sender</em> didChangeText:(NSString *)<em>text</em> intermediate:(BOOL)<em>intermediate</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sender</em></dt>
+			<dd><p>SingleCharWidget</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>text</em></dt>
+			<dd><p>NSString representation of the text.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>intermediate</em></dt>
+			<dd><p><code>YES</code> if the text is an
+intermediate handwriting recognition result, <code>NO</code>
+if the text is stable.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SCWSingleCharViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/singleCharWidget:didDetectBackspaceGesture:" title="singleCharWidget:didDetectBackspaceGesture:"></a>
+	<h3 class="subsubtitle method-title">singleCharWidget:didDetectBackspaceGesture:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when a backspace gesture is detected.</p>
+
+<p><p>
+The gesture should be applied at the current insert index.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)singleCharWidget:(SCWSingleCharView *)<em>sender</em> didDetectBackspaceGesture:(NSUInteger)<em>count</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sender</em></dt>
+			<dd><p>SingleCharWidget</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>count</em></dt>
+			<dd><p>NSUInteger of consecutive detected backspace gestures.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SCWSingleCharViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/singleCharWidget:didDetectLongPressAtPoint:" title="singleCharWidget:didDetectLongPressAtPoint:"></a>
+	<h3 class="subsubtitle method-title">singleCharWidget:didDetectLongPressAtPoint:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when a long press gesture is detected.</p>
+
+<p><p>
+The application may choose to take action when a long press
+gesture is detected, in this case this callback shall return
+<code>YES</code> to indicate that it handled the event and the
+current stroke is cancelled.
+<p>
+If this callback returns <code>NO</code>, then the long
+press gesture is discarded by the widget and the widget resumes
+capturing the current stroke.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)singleCharWidget:(SCWSingleCharView *)<em>sender</em> didDetectLongPressAtPoint:(CGPoint)<em>point</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sender</em></dt>
+			<dd><p>SingleCharWidget</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>point</em></dt>
+			<dd><p>CGPoint position of the long press in widget coordinates.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SCWSingleCharViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/singleCharWidget:didDetectSingleTapAtPoint:" title="singleCharWidget:didDetectSingleTapAtPoint:"></a>
+	<h3 class="subsubtitle method-title">singleCharWidget:didDetectSingleTapAtPoint:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when a single tap gesture is detected.</p>
+
+<p><p>
+The application may choose to take action when a single tap
+gesture is detected, in this case this callback shall return
+<code>YES</code> to indicate that it handled the event.
+<p>
+If this callback returns <code>NO</code>, then the single
+tap gesture is considered by the widget as a genuine dot and
+passed to the handwriting recognizer.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)singleCharWidget:(SCWSingleCharView *)<em>sender</em> didDetectSingleTapAtPoint:(CGPoint)<em>point</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sender</em></dt>
+			<dd><p>SingleCharWidget</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>point</em></dt>
+			<dd><p>CGPoint position of the single tap in widget coordinates.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SCWSingleCharViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/singleCharWidget:didEndConfigurationWithSuccess:" title="singleCharWidget:didEndConfigurationWithSuccess:"></a>
+	<h3 class="subsubtitle method-title">singleCharWidget:didEndConfigurationWithSuccess:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when handwriting configuration ends.</p>
+
+<p><p></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)singleCharWidget:(SCWSingleCharView *)<em>sender</em> didEndConfigurationWithSuccess:(BOOL)<em>success</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sender</em></dt>
+			<dd><p>SingleCharWidget</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>success</em></dt>
+			<dd><p><code>YES</code> if configuration succeeded,
+<code>NO</code> otherwise.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SCWSingleCharViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/singleCharWidgetDidBeginConfiguration:" title="singleCharWidgetDidBeginConfiguration:"></a>
+	<h3 class="subsubtitle method-title">singleCharWidgetDidBeginConfiguration:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when handwriting configuration starts.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)singleCharWidgetDidBeginConfiguration:(SCWSingleCharView *)<em>sender</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sender</em></dt>
+			<dd><p>SingleCharWidget</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SCWSingleCharViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/singleCharWidgetDidBeginRecognition:" title="singleCharWidgetDidBeginRecognition:"></a>
+	<h3 class="subsubtitle method-title">singleCharWidgetDidBeginRecognition:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when a recognition session starts.</p>
+
+<p><p>
+A recognition session starts when the user starts writing on the
+screen.
+<p>
+During a recognition session, the text may change as the user is
+writing. A text changed event is triggered each time the text is
+updated by the user.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)singleCharWidgetDidBeginRecognition:(SCWSingleCharView *)<em>sender</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sender</em></dt>
+			<dd><p>SingleCharWidget</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SCWSingleCharViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/singleCharWidgetDidDetectReturnGesture:" title="singleCharWidgetDidDetectReturnGesture:"></a>
+	<h3 class="subsubtitle method-title">singleCharWidgetDidDetectReturnGesture:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when a return gesture is detected.</p>
+
+<p><p>
+The gesture should be applied at the current insert index.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)singleCharWidgetDidDetectReturnGesture:(SCWSingleCharView *)<em>sender</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sender</em></dt>
+			<dd><p>SingleCharWidget</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SCWSingleCharViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/singleCharWidgetDidEndRecognition:" title="singleCharWidgetDidEndRecognition:"></a>
+	<h3 class="subsubtitle method-title">singleCharWidgetDidEndRecognition:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when a recognition session ends.</p>
+
+<p><p>
+The text does not change anymore after a recognition session is
+finished.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)singleCharWidgetDidEndRecognition:(SCWSingleCharView *)<em>sender</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sender</em></dt>
+			<dd><p>SingleCharWidget</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SCWSingleCharViewDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2015 MyScript. All rights reserved. (Last updated: 2015-07-27)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

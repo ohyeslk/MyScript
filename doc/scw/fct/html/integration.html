@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html>
+	<head><link rel="icon" href="../images/favicon.ico" />
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>MyScript SCW (iOS)</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+<link rel="stylesheet" href="../css/MySBuilder.css" type="text/css">
+
+<script src="../js/prism.js"></script>
+		<meta name="generator" content="appledoc 2.1 (build 858)" />
+	</head>
+	<body>
+
+      <h1>Single Character Widget</h1>
+
+<p class="remark">To install and integrate the <strong>Single Character Widget</strong> on iOS, you must be using the latest version of Xcode and iOS SDK. Minimum deployment target is 7.0.</p>
+<h2>Integration</h2>
+
+    <h3>Links between projects</h3>
+
+<p>The Single Character Widget for iOS is a framework that you add to your Xcode project.</p>
+
+<ul><ul>
+  <li>Click on your project in the project navigator. (1)
+</li>
+<li>Choose the relevant target. (2)</li>
+<li>Open the <b>Build Phase</b> tab. (3)</li>
+<li>In the <b>Link Binary With Libraries</b> section, click on the <b>+</b> sign, then <b>Add Other…</b> (4)</li>
+</ul></ul>
+
+<p align="center"><img src="../images/integration1.png"></p>
+
+<ul>
+  <li>Click on the <b>+</b> sign and add the following frameworks and libraries:
+    <ul>
+      <li>AtkScw.framework</li>
+      <li>Security.framework</li>
+      <li>SystemConfiguration.framework</li>
+      <li>libAtkInw.a</li>
+      <li>libMyScript2D.a</li>
+      <li>libMyScriptEngine.a</li>
+      <li>libMyScriptPrediction.a</li>
+      <li>libMyScriptText.a</li>
+      <li>libStylusCore.a</li>
+    </ul>
+  </li>
+</ul>
+
+<p><img src="../images/integration2.png"></p>
+
+<ul>
+  <ul>
+    <li>Modify your search path to link with <b>SDK</b> and <b>StylusCore</b> libraries.
+    </li>
+  </ul>
+</ul>
+
+<p align="center"><img src="../images/integration3.png"></p>
+<ul><ul>
+  <li>In the <b>Build Settings</b> tab of your target, look for <b>Other Linker Flags</b> and add the following flags:<br>
+      <ul>
+        <li>-ObjC</li>
+        <li>/usr/lib/libstdc++.dylib</li>
+        <li>-Wl,-U,_MyScript2D</li>
+        <li>-Wl,-U,_MyScriptAnalyzer</li>
+        <li>-Wl,-U,_MyScriptDocument</li>
+        <li>-Wl,-U,_MyScriptGesture</li>
+        <li>-Wl,-U,_MyScriptInk</li>
+        <li>-Wl,-U,_MyScriptInkSearch</li>
+        <li>-Wl,-U,_MyScriptMath</li>
+        <li>-Wl,-U,_MyScriptMusic</li>
+        <li>-Wl,-U,_MyScriptPrediction</li>
+        <li>-Wl,-U,_MyScriptShape</li>
+        <li>-Wl,-U,_MyScriptText</li>
+        <li>-Wl,-U,_MyScriptWriterAdaptation</li>
+      </ul>
+  </li>
+  </ul>
+  <p><img src="../images/integration5.png" ></p>
+
+  <h3>Handwriting recognition resources</h3>
+<ul>
+<li>Add the following language resources (at least):
+  <ul>
+    <li>en_US-ak-iso.lite.res<em> (for isolated mode)</em></li>
+    <li>latin-ak-superimposed.lite.res <em>(for superimposed mode)</em></li>
+    <li>en_US-lk-text.lite.res</li>
+    <li>mul-lk-gesture.res</li>
+
+  </ul>
+ They are used by the recognition engine and can be found in the <b>AtkScw.bundle</b> file.</li></ul>
+
+<h3>Code</h3>
+
+<p>To use the Single Character Widget in your app, add the following import instructions:</p>
+
+<pre class="language-objectivec"><code>#import &lt;AtkScw/SingleCharWidget.h&gt;</code></pre>
+
+<p>You can instantiate and configure a <b>SCWSingleCharView</b> with a few lines:</p>
+<pre class="language-objectivec"><code>// Create the Single Char Widget View
+SCWSingleCharView *_widget = [[SCWSingleCharView alloc] init];
+_widget.delegate = self;
+
+// Recognition resources
+NSArray *_resources = [NSArray arrayWithObjects:
+                      [resourceBundle pathForResource:"latin/latin-ak-superimposed.lite" ofType:"res"],
+                      [resourceBundle pathForResource:"en_US/en_US-lk-text.lite" ofType:"res"],
+                      [resourceBundle pathForResource:"mul/mul-lk-gesture" ofType:"res"],
+                      nil];
+
+// Certificate
+NSData *_certificate = [NSData dataWithBytes:myCertificate.bytes length:myCertificate.length];
+
+// Configure the Single Char Widget View with the recognition resources and the certificate
+[_widget configureWithLanguage:@&quot;en_US&quot;
+                     resources:_resources
+                   certificate:_certificate];</code></pre>
+    </ul>
+	</body>
+</html>

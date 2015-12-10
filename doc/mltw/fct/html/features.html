@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head><link rel="icon" href="../images/favicon.ico" />
+  <meta content="text/html; charset=utf-8" http-equiv="content-type">
+  <title>MyScript MLTW (iOS)</title>
+  <link rel="stylesheet" href="../css/MySBuilder.css" type="text/css">
+</head>
+<body bgcolor="#FFFFFF" text="#000000">
+
+ <h1>Multi Line Text Widget</h1>
+
+ <h2>Features</h2>
+ <h3>Modes</h3>
+ <p>The Multi Line Text Widget can operate in  3 modes:</p>
+ <ul><ul>
+   <li><strong>Writing mode:</strong> This is the default mode, it enables the user to write in a continuous flow.</li>
+   <li><strong>Insertion mode: </strong>This mode enables the user to insert an extra space between two words.</li>
+   <li><strong>Correction mode: </strong>This mode enables the user to insert a space within a word and thus edit the text already entered. It is also triggered when an item is selected.</li>
+ </ul></ul>
+ <h3>Gesture detection</h3>
+ <p>The below handwriting gestures are supported by the widget. A set of delegates is provided so that the input method can take action when a gesture is detected. The gestures' behaviour can be configured according to your needs, <u>except for</u> erase and overwrite gestures. You can also choose to activate or deactivate the gesture detection.</p>
+  <table>
+    <tr>
+      <th width="107" scope="col"><div align="center">User action</div></th>
+      <th width="450" scope="col"><div align="center">Gesture</div></th>
+      <th scope="col"><div align="center">Description</div></th>
+      <th width="109" scope="col"><div align="center">Default action</div></th>
+      <th>Code sample</th>
+    </tr>
+    <tr>
+      <td><strong>Tap</strong></td>
+      <td align="center"><p><img src="../images/gesture_tap.png"></p>
+      <p><img src="../images/gesture_tap2.png">&nbsp;</p></td>
+      <td width="110">Briefly touch a word</td>
+      <td><p>n/a</p></td>
+      <td><p>The function <code>setCorrectionMode:</code> is called and the word is selected.</p></td>
+    </tr>
+    <tr>
+      <td><strong>Circle</strong></td>
+      <td align="center"><p><img src="../images/gesture_selection.png"></p>
+        <p><img src="../images/gesture_selection2.png" ></p></td>
+        <td>Circle a word</td>
+        <td>n/a</td>
+        <td>The function <code>setCorrectionMode:</code> is called and the word is selected.</td>
+    </tr>
+    <tr>
+      <td><strong>Insert</strong></td>
+      <td align="center"><p><img src="../images/gesture_split.png" ></p>
+        <p>&nbsp;</p></td>
+        <td>Draw a straight line from top to bottom within a word</td>
+        <td>n/a</td>
+        <td>The function <code>addSpaceWithWord:atIndex:</code> is called and the word is splitted (to insert a letter for example).</td>
+    </tr>
+    <tr>
+        <td><strong>Insert</strong></td>
+        <td align="center"><p><img src="../images/gesture_split2.png"></p></td>
+        <td>Draw a straight line from top to bottom between two words</td>
+        <td>n/a</td>
+        <td>The function <code>setInsertionMode:atIndex:</code> is called and an additional space is added.</td>
+    </tr>
+    <tr>
+      <td><strong>Join</strong></td>
+      <td align="center">
+        <p><img src="../images/gesture_join.png" ></p>
+        <p><img src="../images/gesture_join2.png"></p>
+      </td>
+      <td><p>Draw a straight line from bottom to top</p>
+        <p><em>or </em></p>
+        <p>Draw a line from one word to the next one</p></td>
+      <td>n/a</td>
+      <td>The function <code>removeSpaceWithWord:atIndex:</code> is called and the extra space is removed.</td>
+    </tr>
+    <tr>
+      <td><strong>Strikethrough</strong></td>
+      <td align="center"><img src="../images/gesture_strikethrough.png"></td>
+      <td>Draw a line on a word</td>
+      <td>Erase</td> <td>n/a</td>
+    </tr>
+    <tr>
+      <td><strong>Scratch-out</strong></td>
+      <td align="center"><img src="../images/gesture_scratch-out.png"></td>
+      <td>Scratch out a word</td>
+      <td>Erase</td> <td>n/a</td>
+    </tr>
+    <tr>
+      <td><strong>Pigtail</strong></td>
+      <td align="center"><img src="../images/gesture_pigtail.png" ></td>
+      <td><p>Draw a &quot;curly tail&quot; over the letter or word (intuitive gesture for Asian languages)</p></td>
+      <td>Erase</td> <td>n/a</td>
+    </tr>
+    <tr>
+      <td><strong>Overwrite</strong></td>
+      <td align="center"><img src="../images/gesture_overwrite.png" ></td>
+      <td>Write a letter on top of another</td>
+      <td>Overwrite</td> <td>n/a</td>
+    </tr>
+    <tr>
+      <td><strong>Underline</strong></td>
+      <td align="center"><img src="../images/gesture_underline.png" ></td>
+      <td>Draw a line under a word</td>
+      <td>n/a</td> 
+      <td>The function <code>setCorrectionMode:</code> is called and the word is selected.</td>
+    </tr>
+    <tr>
+      <td><strong>Return</strong></td>
+      <td align="center"><img src="../images/gesture_return.png" ></td>
+      <td>Draw a line from top to bottom then from right to left </td>
+      <td>n/a</td> 
+      <td>The function <code>addLineBreakForWord:atIndex:</code> is called and a hard line break is inserted.</td>
+    </tr>  
+  </table>
+  <h3>UI customization</h3>
+  <p>A number of options are provided to customize the UI of the widget's writing area. The widget can be customized via the widget API.</p>
+  <p>The following items can be configured:</p>
+  <ul>
+    <ul>
+     <li>Ink width &amp; color,</li>
+     <li>Background image of the input view,</li>
+     <li>Guidelines position, color &amp; thickness,</li>
+     <li>Scrollbar background &amp; drawable.</li>
+   </ul>
+    <h3>Languages</h3>
+    <p>The Multi Line Text Widget supports <a href="https://dev.myscript.com/language-list/?tab=atk-ml" target="_blank">59 languages</a>.</p>
+    <p>&nbsp;</p>
+ </ul>
+ </body>
+</html>

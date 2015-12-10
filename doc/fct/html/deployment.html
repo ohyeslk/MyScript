@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head><link rel="icon" href="../../_common/images/favicon.ico" />
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <title>MyScript ATK (iOS)</title>
+    <link rel="stylesheet" href="../../_common/css/MySBuilder.css" type="text/css">
+  </head>
+  <body bgcolor="#FFFFFF" text="#000000">
+<h1>MyScript® Application Toolkit (ATK)</h1>
+<h2>Deployment</h2>
+  <h3>Internet access</h3>
+  <p>An Internet connection is required to launch and run ATK applications.<br>
+    However, a 30-day grace period is offered, from the moment you first launch your application. A connection will then be mandatory.<br>
+  
+<h3><a name="create_certificate"></a>Certificate</h3>
+<p>A certificate is required to use the MyScript handwriting recognition engine. It gives the right to use ATK. Each certificate gives access to all widgets for a given platform.</p>
+<p class="remark">You need one certificate per application and per platform.
+  You can integrate several widgets in one application.</p>
+<p>To download the samples' certificate, follow this procedure:</p>
+<blockquote>
+  <ol>
+<li>Go to <a href="https://atk.myscript.com" target="_blank">https://atk.myscript.com</a>.</li>
+<li>Enter your email and password.</li>
+<li>Click <b>Open</b> on the <strong>ATK Samples</strong> application.</li>
+<li>Click on the download icon to download the <strong>MyCertificate.h</strong> file.<br>
+</li>
+<li>Paste it in the samples folder and thus replace the existing <strong>MyCertificate.h</strong> file.</li>
+
+    <li>Open the corresponding <b>*.xcodeproj</b> file in the samples folder.</li>
+      <li>Build and run the sample app.</li>
+  </ol>
+</blockquote>
+<p>To download any other certificate, follow this procedure:</p>
+<blockquote>
+  <ol>
+<li>Go to <a href="https://atk.myscript.com" target="_blank">https://atk.myscript.com</a>.</li>
+<li>Enter your email and password.</li>
+<li>In the <strong>Applications</strong> tab, click <b>Create application</b>.</li>
+<li>Enter your application name (at least 5 characters) and its description, then click <strong>Create</strong>.</li>
+<li>Click <b>Open</b>, then <b>Create certificate</b>.</li>
+<li>Enter the bundle identifier that can be found in your project's properties (<b>General </b>tab) and select the target environment, then click <strong>Create</strong>.</li>
+<li>Click on the download icon to download the corresponding <strong>*.h</strong> certificate.<br>
+<li>Paste it in your project and start creating your app.</li>
+  </ol>
+</blockquote>
+
+<h3>Runtime management</h3>
+<p>A runtime is the first launch of one application on one device.</p>
+<p>You are allowed 40 runtimes by default, which enable you to install and run one application on 40 devices.</p>
+<p>Go to the <strong>Applications</strong> tab of the <a href="../../_common/html/admin-ui.html">Admin User Interface</a> to see your remaining runtimes.</p>
+  <p>Go to the <a href="https://dev.myscript.com/" target="_blank">developer portal</a> to buy additional cartridges (either 500 or 1,000 units).  </p>
+<p class="remark">If you install and run the samples, your runtime account will be deducted.</p>
+</body>
+</html>

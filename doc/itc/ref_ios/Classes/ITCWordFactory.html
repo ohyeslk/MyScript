@@ -1,0 +1,1453 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>ITCWordFactory Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 961)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">InteractiveTextComponent </a></h1>
+				<a id="developerHome" href="../index.html">MyScript</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">ITCWordFactory Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/wordFactoryWithStrokeFactory:wordUserParamFactory:">&nbsp;&nbsp;&nbsp;&nbsp;+ wordFactoryWithStrokeFactory:wordUserParamFactory:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/charBoxFactory">&nbsp;&nbsp;&nbsp;&nbsp;- charBoxFactory</option>
+	
+	<option value="//api/name/createCopyOfWord:spaceBefore:">&nbsp;&nbsp;&nbsp;&nbsp;- createCopyOfWord:spaceBefore:</option>
+	
+	<option value="//api/name/createMixWordFromWord:charIndexTypeset:andSpaceBefore:">&nbsp;&nbsp;&nbsp;&nbsp;- createMixWordFromWord:charIndexTypeset:andSpaceBefore:</option>
+	
+	<option value="//api/name/createMovedWord:offsetX:offsetY:spaceBefore:">&nbsp;&nbsp;&nbsp;&nbsp;- createMovedWord:offsetX:offsetY:spaceBefore:</option>
+	
+	<option value="//api/name/createScaledWord:scaleX:scaleY:spaceBefore:">&nbsp;&nbsp;&nbsp;&nbsp;- createScaledWord:scaleX:scaleY:spaceBefore:</option>
+	
+	<option value="//api/name/createSubWord:beginIndex:endIndex:spaceBefore:">&nbsp;&nbsp;&nbsp;&nbsp;- createSubWord:beginIndex:endIndex:spaceBefore:</option>
+	
+	<option value="//api/name/createTransformedWord:transform:spaceBefore:">&nbsp;&nbsp;&nbsp;&nbsp;- createTransformedWord:transform:spaceBefore:</option>
+	
+	<option value="//api/name/createTypeSetWord:charBoxes:baseline:midLine:spaceBefore:">&nbsp;&nbsp;&nbsp;&nbsp;- createTypeSetWord:charBoxes:baseline:midLine:spaceBefore:</option>
+	
+	<option value="//api/name/createTypeSetWord:xPosition:yPosition:spaceBefore:">&nbsp;&nbsp;&nbsp;&nbsp;- createTypeSetWord:xPosition:yPosition:spaceBefore:</option>
+	
+	<option value="//api/name/createTypesetWordsFromLabel:locale:xPosition:yPosition:userParams:spaceBefore:">&nbsp;&nbsp;&nbsp;&nbsp;- createTypesetWordsFromLabel:locale:xPosition:yPosition:userParams:spaceBefore:</option>
+	
+	<option value="//api/name/createWord:selectedCandidateIndex:spaceBefore:">&nbsp;&nbsp;&nbsp;&nbsp;- createWord:selectedCandidateIndex:spaceBefore:</option>
+	
+	<option value="//api/name/createWord:userParams:spaceBefore:">&nbsp;&nbsp;&nbsp;&nbsp;- createWord:userParams:spaceBefore:</option>
+	
+	<option value="//api/name/createWordFromData:">&nbsp;&nbsp;&nbsp;&nbsp;- createWordFromData:</option>
+	
+	<option value="//api/name/defaultCharBoxFactory">&nbsp;&nbsp;&nbsp;&nbsp;- defaultCharBoxFactory</option>
+	
+	<option value="//api/name/setCharBoxFactory:">&nbsp;&nbsp;&nbsp;&nbsp;- setCharBoxFactory:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Creation">Creation</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Copy/Sub">Copy/Sub</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Geometry">Geometry</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Candidate">Candidate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_User params">User params</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Typeset">Typeset</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Serialisation">Serialisation</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_CharBoxFactory">CharBoxFactory</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/wordFactoryWithStrokeFactory:wordUserParamFactory:">wordFactoryWithStrokeFactory:wordUserParamFactory:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/charBoxFactory">charBoxFactory</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createCopyOfWord:spaceBefore:">createCopyOfWord:spaceBefore:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createMixWordFromWord:charIndexTypeset:andSpaceBefore:">createMixWordFromWord:charIndexTypeset:andSpaceBefore:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createMovedWord:offsetX:offsetY:spaceBefore:">createMovedWord:offsetX:offsetY:spaceBefore:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createScaledWord:scaleX:scaleY:spaceBefore:">createScaledWord:scaleX:scaleY:spaceBefore:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createSubWord:beginIndex:endIndex:spaceBefore:">createSubWord:beginIndex:endIndex:spaceBefore:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createTransformedWord:transform:spaceBefore:">createTransformedWord:transform:spaceBefore:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createTypeSetWord:charBoxes:baseline:midLine:spaceBefore:">createTypeSetWord:charBoxes:baseline:midLine:spaceBefore:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createTypeSetWord:xPosition:yPosition:spaceBefore:">createTypeSetWord:xPosition:yPosition:spaceBefore:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createTypesetWordsFromLabel:locale:xPosition:yPosition:userParams:spaceBefore:">createTypesetWordsFromLabel:locale:xPosition:yPosition:userParams:spaceBefore:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createWord:selectedCandidateIndex:spaceBefore:">createWord:selectedCandidateIndex:spaceBefore:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createWord:userParams:spaceBefore:">createWord:userParams:spaceBefore:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createWordFromData:">createWordFromData:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/defaultCharBoxFactory">defaultCharBoxFactory</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setCharBoxFactory:">setCharBoxFactory:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="ITCWordFactory Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">ITCWordFactory Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">ITCWordFactory.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Object in charge of the creation of <a href="../Classes/ITCSmartWord.html"><code>ITCSmartWord</code></a>.
+Do not inherit</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Creation" name="task_Creation"></a>
+						<h3 class="subsubtitle task-title">Creation</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/wordFactoryWithStrokeFactory:wordUserParamFactory:">+&nbsp;wordFactoryWithStrokeFactory:wordUserParamFactory:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Copy/Sub" name="task_Copy/Sub"></a>
+						<h3 class="subsubtitle task-title">Copy/Sub</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createCopyOfWord:spaceBefore:">&ndash;&nbsp;createCopyOfWord:spaceBefore:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createSubWord:beginIndex:endIndex:spaceBefore:">&ndash;&nbsp;createSubWord:beginIndex:endIndex:spaceBefore:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Geometry" name="task_Geometry"></a>
+						<h3 class="subsubtitle task-title">Geometry</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createMovedWord:offsetX:offsetY:spaceBefore:">&ndash;&nbsp;createMovedWord:offsetX:offsetY:spaceBefore:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createScaledWord:scaleX:scaleY:spaceBefore:">&ndash;&nbsp;createScaledWord:scaleX:scaleY:spaceBefore:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createTransformedWord:transform:spaceBefore:">&ndash;&nbsp;createTransformedWord:transform:spaceBefore:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Candidate" name="task_Candidate"></a>
+						<h3 class="subsubtitle task-title">Candidate</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createWord:selectedCandidateIndex:spaceBefore:">&ndash;&nbsp;createWord:selectedCandidateIndex:spaceBefore:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="User params" name="task_User params"></a>
+						<h3 class="subsubtitle task-title">User params</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createWord:userParams:spaceBefore:">&ndash;&nbsp;createWord:userParams:spaceBefore:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Typeset" name="task_Typeset"></a>
+						<h3 class="subsubtitle task-title">Typeset</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createTypeSetWord:charBoxes:baseline:midLine:spaceBefore:">&ndash;&nbsp;createTypeSetWord:charBoxes:baseline:midLine:spaceBefore:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createTypeSetWord:xPosition:yPosition:spaceBefore:">&ndash;&nbsp;createTypeSetWord:xPosition:yPosition:spaceBefore:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createTypesetWordsFromLabel:locale:xPosition:yPosition:userParams:spaceBefore:">&ndash;&nbsp;createTypesetWordsFromLabel:locale:xPosition:yPosition:userParams:spaceBefore:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Serialisation" name="task_Serialisation"></a>
+						<h3 class="subsubtitle task-title">Serialisation</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createMixWordFromWord:charIndexTypeset:andSpaceBefore:">&ndash;&nbsp;createMixWordFromWord:charIndexTypeset:andSpaceBefore:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createWordFromData:">&ndash;&nbsp;createWordFromData:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="CharBoxFactory" name="task_CharBoxFactory"></a>
+						<h3 class="subsubtitle task-title">CharBoxFactory</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setCharBoxFactory:">&ndash;&nbsp;setCharBoxFactory:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/charBoxFactory">&ndash;&nbsp;charBoxFactory</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/defaultCharBoxFactory">&ndash;&nbsp;defaultCharBoxFactory</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/wordFactoryWithStrokeFactory:wordUserParamFactory:" title="wordFactoryWithStrokeFactory:wordUserParamFactory:"></a>
+	<h3 class="subsubtitle method-title">wordFactoryWithStrokeFactory:wordUserParamFactory:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a new ITCWordFactory. Mandatory for the creation of a <a href="../Classes/ITCSmartPage.html">ITCSmartPage</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (id)wordFactoryWithStrokeFactory:(ITCStrokeFactory *)<em>strokeFactory</em> wordUserParamFactory:(id&lt;ITCWordUserParamsFactoryProtocol&gt;)<em>wordUserParamFactory</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>strokeFactory</em></dt>
+			<dd><p>The stroke factory used in the word factory. Must not be <code>nil</code>.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>wordUserParamFactory</em></dt>
+			<dd><p>The wordUserParamsFactory for the current word factory.
+If you use <a href="../Protocols/ITCUserParams.html"><code>ITCUserParams</code></a>, the object can not be <code>nil</code>.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>the new ITCWordFactory</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ITCWordFactory.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/charBoxFactory" title="charBoxFactory"></a>
+	<h3 class="subsubtitle method-title">charBoxFactory</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The char box factory used.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id&lt;ITCCharBoxFactoryProtocol&gt;)charBoxFactory</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The char box factory used.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ITCWordFactory.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/createCopyOfWord:spaceBefore:" title="createCopyOfWord:spaceBefore:"></a>
+	<h3 class="subsubtitle method-title">createCopyOfWord:spaceBefore:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a copy of the given <a href="../Classes/ITCSmartWord.html"><code>ITCSmartWord</code></a></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (ITCSmartWord *)createCopyOfWord:(ITCSmartWord *)<em>aWord</em> spaceBefore:(NSInteger)<em>spaceBefore</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>spaceBefore</em></dt>
+			<dd><p>The new number of spaces before the word.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>word</em></dt>
+			<dd><p>Original word.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Word copied.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ITCWordFactory.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/createMixWordFromWord:charIndexTypeset:andSpaceBefore:" title="createMixWordFromWord:charIndexTypeset:andSpaceBefore:"></a>
+	<h3 class="subsubtitle method-title">createMixWordFromWord:charIndexTypeset:andSpaceBefore:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a <a href="../Classes/ITCSmartWord.html"><code>ITCSmartWord</code></a> from a serialized word.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (ITCSmartWord *)createMixWordFromWord:(ITCSmartWord *)<em>word</em> charIndexTypeset:(NSArray *)<em>charIndexTypeset</em> andSpaceBefore:(NSInteger)<em>spaceBefore</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>word</em></dt>
+			<dd><p>Original word.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>charIndexTypeset</em></dt>
+			<dd><p>The characters index to typeset. The other ones will be created with this stroke.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>spaceBefore</em></dt>
+			<dd><p>The new number of spaces before the word.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>a <a href="../Classes/ITCSmartWord.html">ITCSmartWord</a> created from the given parameters.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ITCWordFactory.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/createMovedWord:offsetX:offsetY:spaceBefore:" title="createMovedWord:offsetX:offsetY:spaceBefore:"></a>
+	<h3 class="subsubtitle method-title">createMovedWord:offsetX:offsetY:spaceBefore:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a <a href="../Classes/ITCSmartWord.html"><code>ITCSmartWord</code></a> with the given translation values.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (ITCSmartWord *)createMovedWord:(ITCSmartWord *)<em>aWord</em> offsetX:(NSInteger)<em>anOffsetX</em> offsetY:(NSInteger)<em>anOffsetY</em> spaceBefore:(NSInteger)<em>spaceBefore</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>spaceBefore</em></dt>
+			<dd><p>The new number of spaces before the word.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>dy</em></dt>
+			<dd><p>Amount in the Y direction to offset the word.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>dx</em></dt>
+			<dd><p>Amount in the X direction to offset the word.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Word created with the given parameters or <code>nil</code> for an invalid request.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ITCWordFactory.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/createScaledWord:scaleX:scaleY:spaceBefore:" title="createScaledWord:scaleX:scaleY:spaceBefore:"></a>
+	<h3 class="subsubtitle method-title">createScaledWord:scaleX:scaleY:spaceBefore:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a <a href="../Classes/ITCSmartWord.html"><code>ITCSmartWord</code></a> with the given translation values.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (ITCSmartWord *)createScaledWord:(ITCSmartWord *)<em>aWord</em> scaleX:(NSInteger)<em>aScaleX</em> scaleY:(NSInteger)<em>aScaleY</em> spaceBefore:(NSInteger)<em>spaceBefore</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>spaceBefore</em></dt>
+			<dd><p>The new number of spaces before the word.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>dy</em></dt>
+			<dd><p>The Y scale the word.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>dx</em></dt>
+			<dd><p>The X scale the word.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Word created with the given parameters or <code>nil</code> for an invalid request.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ITCWordFactory.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/createSubWord:beginIndex:endIndex:spaceBefore:" title="createSubWord:beginIndex:endIndex:spaceBefore:"></a>
+	<h3 class="subsubtitle method-title">createSubWord:beginIndex:endIndex:spaceBefore:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a sub <a href="../Classes/ITCSmartWord.html"><code>ITCSmartWord</code></a> from a given word.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (ITCSmartWord *)createSubWord:(ITCSmartWord *)<em>aWord</em> beginIndex:(NSInteger)<em>aBeginIndex</em> endIndex:(NSInteger)<em>anEndIndex</em> spaceBefore:(NSInteger)<em>spaceBefore</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>spaceBefore</em></dt>
+			<dd><p>The new number of spaces before the word.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>begin</em></dt>
+			<dd><p>Start index to consider among word characters.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>end</em></dt>
+			<dd><p>End index to consider among word characters.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Word created with the given parameters or <code>nil</code> for an invalid request.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ITCWordFactory.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/createTransformedWord:transform:spaceBefore:" title="createTransformedWord:transform:spaceBefore:"></a>
+	<h3 class="subsubtitle method-title">createTransformedWord:transform:spaceBefore:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a <a href="../Classes/ITCSmartWord.html"><code>ITCSmartWord</code></a> with the given translation values.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (ITCSmartWord *)createTransformedWord:(ITCSmartWord *)<em>aWord</em> transform:(ITCTransform *)<em>aTransform</em> spaceBefore:(NSInteger)<em>spaceBefore</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>spaceBefore</em></dt>
+			<dd><p>The new number of spaces before the word.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>transform</em></dt>
+			<dd><p>The new transform applied to the word.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Word created with the given parameters or <code>nil</code> for an invalid request.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ITCWordFactory.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/createTypeSetWord:charBoxes:baseline:midLine:spaceBefore:" title="createTypeSetWord:charBoxes:baseline:midLine:spaceBefore:"></a>
+	<h3 class="subsubtitle method-title">createTypeSetWord:charBoxes:baseline:midLine:spaceBefore:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a typeset <a href="../Classes/ITCSmartWord.html"><code>ITCSmartWord</code></a> from a given word.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (ITCSmartWord *)createTypeSetWord:(ITCSmartWord *)<em>aWord</em> charBoxes:(NSArray *)<em>charBoxes</em> baseline:(float)<em>baseline</em> midLine:(float)<em>midline</em> spaceBefore:(NSInteger)<em>spaceBefore</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>charBoxes</em></dt>
+			<dd><p>The char boxes for the selected candidate.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>baseline</em></dt>
+			<dd><p>The base line position where the word will be typeset.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>spaceBefore</em></dt>
+			<dd><p>The new number of space before the word.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>word</em></dt>
+			<dd><p>Original word.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>mideline</em></dt>
+			<dd><p>The midline position used for the internal scaling of the characters in their boxes.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Word created form the given parameters or <code>nil</code> for an invalid request.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This is the way to typeset a word using an external way to compute the character boxes.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ITCWordFactory.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/createTypeSetWord:xPosition:yPosition:spaceBefore:" title="createTypeSetWord:xPosition:yPosition:spaceBefore:"></a>
+	<h3 class="subsubtitle method-title">createTypeSetWord:xPosition:yPosition:spaceBefore:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a typeset <a href="../Classes/ITCSmartWord.html"><code>ITCSmartWord</code></a> from a given ink word.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (ITCSmartWord *)createTypeSetWord:(ITCSmartWord *)<em>aWord</em> xPosition:(float)<em>x</em> yPosition:(float)<em>y</em> spaceBefore:(NSInteger)<em>spaceBefore</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>x</em></dt>
+			<dd><p>Word bounding rectangle abscissa.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>y</em></dt>
+			<dd><p>Word bounding rectangle ordinate.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>spaceBefore</em></dt>
+			<dd><p>The new number of spaces before the word.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>word</em></dt>
+			<dd><p>Original word.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p><a href="../Classes/ITCSmartWord.html">ITCSmartWord</a> created form the given parameters or <code>nil</code> for an invalid request.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This is the way to typeset a word using the component provided character box calculation feature.
+See <a href="../Classes/ITCSmartPage.html">ITCSmartPage</a>.replaceWord:</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ITCWordFactory.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/createTypesetWordsFromLabel:locale:xPosition:yPosition:userParams:spaceBefore:" title="createTypesetWordsFromLabel:locale:xPosition:yPosition:userParams:spaceBefore:"></a>
+	<h3 class="subsubtitle method-title">createTypesetWordsFromLabel:locale:xPosition:yPosition:userParams:spaceBefore:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a <a href="../Classes/ITCSmartWord.html"><code>ITCSmartWord</code></a> from a label.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)createTypesetWordsFromLabel:(NSString *)<em>label</em> locale:(NSString *)<em>locale</em> xPosition:(float)<em>x</em> yPosition:(float)<em>y</em> userParams:(id&lt;ITCUserParams&gt;)<em>defaultCharacterUserParams</em> spaceBefore:(NSInteger)<em>spaceBefore</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>label</em></dt>
+			<dd><p>String representing the label of the word to be created.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>locale</em></dt>
+			<dd><p>String representing the system local.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>x</em></dt>
+			<dd><p>Word bounding rectangle abscissa.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>y</em></dt>
+			<dd><p>Word bounding rectangle ordinate.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>defaultCharacterUserParams</em></dt>
+			<dd><p>User parameters to be set to all the word characters.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>spaceBefore</em></dt>
+			<dd><p>The new number of spaces before the word.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>an array of <a href="../Classes/ITCSmartWord.html">ITCSmartWord</a> created form the given parameters.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This is the way of creating a word from a label. It could be the case of a
+copy(cut)/paste feature from outside the application.
+See <a href="../Classes/ITCSmartPage.html">ITCSmartPage</a>.addWord: to add it to the recognition process once created.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ITCWordFactory.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/createWord:selectedCandidateIndex:spaceBefore:" title="createWord:selectedCandidateIndex:spaceBefore:"></a>
+	<h3 class="subsubtitle method-title">createWord:selectedCandidateIndex:spaceBefore:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a <a href="../Classes/ITCSmartWord.html"><code>ITCSmartWord</code></a> by selecting a new candidate.
+This method applies on both ink or typeset words.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (ITCSmartWord *)createWord:(ITCSmartWord *)<em>aWord</em> selectedCandidateIndex:(NSInteger)<em>selectedIndex</em> spaceBefore:(NSInteger)<em>spaceBefore</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>selectedIndex</em></dt>
+			<dd><p>The selected candidate index to set.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>spaceBefore</em></dt>
+			<dd><p>The new number of spaces before the word.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>word</em></dt>
+			<dd><p>Original word.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Word created from the given parameters.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ITCWordFactory.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/createWord:userParams:spaceBefore:" title="createWord:userParams:spaceBefore:"></a>
+	<h3 class="subsubtitle method-title">createWord:userParams:spaceBefore:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a copy of the given <a href="../Classes/ITCSmartWord.html"><code>ITCSmartWord</code></a> associated with given array of <a href="../Protocols/ITCUserParams.html">ITCUserParams</a>.
+If the userParams count is different from the characters count or the strokes count the
+method will return <code>nil</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (ITCSmartWord *)createWord:(ITCSmartWord *)<em>aWord</em> userParams:(NSArray *)<em>userParams</em> spaceBefore:(NSInteger)<em>spaceBefore</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>userParams</em></dt>
+			<dd><p>The list of user parameters to be set.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>spaceBefore</em></dt>
+			<dd><p>The new number of spaces before the word.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>word</em></dt>
+			<dd><p>Original word.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Word copied with given user parameters.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ITCWordFactory.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/createWordFromData:" title="createWordFromData:"></a>
+	<h3 class="subsubtitle method-title">createWordFromData:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a <a href="../Classes/ITCSmartWord.html">ITCSmartWord</a> from a serialized word.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (ITCSmartWord *)createWordFromData:(NSData *)<em>data</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>data</em></dt>
+			<dd><p>the <a href="../Classes/ITCSmartWord.html"><code>ITCSmartWord</code></a> serialized as a NSData</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>a word deserialized from the NSData</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ITCWordFactory.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/defaultCharBoxFactory" title="defaultCharBoxFactory"></a>
+	<h3 class="subsubtitle method-title">defaultCharBoxFactory</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Our default implementation of the <a href="../Protocols/ITCCharBoxFactoryProtocol.html"><code>ITCCharBoxFactoryProtocol</code></a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (ITCCharBoxFactory *)defaultCharBoxFactory</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Our default implementation of the <a href="../Protocols/ITCCharBoxFactoryProtocol.html"><code>ITCCharBoxFactoryProtocol</code></a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ITCWordFactory.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setCharBoxFactory:" title="setCharBoxFactory:"></a>
+	<h3 class="subsubtitle method-title">setCharBoxFactory:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the char box factory that will be used for typeset words.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setCharBoxFactory:(id&lt;ITCCharBoxFactoryProtocol&gt;)<em>charBoxFactory</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>charBoxFactory</em></dt>
+			<dd><p>The newchar box factory</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ITCWordFactory.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2015 MyScript. All rights reserved. (Last updated: 2015-07-27)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

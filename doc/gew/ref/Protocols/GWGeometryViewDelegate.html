@@ -1,0 +1,1026 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>GWGeometryViewDelegate Protocol Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 961)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">GeometryWidget </a></h1>
+				<a id="developerHome" href="../index.html">MyScript</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">GWGeometryViewDelegate Protocol Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/geometryView:didFailConfigurationWithError:">&nbsp;&nbsp;&nbsp;&nbsp;- geometryView:didFailConfigurationWithError:</option>
+	
+	<option value="//api/name/geometryView:didPerformEraseGesture:">&nbsp;&nbsp;&nbsp;&nbsp;- geometryView:didPerformEraseGesture:</option>
+	
+	<option value="//api/name/geometryView:didSelectItem:ofType:displayPoint:">&nbsp;&nbsp;&nbsp;&nbsp;- geometryView:didSelectItem:ofType:displayPoint:</option>
+	
+	<option value="//api/name/geometryView:labelForItem:">&nbsp;&nbsp;&nbsp;&nbsp;- geometryView:labelForItem:</option>
+	
+	<option value="//api/name/geometryViewDidBeginConfiguration:">&nbsp;&nbsp;&nbsp;&nbsp;- geometryViewDidBeginConfiguration:</option>
+	
+	<option value="//api/name/geometryViewDidBeginRecognition:">&nbsp;&nbsp;&nbsp;&nbsp;- geometryViewDidBeginRecognition:</option>
+	
+	<option value="//api/name/geometryViewDidBeginWriting:">&nbsp;&nbsp;&nbsp;&nbsp;- geometryViewDidBeginWriting:</option>
+	
+	<option value="//api/name/geometryViewDidChangeUndoRedoState:">&nbsp;&nbsp;&nbsp;&nbsp;- geometryViewDidChangeUndoRedoState:</option>
+	
+	<option value="//api/name/geometryViewDidEndConfiguration:">&nbsp;&nbsp;&nbsp;&nbsp;- geometryViewDidEndConfiguration:</option>
+	
+	<option value="//api/name/geometryViewDidEndRecognition:">&nbsp;&nbsp;&nbsp;&nbsp;- geometryViewDidEndRecognition:</option>
+	
+	<option value="//api/name/geometryViewDidEndWriting:">&nbsp;&nbsp;&nbsp;&nbsp;- geometryViewDidEndWriting:</option>
+	
+	<option value="//api/name/geometryViewDidUpdateItems:">&nbsp;&nbsp;&nbsp;&nbsp;- geometryViewDidUpdateItems:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Monitoring Configuration">Monitoring Configuration</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Monitoring Recognition Progress">Monitoring Recognition Progress</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Monitoring Changes in Undo Redo Stack">Monitoring Changes in Undo Redo Stack</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Handling Gestures">Handling Gestures</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Monitoring User Input">Monitoring User Input</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/geometryView:didFailConfigurationWithError:">geometryView:didFailConfigurationWithError:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/geometryView:didPerformEraseGesture:">geometryView:didPerformEraseGesture:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/geometryView:didSelectItem:ofType:displayPoint:">geometryView:didSelectItem:ofType:displayPoint:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/geometryView:labelForItem:">geometryView:labelForItem:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/geometryViewDidBeginConfiguration:">geometryViewDidBeginConfiguration:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/geometryViewDidBeginRecognition:">geometryViewDidBeginRecognition:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/geometryViewDidBeginWriting:">geometryViewDidBeginWriting:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/geometryViewDidChangeUndoRedoState:">geometryViewDidChangeUndoRedoState:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/geometryViewDidEndConfiguration:">geometryViewDidEndConfiguration:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/geometryViewDidEndRecognition:">geometryViewDidEndRecognition:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/geometryViewDidEndWriting:">geometryViewDidEndWriting:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/geometryViewDidUpdateItems:">geometryViewDidUpdateItems:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="GWGeometryViewDelegate Protocol Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">GWGeometryViewDelegate Protocol Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">GWGeometryView.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>The GWGeometryViewDelegate protocol defines the methods you can implement to be notified of
+the activity of a <a href="../Classes/GWGeometryView.html">GWGeometryView</a> object.
+These methods allow to monitor events such as configuration, recognition or a change in the Undo
+Redo stack.</p>
+
+<p>All of the methods in this protocol are optional.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Monitoring Configuration" name="task_Monitoring Configuration"></a>
+						<h3 class="subsubtitle task-title">Monitoring Configuration</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/geometryViewDidBeginConfiguration:">&ndash;&nbsp;geometryViewDidBeginConfiguration:</a></code>
+		<span class="tooltip"><p>Tells the delegate that the Geometry Widget has started its configuration.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/geometryViewDidEndConfiguration:">&ndash;&nbsp;geometryViewDidEndConfiguration:</a></code>
+		<span class="tooltip"><p>Tells the delegate that the Geometry Widget has end its configuration with success.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/geometryView:didFailConfigurationWithError:">&ndash;&nbsp;geometryView:didFailConfigurationWithError:</a></code>
+		<span class="tooltip"><p>Tells the delegate that the Geometry Widget has failed its configuration.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Monitoring Recognition Progress" name="task_Monitoring Recognition Progress"></a>
+						<h3 class="subsubtitle task-title">Monitoring Recognition Progress</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/geometryViewDidBeginRecognition:">&ndash;&nbsp;geometryViewDidBeginRecognition:</a></code>
+		<span class="tooltip"><p>Tells the delegate that the Geometry Widget has begun a recognition session.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/geometryViewDidEndRecognition:">&ndash;&nbsp;geometryViewDidEndRecognition:</a></code>
+		<span class="tooltip"><p>Tells the delegate that the Geometry Widget has ended a recognition process.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/geometryViewDidUpdateItems:">&ndash;&nbsp;geometryViewDidUpdateItems:</a></code>
+		<span class="tooltip"><p>Tells the delegate that the Geometry Widget has ended updating the items after a recognition.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Monitoring Changes in Undo Redo Stack" name="task_Monitoring Changes in Undo Redo Stack"></a>
+						<h3 class="subsubtitle task-title">Monitoring Changes in Undo Redo Stack</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/geometryViewDidChangeUndoRedoState:">&ndash;&nbsp;geometryViewDidChangeUndoRedoState:</a></code>
+		<span class="tooltip"><p>Tells the delegate that the Geometry Widget Undo/Redo stack has changed.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Handling Gestures" name="task_Handling Gestures"></a>
+						<h3 class="subsubtitle task-title">Handling Gestures</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/geometryView:didPerformEraseGesture:">&ndash;&nbsp;geometryView:didPerformEraseGesture:</a></code>
+		<span class="tooltip"><p>Tells the delegate that the Geometry Widget has detected an erase gesture.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/geometryView:didSelectItem:ofType:displayPoint:">&ndash;&nbsp;geometryView:didSelectItem:ofType:displayPoint:</a></code>
+		<span class="tooltip"><p>Tells the delegate that an item has been selected by the user.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Monitoring User Input" name="task_Monitoring User Input"></a>
+						<h3 class="subsubtitle task-title">Monitoring User Input</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/geometryViewDidBeginWriting:">&ndash;&nbsp;geometryViewDidBeginWriting:</a></code>
+		<span class="tooltip"><p>Tells the delegate that the user has started touching the screen.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/geometryViewDidEndWriting:">&ndash;&nbsp;geometryViewDidEndWriting:</a></code>
+		<span class="tooltip"><p>Tells the delegate that the user has ending touching the screen.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/geometryView:labelForItem:">&ndash;&nbsp;geometryView:labelForItem:</a></code>
+		<span class="tooltip"><p>Return the label to display next to the given item</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/geometryView:didFailConfigurationWithError:" title="geometryView:didFailConfigurationWithError:"></a>
+	<h3 class="subsubtitle method-title">geometryView:didFailConfigurationWithError:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Tells the delegate that the Geometry Widget has failed its configuration.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)geometryView:(GWGeometryView *)<em>geometryView</em> didFailConfigurationWithError:(NSError *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>geometryView</em></dt>
+			<dd><p>The geometry view that has failed its configuration.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p>An NSError object that encapsulates information why configuration failed.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">GWGeometryView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/geometryView:didPerformEraseGesture:" title="geometryView:didPerformEraseGesture:"></a>
+	<h3 class="subsubtitle method-title">geometryView:didPerformEraseGesture:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Tells the delegate that the Geometry Widget has detected an erase gesture.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)geometryView:(GWGeometryView *)<em>geometryView</em> didPerformEraseGesture:(BOOL)<em>partial</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>geometryView</em></dt>
+			<dd><p>The geometry view that has detected an erase gesture.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>partial</em></dt>
+			<dd><p><code>YES</code> if the all the sketch was deleted; otherwise, <code>NO</code>.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">GWGeometryView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/geometryView:didSelectItem:ofType:displayPoint:" title="geometryView:didSelectItem:ofType:displayPoint:"></a>
+	<h3 class="subsubtitle method-title">geometryView:didSelectItem:ofType:displayPoint:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Tells the delegate that an item has been selected by the user.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)geometryView:(GWGeometryView *)<em>geometryView</em> didSelectItem:(ItemID)<em>item</em> ofType:(GWItemType)<em>type</em> displayPoint:(CGPoint)<em>point</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>geometryView</em></dt>
+			<dd><p>The geometry view that has detected the selection.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>item</em></dt>
+			<dd><p>The selected item.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>type</em></dt>
+			<dd><p>The type of the selected item.
+@param point</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">GWGeometryView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/geometryView:labelForItem:" title="geometryView:labelForItem:"></a>
+	<h3 class="subsubtitle method-title">geometryView:labelForItem:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Return the label to display next to the given item</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)geometryView:(GWGeometryView *)<em>geometryView</em> labelForItem:(ItemID)<em>item</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>geometryView</em></dt>
+			<dd><p>The geometry view</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>item</em></dt>
+			<dd><p>The ID of the item for which to display the label</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An <code>NSString</code> corresponding to the label to display</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">GWGeometryView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/geometryViewDidBeginConfiguration:" title="geometryViewDidBeginConfiguration:"></a>
+	<h3 class="subsubtitle method-title">geometryViewDidBeginConfiguration:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Tells the delegate that the Geometry Widget has started its configuration.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)geometryViewDidBeginConfiguration:(GWGeometryView *)<em>geometryView</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>geometryView</em></dt>
+			<dd><p>The geometry view that has started its configuration.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">GWGeometryView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/geometryViewDidBeginRecognition:" title="geometryViewDidBeginRecognition:"></a>
+	<h3 class="subsubtitle method-title">geometryViewDidBeginRecognition:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Tells the delegate that the Geometry Widget has begun a recognition session.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)geometryViewDidBeginRecognition:(GWGeometryView *)<em>geometryView</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>geometryView</em></dt>
+			<dd><p>The geometry view that has begun a recognition process.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A recognition session starts when the user starts writing on the screen.
+The session can also start after an undo or redo or a after any context restoration
+such as screen rotation.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">GWGeometryView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/geometryViewDidBeginWriting:" title="geometryViewDidBeginWriting:"></a>
+	<h3 class="subsubtitle method-title">geometryViewDidBeginWriting:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Tells the delegate that the user has started touching the screen.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)geometryViewDidBeginWriting:(GWGeometryView *)<em>geometryView</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>geometryView</em></dt>
+			<dd><p>The geometry view receiving touches.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">GWGeometryView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/geometryViewDidChangeUndoRedoState:" title="geometryViewDidChangeUndoRedoState:"></a>
+	<h3 class="subsubtitle method-title">geometryViewDidChangeUndoRedoState:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Tells the delegate that the Geometry Widget Undo/Redo stack has changed.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)geometryViewDidChangeUndoRedoState:(GWGeometryView *)<em>geometryView</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>geometryView</em></dt>
+			<dd><p>The geometry view whose Undo/Redo stack has changed.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">GWGeometryView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/geometryViewDidEndConfiguration:" title="geometryViewDidEndConfiguration:"></a>
+	<h3 class="subsubtitle method-title">geometryViewDidEndConfiguration:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Tells the delegate that the Geometry Widget has end its configuration with success.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)geometryViewDidEndConfiguration:(GWGeometryView *)<em>geometryView</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>geometryView</em></dt>
+			<dd><p>The geometry view that has ended its configuration.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">GWGeometryView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/geometryViewDidEndRecognition:" title="geometryViewDidEndRecognition:"></a>
+	<h3 class="subsubtitle method-title">geometryViewDidEndRecognition:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Tells the delegate that the Geometry Widget has ended a recognition process.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)geometryViewDidEndRecognition:(GWGeometryView *)<em>geometryView</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>geometryView</em></dt>
+			<dd><p>The geometry view that has ended a recognition process.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">GWGeometryView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/geometryViewDidEndWriting:" title="geometryViewDidEndWriting:"></a>
+	<h3 class="subsubtitle method-title">geometryViewDidEndWriting:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Tells the delegate that the user has ending touching the screen.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)geometryViewDidEndWriting:(GWGeometryView *)<em>geometryView</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>geometryView</em></dt>
+			<dd><p>The geometry view that has stopped receiving touches.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">GWGeometryView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/geometryViewDidUpdateItems:" title="geometryViewDidUpdateItems:"></a>
+	<h3 class="subsubtitle method-title">geometryViewDidUpdateItems:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Tells the delegate that the Geometry Widget has ended updating the items after a recognition.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)geometryViewDidUpdateItems:(GWGeometryView *)<em>geometryView</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>geometryView</em></dt>
+			<dd><p>The geometry view that has ended a recognition process.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">GWGeometryView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2015 MyScript. All rights reserved. (Last updated: 2015-07-27)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

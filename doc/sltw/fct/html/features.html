@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head><link rel="icon" href="../images/favicon.ico" />
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <title>MyScript SLTW (iOS)</title>
+    <link rel="stylesheet" href="../css/MySBuilder.css" type="text/css">
+    <script src="../js/prism.js"></script>
+  </head>
+  <body bgcolor="#FFFFFF" text="#000000">
+<h1>Single Line Text Widget</h1>
+
+<h2>Features</h2>
+<h3>Text entry</h3>
+<p>The <strong>Single Line Text Widget</strong> is designed to enable the user to write a single line of text in a continuous flow.  The writing area scrolls automatically after a short delay once the user has finished writing.  Scrolling of the writing area is managed by the widget.</p>
+<h3>Gesture detection</h3>
+<p>Handwriting gestures are detected by the widget. A set of delegate callbacks is provided so that the application can take action when some of the gestures  are detected.</p>
+<p>The following gestures are supported:<br>
+<ul><ul>
+<li>Single tap</li>
+  <li>Insert (top to bottom straight line)</li>
+  <li>Join (line from one word to the next one)</li>
+  <li>Return (continuous line from top to bottom then from right to left)</li>
+  <li>Erase (scratch-out or strike-through)</li>
+<li>Overwrite</li></ul></ul>
+<h3>Text interface</h3>
+<p>The widget simplifies text manipulation by providing a simple character-based method  to edit the text. Whether text is represented as ink or as characters in the writing area,  the widget handles all of this transparently.</p>
+<p>A single method is provided to modify the text of the writing area:</p>
+
+  <pre class="language-objectivec"><code>-(void)replaceCharactersInRange:(NSRange)range replacementString:(NSString *)text;</code></pre>
+
+<p>This method is a versatile tool that handles text insertion, deletion and replacement.<br>
+  Handwriting recognition candidate change is implemented as a simple text replacement.</p>
+<h3>Handwriting recognition setup</h3>
+<p>The widget simplifies the setup of the handwriting recognition engine, and  reconfiguration of the engine in case of a language change for example.</p>
+<pre class="language-objectivec"><code>-(void)configureWithLocale:(NSString *)locale resources:(NSDictionary *)
+resources lexicon:(NSArray *)lexicon certificate:(NSData *)certificate;</code></pre>
+<p>This function is non-blocking and performs configuration in the background to avoid  blocking the UI thread. Delegate callbacks are provided to monitor the beginning and end  of the configuration process and update the UI of the application accordingly.</p>
+<h3>UI customization</h3>
+<p>A number of options are provided to customize the UI of the widget's writing area.</p>
+<p>The following items can be configured:<br>
+<ul><ul>
+  <li>Font for typeset text</li>
+  <li>Text size</li>
+  <li>Text color</li>
+  <li>Ink width</li>
+  <li>Ink color</li>
+  <li>Background image of the scrolling area</li>
+  <li>Baseline position</li>
+  <li>Baseline thickness</li>
+  <li>Baseline color</li>
+  <li>Auto-scroll margin and delay (auto-scroll feature can be enabled/disabled)</li>
+  <li>Auto-typeset delay (auto-typeset feature can be enabled/disabled)</li></ul></ul>
+<h3>Languages</h3>
+<p>The Single Line Text Widget supports <a href="https://dev.myscript.com/language-list/?tab=atk-sl" target="_blank">59 languages</a>.<br>
+</p>
+
+  </body>
+</html>

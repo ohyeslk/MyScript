@@ -1,0 +1,565 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		38324D471ABB28FD00DDF1A0 /* AtkGew.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38324D461ABB28FD00DDF1A0 /* AtkGew.framework */; };
+		38324D491ABB2F2F00DDF1A0 /* AtkGew.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 38324D481ABB2F2F00DDF1A0 /* AtkGew.bundle */; };
+		38EEED221AB334D900120AD9 /* AtkMaw.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38EEED211AB334D900120AD9 /* AtkMaw.framework */; };
+		38EEED2B1AB3351200120AD9 /* libMyScript2D.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 38EEED231AB3351200120AD9 /* libMyScript2D.a */; };
+		38EEED2C1AB3351200120AD9 /* libMyScriptDocument.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 38EEED241AB3351200120AD9 /* libMyScriptDocument.a */; };
+		38EEED2D1AB3351200120AD9 /* libMyScriptEngine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 38EEED251AB3351200120AD9 /* libMyScriptEngine.a */; };
+		38EEED2E1AB3351200120AD9 /* libMyScriptInk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 38EEED261AB3351200120AD9 /* libMyScriptInk.a */; };
+		38EEED301AB3351200120AD9 /* libMyScriptShape.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 38EEED281AB3351200120AD9 /* libMyScriptShape.a */; };
+		38EEED321AB3351200120AD9 /* libStylusCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 38EEED2A1AB3351200120AD9 /* libStylusCore.a */; };
+		38EEED371AB3397400120AD9 /* AtkMaw.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 38EEED361AB3397400120AD9 /* AtkMaw.bundle */; };
+		F43BA682177D93C6002F5330 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F43BA680177D93C6002F5330 /* InfoPlist.strings */; };
+		F43BA684177D93C7002F5330 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F43BA683177D93C7002F5330 /* main.m */; };
+		F43BA68A177D93C7002F5330 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = F43BA689177D93C7002F5330 /* Default.png */; };
+		F43BA68C177D93C7002F5330 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F43BA68B177D93C7002F5330 /* Default@2x.png */; };
+		F43BA68E177D93C7002F5330 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F43BA68D177D93C7002F5330 /* Default-568h@2x.png */; };
+		F45F8D221962B51C0085E4EB /* shk-standard.res in Resources */ = {isa = PBXBuildFile; fileRef = F45F8D171962B51C0085E4EB /* shk-standard.res */; };
+		F45F8D231962B51C0085E4EB /* angle-grm-mathwidget.def in Resources */ = {isa = PBXBuildFile; fileRef = F45F8D191962B51C0085E4EB /* angle-grm-mathwidget.def */; };
+		F45F8D241962B51C0085E4EB /* angle-grm-mathwidget.res in Resources */ = {isa = PBXBuildFile; fileRef = F45F8D1A1962B51C0085E4EB /* angle-grm-mathwidget.res */; };
+		F45F8D251962B51C0085E4EB /* math-ak.res in Resources */ = {isa = PBXBuildFile; fileRef = F45F8D1B1962B51C0085E4EB /* math-ak.res */; };
+		F45F8D281962B51C0085E4EB /* point-grm-mathwidget.def in Resources */ = {isa = PBXBuildFile; fileRef = F45F8D1E1962B51C0085E4EB /* point-grm-mathwidget.def */; };
+		F45F8D291962B51C0085E4EB /* point-grm-mathwidget.res in Resources */ = {isa = PBXBuildFile; fileRef = F45F8D1F1962B51C0085E4EB /* point-grm-mathwidget.res */; };
+		F45F8D2A1962B51C0085E4EB /* segmentarc-grm-mathwidget.def in Resources */ = {isa = PBXBuildFile; fileRef = F45F8D201962B51C0085E4EB /* segmentarc-grm-mathwidget.def */; };
+		F45F8D2B1962B51C0085E4EB /* segmentarc-grm-mathwidget.res in Resources */ = {isa = PBXBuildFile; fileRef = F45F8D211962B51C0085E4EB /* segmentarc-grm-mathwidget.res */; };
+		F45F8DB31962D5010085E4EB /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F45F8DB21962D5010085E4EB /* SettingsViewController.m */; };
+		F45F8DD31962E3F10085E4EB /* IconRedo.png in Resources */ = {isa = PBXBuildFile; fileRef = F45F8DCB1962E3F10085E4EB /* IconRedo.png */; };
+		F45F8DD41962E3F10085E4EB /* IconRedo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F45F8DCC1962E3F10085E4EB /* IconRedo@2x.png */; };
+		F45F8DD51962E3F10085E4EB /* IconSettings.png in Resources */ = {isa = PBXBuildFile; fileRef = F45F8DCD1962E3F10085E4EB /* IconSettings.png */; };
+		F45F8DD61962E3F10085E4EB /* IconSettings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F45F8DCE1962E3F10085E4EB /* IconSettings@2x.png */; };
+		F45F8DD71962E3F10085E4EB /* IconTrash.png in Resources */ = {isa = PBXBuildFile; fileRef = F45F8DCF1962E3F10085E4EB /* IconTrash.png */; };
+		F45F8DD81962E3F10085E4EB /* IconTrash@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F45F8DD01962E3F10085E4EB /* IconTrash@2x.png */; };
+		F45F8DD91962E3F10085E4EB /* IconUndo.png in Resources */ = {isa = PBXBuildFile; fileRef = F45F8DD11962E3F10085E4EB /* IconUndo.png */; };
+		F45F8DDA1962E3F10085E4EB /* IconUndo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F45F8DD21962E3F10085E4EB /* IconUndo@2x.png */; };
+		F45F8DDC1962E6FC0085E4EB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F45F8DDB1962E6FC0085E4EB /* Images.xcassets */; };
+		F46308081AC5CEFB001D7A0C /* libAtkInw.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F46308071AC5CEFB001D7A0C /* libAtkInw.a */; };
+		F4E2911F1961A19300AB1A5B /* AnnotationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E291151961A19300AB1A5B /* AnnotationViewController.m */; };
+		F4E291221961A19300AB1A5B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E2911A1961A19300AB1A5B /* AppDelegate.m */; };
+		F4E291231961A19300AB1A5B /* Customization.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E2911C1961A19300AB1A5B /* Customization.m */; };
+		F4E291241961A19300AB1A5B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E2911E1961A19300AB1A5B /* ViewController.m */; };
+		F4E599331ACB030B000D9017 /* libMyScriptMath.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 38EEED271AB3351200120AD9 /* libMyScriptMath.a */; };
+		F4E599851ACBEFA8000D9017 /* libMyScriptText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F4E599841ACBEFA8000D9017 /* libMyScriptText.a */; };
+		F4E5999F1ACBFCE3000D9017 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4E5999E1ACBFCE3000D9017 /* SystemConfiguration.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		38324D461ABB28FD00DDF1A0 /* AtkGew.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AtkGew.framework; path = ../../libs/gew/AtkGew.framework; sourceTree = "<group>"; };
+		38324D481ABB2F2F00DDF1A0 /* AtkGew.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AtkGew.bundle; path = ../../libs/gew/AtkGew.bundle; sourceTree = "<group>"; };
+		38EEED211AB334D900120AD9 /* AtkMaw.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AtkMaw.framework; path = ../../libs/maw/AtkMaw.framework; sourceTree = "<group>"; };
+		38EEED231AB3351200120AD9 /* libMyScript2D.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMyScript2D.a; path = "../../libs/sdk/libMyScript2D.a"; sourceTree = "<group>"; };
+		38EEED241AB3351200120AD9 /* libMyScriptDocument.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMyScriptDocument.a; path = "../../libs/sdk/libMyScriptDocument.a"; sourceTree = "<group>"; };
+		38EEED251AB3351200120AD9 /* libMyScriptEngine.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMyScriptEngine.a; path = "../../libs/sdk/libMyScriptEngine.a"; sourceTree = "<group>"; };
+		38EEED261AB3351200120AD9 /* libMyScriptInk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMyScriptInk.a; path = "../../libs/sdk/libMyScriptInk.a"; sourceTree = "<group>"; };
+		38EEED271AB3351200120AD9 /* libMyScriptMath.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMyScriptMath.a; path = "../../libs/sdk/libMyScriptMath.a"; sourceTree = "<group>"; };
+		38EEED281AB3351200120AD9 /* libMyScriptShape.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMyScriptShape.a; path = "../../libs/sdk/libMyScriptShape.a"; sourceTree = "<group>"; };
+		38EEED2A1AB3351200120AD9 /* libStylusCore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libStylusCore.a; path = "../../libs/styluscore/libStylusCore.a"; sourceTree = "<group>"; };
+		38EEED361AB3397400120AD9 /* AtkMaw.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AtkMaw.bundle; path = ../../libs/maw/AtkMaw.bundle; sourceTree = "<group>"; };
+		F43BA674177D93C6002F5330 /* GeometryWidgetSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeometryWidgetSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F43BA67F177D93C6002F5330 /* GeometryWidgetSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GeometryWidgetSample-Info.plist"; sourceTree = "<group>"; };
+		F43BA681177D93C6002F5330 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F43BA683177D93C7002F5330 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F43BA685177D93C7002F5330 /* GeometryWidgetSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GeometryWidgetSample-Prefix.pch"; sourceTree = "<group>"; };
+		F43BA689177D93C7002F5330 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		F43BA68B177D93C7002F5330 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		F43BA68D177D93C7002F5330 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		F43BA698177D966A002F5330 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		F45F8D171962B51C0085E4EB /* shk-standard.res */ = {isa = PBXFileReference; lastKnownFileType = file; path = "shk-standard.res"; sourceTree = "<group>"; };
+		F45F8D191962B51C0085E4EB /* angle-grm-mathwidget.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "angle-grm-mathwidget.def"; sourceTree = "<group>"; };
+		F45F8D1A1962B51C0085E4EB /* angle-grm-mathwidget.res */ = {isa = PBXFileReference; lastKnownFileType = file; path = "angle-grm-mathwidget.res"; sourceTree = "<group>"; };
+		F45F8D1B1962B51C0085E4EB /* math-ak.res */ = {isa = PBXFileReference; lastKnownFileType = file; path = "math-ak.res"; sourceTree = "<group>"; };
+		F45F8D1E1962B51C0085E4EB /* point-grm-mathwidget.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "point-grm-mathwidget.def"; sourceTree = "<group>"; };
+		F45F8D1F1962B51C0085E4EB /* point-grm-mathwidget.res */ = {isa = PBXFileReference; lastKnownFileType = file; path = "point-grm-mathwidget.res"; sourceTree = "<group>"; };
+		F45F8D201962B51C0085E4EB /* segmentarc-grm-mathwidget.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "segmentarc-grm-mathwidget.def"; sourceTree = "<group>"; };
+		F45F8D211962B51C0085E4EB /* segmentarc-grm-mathwidget.res */ = {isa = PBXFileReference; lastKnownFileType = file; path = "segmentarc-grm-mathwidget.res"; sourceTree = "<group>"; };
+		F45F8DB11962D5010085E4EB /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingsViewController.h; path = Sources/Settings/SettingsViewController.h; sourceTree = "<group>"; };
+		F45F8DB21962D5010085E4EB /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingsViewController.m; path = Sources/Settings/SettingsViewController.m; sourceTree = "<group>"; };
+		F45F8DCB1962E3F10085E4EB /* IconRedo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IconRedo.png; sourceTree = "<group>"; };
+		F45F8DCC1962E3F10085E4EB /* IconRedo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IconRedo@2x.png"; sourceTree = "<group>"; };
+		F45F8DCD1962E3F10085E4EB /* IconSettings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IconSettings.png; sourceTree = "<group>"; };
+		F45F8DCE1962E3F10085E4EB /* IconSettings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IconSettings@2x.png"; sourceTree = "<group>"; };
+		F45F8DCF1962E3F10085E4EB /* IconTrash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IconTrash.png; sourceTree = "<group>"; };
+		F45F8DD01962E3F10085E4EB /* IconTrash@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IconTrash@2x.png"; sourceTree = "<group>"; };
+		F45F8DD11962E3F10085E4EB /* IconUndo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IconUndo.png; sourceTree = "<group>"; };
+		F45F8DD21962E3F10085E4EB /* IconUndo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IconUndo@2x.png"; sourceTree = "<group>"; };
+		F45F8DDB1962E6FC0085E4EB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F46308071AC5CEFB001D7A0C /* libAtkInw.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAtkInw.a; path = ../../libs/inw/libAtkInw.a; sourceTree = "<group>"; };
+		F477FE251ADD04DF00DF5D92 /* MyCertificate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MyCertificate.h; path = ../../MyCertificate.h; sourceTree = "<group>"; };
+		F477FE271ADD06FC00DF5D92 /* ExternCertificate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExternCertificate.h; path = Sources/ExternCertificate.h; sourceTree = "<group>"; };
+		F4E291141961A19300AB1A5B /* AnnotationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnotationViewController.h; sourceTree = "<group>"; };
+		F4E291151961A19300AB1A5B /* AnnotationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnotationViewController.m; sourceTree = "<group>"; };
+		F4E291191961A19300AB1A5B /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Sources/AppDelegate.h; sourceTree = "<group>"; };
+		F4E2911A1961A19300AB1A5B /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Sources/AppDelegate.m; sourceTree = "<group>"; };
+		F4E2911B1961A19300AB1A5B /* Customization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Customization.h; path = Sources/Customization.h; sourceTree = "<group>"; };
+		F4E2911C1961A19300AB1A5B /* Customization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Customization.m; path = Sources/Customization.m; sourceTree = "<group>"; };
+		F4E2911D1961A19300AB1A5B /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = Sources/ViewController.h; sourceTree = "<group>"; };
+		F4E2911E1961A19300AB1A5B /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = Sources/ViewController.m; sourceTree = "<group>"; };
+		F4E599841ACBEFA8000D9017 /* libMyScriptText.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMyScriptText.a; path = "../../libs/sdk/libMyScriptText.a"; sourceTree = "<group>"; };
+		F4E5999E1ACBFCE3000D9017 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F43BA671177D93C6002F5330 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4E5999F1ACBFCE3000D9017 /* SystemConfiguration.framework in Frameworks */,
+				38324D471ABB28FD00DDF1A0 /* AtkGew.framework in Frameworks */,
+				38EEED221AB334D900120AD9 /* AtkMaw.framework in Frameworks */,
+				F46308081AC5CEFB001D7A0C /* libAtkInw.a in Frameworks */,
+				38EEED2B1AB3351200120AD9 /* libMyScript2D.a in Frameworks */,
+				38EEED2C1AB3351200120AD9 /* libMyScriptDocument.a in Frameworks */,
+				38EEED2D1AB3351200120AD9 /* libMyScriptEngine.a in Frameworks */,
+				38EEED2E1AB3351200120AD9 /* libMyScriptInk.a in Frameworks */,
+				F4E599331ACB030B000D9017 /* libMyScriptMath.a in Frameworks */,
+				38EEED301AB3351200120AD9 /* libMyScriptShape.a in Frameworks */,
+				F4E599851ACBEFA8000D9017 /* libMyScriptText.a in Frameworks */,
+				38EEED321AB3351200120AD9 /* libStylusCore.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F43BA66B177D93C6002F5330 = {
+			isa = PBXGroup;
+			children = (
+				F43BA67D177D93C6002F5330 /* GeometryWidgetSample */,
+				F43BA676177D93C6002F5330 /* Frameworks */,
+				F43BA675177D93C6002F5330 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F43BA675177D93C6002F5330 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F43BA674177D93C6002F5330 /* GeometryWidgetSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F43BA676177D93C6002F5330 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F46308071AC5CEFB001D7A0C /* libAtkInw.a */,
+				38EEED231AB3351200120AD9 /* libMyScript2D.a */,
+				38EEED241AB3351200120AD9 /* libMyScriptDocument.a */,
+				38EEED251AB3351200120AD9 /* libMyScriptEngine.a */,
+				38EEED261AB3351200120AD9 /* libMyScriptInk.a */,
+				38EEED271AB3351200120AD9 /* libMyScriptMath.a */,
+				38EEED281AB3351200120AD9 /* libMyScriptShape.a */,
+				F4E599841ACBEFA8000D9017 /* libMyScriptText.a */,
+				38EEED2A1AB3351200120AD9 /* libStylusCore.a */,
+				38324D481ABB2F2F00DDF1A0 /* AtkGew.bundle */,
+				38EEED361AB3397400120AD9 /* AtkMaw.bundle */,
+				F43BA698177D966A002F5330 /* libstdc++.dylib */,
+				38324D461ABB28FD00DDF1A0 /* AtkGew.framework */,
+				38EEED211AB334D900120AD9 /* AtkMaw.framework */,
+				F4E5999E1ACBFCE3000D9017 /* SystemConfiguration.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F43BA67D177D93C6002F5330 /* GeometryWidgetSample */ = {
+			isa = PBXGroup;
+			children = (
+				F45F8DC91962E3DA0085E4EB /* Sources */,
+				F43BA69B177D9930002F5330 /* Resources */,
+				F45F8DDB1962E6FC0085E4EB /* Images.xcassets */,
+				F43BA67E177D93C6002F5330 /* Supporting Files */,
+			);
+			path = GeometryWidgetSample;
+			sourceTree = "<group>";
+		};
+		F43BA67E177D93C6002F5330 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F43BA67F177D93C6002F5330 /* GeometryWidgetSample-Info.plist */,
+				F43BA680177D93C6002F5330 /* InfoPlist.strings */,
+				F43BA683177D93C7002F5330 /* main.m */,
+				F43BA685177D93C7002F5330 /* GeometryWidgetSample-Prefix.pch */,
+				F43BA689177D93C7002F5330 /* Default.png */,
+				F43BA68B177D93C7002F5330 /* Default@2x.png */,
+				F43BA68D177D93C7002F5330 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F43BA69B177D9930002F5330 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F45F8DCA1962E3F10085E4EB /* Icons */,
+				F45F8D151962B51C0085E4EB /* Recognition */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F45F8D151962B51C0085E4EB /* Recognition */ = {
+			isa = PBXGroup;
+			children = (
+				F45F8D161962B51C0085E4EB /* Geometry */,
+				F45F8D181962B51C0085E4EB /* Math */,
+			);
+			path = Recognition;
+			sourceTree = "<group>";
+		};
+		F45F8D161962B51C0085E4EB /* Geometry */ = {
+			isa = PBXGroup;
+			children = (
+				F45F8D171962B51C0085E4EB /* shk-standard.res */,
+			);
+			path = Geometry;
+			sourceTree = "<group>";
+		};
+		F45F8D181962B51C0085E4EB /* Math */ = {
+			isa = PBXGroup;
+			children = (
+				F45F8D191962B51C0085E4EB /* angle-grm-mathwidget.def */,
+				F45F8D1A1962B51C0085E4EB /* angle-grm-mathwidget.res */,
+				F45F8D1B1962B51C0085E4EB /* math-ak.res */,
+				F45F8D1E1962B51C0085E4EB /* point-grm-mathwidget.def */,
+				F45F8D1F1962B51C0085E4EB /* point-grm-mathwidget.res */,
+				F45F8D201962B51C0085E4EB /* segmentarc-grm-mathwidget.def */,
+				F45F8D211962B51C0085E4EB /* segmentarc-grm-mathwidget.res */,
+			);
+			path = Math;
+			sourceTree = "<group>";
+		};
+		F45F8DB41962D5070085E4EB /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				F45F8DB11962D5010085E4EB /* SettingsViewController.h */,
+				F45F8DB21962D5010085E4EB /* SettingsViewController.m */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		F45F8DC91962E3DA0085E4EB /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F4E291191961A19300AB1A5B /* AppDelegate.h */,
+				F4E2911A1961A19300AB1A5B /* AppDelegate.m */,
+				F4E2911B1961A19300AB1A5B /* Customization.h */,
+				F4E2911C1961A19300AB1A5B /* Customization.m */,
+				F4E2911D1961A19300AB1A5B /* ViewController.h */,
+				F4E2911E1961A19300AB1A5B /* ViewController.m */,
+				F477FE271ADD06FC00DF5D92 /* ExternCertificate.h */,
+				F477FE251ADD04DF00DF5D92 /* MyCertificate.h */,
+				F45F8DB41962D5070085E4EB /* Settings */,
+				F4E291131961A19300AB1A5B /* Annotation */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		F45F8DCA1962E3F10085E4EB /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				F45F8DCB1962E3F10085E4EB /* IconRedo.png */,
+				F45F8DCC1962E3F10085E4EB /* IconRedo@2x.png */,
+				F45F8DCD1962E3F10085E4EB /* IconSettings.png */,
+				F45F8DCE1962E3F10085E4EB /* IconSettings@2x.png */,
+				F45F8DCF1962E3F10085E4EB /* IconTrash.png */,
+				F45F8DD01962E3F10085E4EB /* IconTrash@2x.png */,
+				F45F8DD11962E3F10085E4EB /* IconUndo.png */,
+				F45F8DD21962E3F10085E4EB /* IconUndo@2x.png */,
+			);
+			path = Icons;
+			sourceTree = "<group>";
+		};
+		F4E291131961A19300AB1A5B /* Annotation */ = {
+			isa = PBXGroup;
+			children = (
+				F4E291141961A19300AB1A5B /* AnnotationViewController.h */,
+				F4E291151961A19300AB1A5B /* AnnotationViewController.m */,
+			);
+			name = Annotation;
+			path = Sources/Annotation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F43BA673177D93C6002F5330 /* GeometryWidgetSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F43BA691177D93C7002F5330 /* Build configuration list for PBXNativeTarget "GeometryWidgetSample" */;
+			buildPhases = (
+				F43BA670177D93C6002F5330 /* Sources */,
+				F43BA671177D93C6002F5330 /* Frameworks */,
+				F43BA672177D93C6002F5330 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GeometryWidgetSample;
+			productName = MathWidgetSample;
+			productReference = F43BA674177D93C6002F5330 /* GeometryWidgetSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F43BA66C177D93C6002F5330 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Vision Objects";
+			};
+			buildConfigurationList = F43BA66F177D93C6002F5330 /* Build configuration list for PBXProject "GeometryWidgetSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F43BA66B177D93C6002F5330;
+			productRefGroup = F43BA675177D93C6002F5330 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F43BA673177D93C6002F5330 /* GeometryWidgetSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F43BA672177D93C6002F5330 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38324D491ABB2F2F00DDF1A0 /* AtkGew.bundle in Resources */,
+				38EEED371AB3397400120AD9 /* AtkMaw.bundle in Resources */,
+				F43BA682177D93C6002F5330 /* InfoPlist.strings in Resources */,
+				F43BA68A177D93C7002F5330 /* Default.png in Resources */,
+				F43BA68C177D93C7002F5330 /* Default@2x.png in Resources */,
+				F43BA68E177D93C7002F5330 /* Default-568h@2x.png in Resources */,
+				F45F8DD41962E3F10085E4EB /* IconRedo@2x.png in Resources */,
+				F45F8D291962B51C0085E4EB /* point-grm-mathwidget.res in Resources */,
+				F45F8D221962B51C0085E4EB /* shk-standard.res in Resources */,
+				F45F8D231962B51C0085E4EB /* angle-grm-mathwidget.def in Resources */,
+				F45F8D251962B51C0085E4EB /* math-ak.res in Resources */,
+				F45F8DD31962E3F10085E4EB /* IconRedo.png in Resources */,
+				F45F8DD81962E3F10085E4EB /* IconTrash@2x.png in Resources */,
+				F45F8D2B1962B51C0085E4EB /* segmentarc-grm-mathwidget.res in Resources */,
+				F45F8DD91962E3F10085E4EB /* IconUndo.png in Resources */,
+				F45F8D241962B51C0085E4EB /* angle-grm-mathwidget.res in Resources */,
+				F45F8DD71962E3F10085E4EB /* IconTrash.png in Resources */,
+				F45F8DD61962E3F10085E4EB /* IconSettings@2x.png in Resources */,
+				F45F8D281962B51C0085E4EB /* point-grm-mathwidget.def in Resources */,
+				F45F8DDA1962E3F10085E4EB /* IconUndo@2x.png in Resources */,
+				F45F8DD51962E3F10085E4EB /* IconSettings.png in Resources */,
+				F45F8DDC1962E6FC0085E4EB /* Images.xcassets in Resources */,
+				F45F8D2A1962B51C0085E4EB /* segmentarc-grm-mathwidget.def in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F43BA670177D93C6002F5330 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F43BA684177D93C7002F5330 /* main.m in Sources */,
+				F4E2911F1961A19300AB1A5B /* AnnotationViewController.m in Sources */,
+				F4E291221961A19300AB1A5B /* AppDelegate.m in Sources */,
+				F45F8DB31962D5010085E4EB /* SettingsViewController.m in Sources */,
+				F4E291231961A19300AB1A5B /* Customization.m in Sources */,
+				F4E291241961A19300AB1A5B /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F43BA680177D93C6002F5330 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F43BA681177D93C6002F5330 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F43BA68F177D93C7002F5330 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F43BA690177D93C7002F5330 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F43BA692177D93C7002F5330 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"\"$(SRCROOT)/../../libs/gew\"",
+					"$(PROJECT_DIR)/../../libs/gew",
+					"$(PROJECT_DIR)/../../libs/maw",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GeometryWidgetSample/GeometryWidgetSample-Prefix.pch";
+				INFOPLIST_FILE = "GeometryWidgetSample/GeometryWidgetSample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(PROJECT_DIR)/../../libs/sdk\"",
+					"\"$(PROJECT_DIR)/../../libs/styluscore\"",
+					"\"$(PROJECT_DIR)/../../libs/inw\"",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"/usr/lib/libstdc++.dylib",
+					"-Wl,-U,_MyScript2D",
+					"-Wl,-U,_MyScriptAnalyzer",
+					"-Wl,-U,_MyScriptDocument",
+					"-Wl,-U,_MyScriptGesture",
+					"-Wl,-U,_MyScriptInk",
+					"-Wl,-U,_MyScriptInkSearch",
+					"-Wl,-U,_MyScriptMath",
+					"-Wl,-U,_MyScriptMusic",
+					"-Wl,-U,_MyScriptPrediction",
+					"-Wl,-U,_MyScriptShape",
+					"-Wl,-U,_MyScriptText",
+					"-Wl,-U,_MyScriptWriterAdaptation",
+				);
+				PRODUCT_NAME = GeometryWidgetSample;
+				TARGETED_DEVICE_FAMILY = 2;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F43BA693177D93C7002F5330 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"\"$(SRCROOT)/../../libs/gew\"",
+					"$(PROJECT_DIR)/../../libs/gew",
+					"$(PROJECT_DIR)/../../libs/maw",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GeometryWidgetSample/GeometryWidgetSample-Prefix.pch";
+				INFOPLIST_FILE = "GeometryWidgetSample/GeometryWidgetSample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(PROJECT_DIR)/../../libs/sdk\"",
+					"\"$(PROJECT_DIR)/../../libs/styluscore\"",
+					"\"$(PROJECT_DIR)/../../libs/inw\"",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"/usr/lib/libstdc++.dylib",
+					"-Wl,-U,_MyScript2D",
+					"-Wl,-U,_MyScriptAnalyzer",
+					"-Wl,-U,_MyScriptDocument",
+					"-Wl,-U,_MyScriptGesture",
+					"-Wl,-U,_MyScriptInk",
+					"-Wl,-U,_MyScriptInkSearch",
+					"-Wl,-U,_MyScriptMath",
+					"-Wl,-U,_MyScriptMusic",
+					"-Wl,-U,_MyScriptPrediction",
+					"-Wl,-U,_MyScriptShape",
+					"-Wl,-U,_MyScriptText",
+					"-Wl,-U,_MyScriptWriterAdaptation",
+				);
+				PRODUCT_NAME = GeometryWidgetSample;
+				TARGETED_DEVICE_FAMILY = 2;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F43BA66F177D93C6002F5330 /* Build configuration list for PBXProject "GeometryWidgetSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F43BA68F177D93C7002F5330 /* Debug */,
+				F43BA690177D93C7002F5330 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F43BA691177D93C7002F5330 /* Build configuration list for PBXNativeTarget "GeometryWidgetSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F43BA692177D93C7002F5330 /* Debug */,
+				F43BA693177D93C7002F5330 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F43BA66C177D93C6002F5330 /* Project object */;
+}

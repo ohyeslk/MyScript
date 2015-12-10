@@ -1,0 +1,25 @@
+// Copyright MyScript. All right reserved.
+
+#import <Foundation/Foundation.h>
+
+#import "ITCError.h"
+#import "ITCPageInterpreter.h"
+#import "ITCPageInterpreterDelegate.h"
+#import "ITCRect.h"
+#import "ITCSmartPage.h"
+#import "ITCSmartPageDelegate.h"
+#import "ITCSmartPageGestureDelegate.h"
+#import "ITCSmartPageRecognitionDelegate.h"
+#import "ITCSmartStroke.h"
+#import "ITCSmartWord.h"
+#import "ITCStrokeFactory.h"
+#import "ITCStrokeRange.h"
+#import "ITCStrokeUserParamsFactoryProtocol.h"
+#import "ITCTransform.h"
+#import "ITCUserParams.h"
+#import "ITCWordFactory.h"
+#import "ITCWordRange.h"
+#import "ITCWordUserParamsFactoryProtocol.h"
+#import "ITCCharBoxFactory.h"
+#import "ITCCharBoxFactoryProtocol.h"
+#import "NSString+ITCUtils.h"

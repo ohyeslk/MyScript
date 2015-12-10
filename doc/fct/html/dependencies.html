@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head><link rel="icon" href="../../_common/images/favicon.ico" />
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <title>MyScript ATK (iOS)</title>
+    <link rel="stylesheet" href="../../_common/css/MySBuilder.css" type="text/css">
+  </head>
+  <body bgcolor="#FFFFFF" text="#000000">
+		<h1>MyScript® Application Toolkit (ATK)</h1>
+		<h2>Dependencies</h2>
+		<p>Some widgets and components are dependent on each other. If you are interested in a specific widget, know that you might have to integrate other widgets first. </p>
+		<p align="center"><img src="../../_common/images/dependencies.png"></p>
+		<h3>Example: Multi Line Text Widget</h3>
+		<p>To use the Multi Line Text Widget, you will need to add the following libraries:</p>
+			<ul>
+				<ul>
+					<li><strong>Multi Line Text Widget</strong>: AtkMltw.framework</li>
+					<li><strong>Interactive Text Component</strong>: AtkItc.framework</li>
+					<li><strong>StylusCore</strong>: libStylusCore.a</li>
+					<li><strong>Ink Widget</strong>: libAtkInw.a</li>
+					<li><strong>SDK</strong>: libMyScript2D.a, libMyScriptAnalyzer.a, libMyScriptEngine.a, libMyScriptMath.a, libMyScriptText.a, libMyScriptInkSearch.a, libMyScriptPrediction.a, libMyScriptShape.a</li>
+				</ul>
+			</ul>
+			<p>To link against those libraries, select your project in <strong>XCode</strong> > <strong>Project Navigator</strong>, go to <strong>Build Phases</strong> then <strong>Link Binary With Libraries</strong> and add the above libraries.</p>
+			<p>See screenshot below:</p>
+			<p align="center"><img src="../images/integration.png" alt="Xcode link libraries" /></p>
+			<p>For more information, read the documentation of the corresponding widget.</p>
+	</body>
+</html>

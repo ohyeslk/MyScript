@@ -1,0 +1,1071 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>SLTWTextWidgetDelegate Protocol Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 961)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">Single Line Text Widget </a></h1>
+				<a id="developerHome" href="../index.html">MyScript</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">SLTWTextWidgetDelegate Protocol Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/textWidget:didDetectInsertGestureAtIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- textWidget:didDetectInsertGestureAtIndex:</option>
+	
+	<option value="//api/name/textWidget:didDetectJoinGestureAtIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- textWidget:didDetectJoinGestureAtIndex:</option>
+	
+	<option value="//api/name/textWidget:didDetectLongPressAtPoint:">&nbsp;&nbsp;&nbsp;&nbsp;- textWidget:didDetectLongPressAtPoint:</option>
+	
+	<option value="//api/name/textWidget:didDetectReturnGestureAtIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- textWidget:didDetectReturnGestureAtIndex:</option>
+	
+	<option value="//api/name/textWidget:didDetectSingleTapAtIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- textWidget:didDetectSingleTapAtIndex:</option>
+	
+	<option value="//api/name/textWidget:didDetectSingleTapAtPoint:">&nbsp;&nbsp;&nbsp;&nbsp;- textWidget:didDetectSingleTapAtPoint:</option>
+	
+	<option value="//api/name/textWidget:didSelectWordInRange:labels:selectedIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- textWidget:didSelectWordInRange:labels:selectedIndex:</option>
+	
+	<option value="//api/name/textWidget:didUpdateText:intermediate:">&nbsp;&nbsp;&nbsp;&nbsp;- textWidget:didUpdateText:intermediate:</option>
+	
+	<option value="//api/name/textWidgetDidBeginConfiguration:">&nbsp;&nbsp;&nbsp;&nbsp;- textWidgetDidBeginConfiguration:</option>
+	
+	<option value="//api/name/textWidgetDidBeginRecognition:">&nbsp;&nbsp;&nbsp;&nbsp;- textWidgetDidBeginRecognition:</option>
+	
+	<option value="//api/name/textWidgetDidEndConfiguration:">&nbsp;&nbsp;&nbsp;&nbsp;- textWidgetDidEndConfiguration:</option>
+	
+	<option value="//api/name/textWidgetDidEndRecognition:">&nbsp;&nbsp;&nbsp;&nbsp;- textWidgetDidEndRecognition:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/textWidget:didDetectInsertGestureAtIndex:">textWidget:didDetectInsertGestureAtIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/textWidget:didDetectJoinGestureAtIndex:">textWidget:didDetectJoinGestureAtIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/textWidget:didDetectLongPressAtPoint:">textWidget:didDetectLongPressAtPoint:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/textWidget:didDetectReturnGestureAtIndex:">textWidget:didDetectReturnGestureAtIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/textWidget:didDetectSingleTapAtIndex:">textWidget:didDetectSingleTapAtIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/textWidget:didDetectSingleTapAtPoint:">textWidget:didDetectSingleTapAtPoint:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/textWidget:didSelectWordInRange:labels:selectedIndex:">textWidget:didSelectWordInRange:labels:selectedIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/textWidget:didUpdateText:intermediate:">textWidget:didUpdateText:intermediate:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/textWidgetDidBeginConfiguration:">textWidgetDidBeginConfiguration:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/textWidgetDidBeginRecognition:">textWidgetDidBeginRecognition:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/textWidgetDidEndConfiguration:">textWidgetDidEndConfiguration:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/textWidgetDidEndRecognition:">textWidgetDidEndRecognition:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="SLTWTextWidgetDelegate Protocol Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">SLTWTextWidgetDelegate Protocol Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">SLTWTextWidgetDelegate.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/textWidget:didUpdateText:intermediate:">&ndash;&nbsp;textWidget:didUpdateText:intermediate:</a></code>
+		<span class="tooltip"><p>Called when the text changes.</p>
+
+<p><p>
+The text returned by this callback may be intermediate, which
+means that it can change again in the near future. Text is
+intermediate when there is some ink left in the writing area
+that has not been processed yet.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/textWidget:didSelectWordInRange:labels:selectedIndex:">&ndash;&nbsp;textWidget:didSelectWordInRange:labels:selectedIndex:</a></code>
+		<span class="tooltip"><p>Called when the text selection changes.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/textWidgetDidBeginConfiguration:">&ndash;&nbsp;textWidgetDidBeginConfiguration:</a></code>
+		<span class="tooltip"><p>Called when configuration starts.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/textWidgetDidEndConfiguration:">&ndash;&nbsp;textWidgetDidEndConfiguration:</a></code>
+		<span class="tooltip"><p>Called when configuration ends.</p>
+
+<p><p>
+In case of failure, you may retrieve more information by calling
+{@link #(BOOL)failed}.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/textWidgetDidBeginRecognition:">&ndash;&nbsp;textWidgetDidBeginRecognition:</a></code>
+		<span class="tooltip"><p>Called when a recognition session starts.</p>
+
+<p><p>
+A recognition session starts when the user starts writing on the
+screen.
+<p>
+During a recognition session, the text may change as the user is
+writing and editing using gestures. A text changed events is
+triggered each time text is updated by the user.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/textWidgetDidEndRecognition:">&ndash;&nbsp;textWidgetDidEndRecognition:</a></code>
+		<span class="tooltip"><p>Called when a recognition session ends.</p>
+
+<p><p>
+The text does not change anymore after a recognition session is
+finished.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/textWidget:didDetectSingleTapAtIndex:">&ndash;&nbsp;textWidget:didDetectSingleTapAtIndex:</a></code>
+		<span class="tooltip"><p>Called when a single tap gesture is detected.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/textWidget:didDetectJoinGestureAtIndex:">&ndash;&nbsp;textWidget:didDetectJoinGestureAtIndex:</a></code>
+		<span class="tooltip"><p>Called when a join gesture is detected.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/textWidget:didDetectReturnGestureAtIndex:">&ndash;&nbsp;textWidget:didDetectReturnGestureAtIndex:</a></code>
+		<span class="tooltip"><p>Called when a return gesture is detected.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/textWidget:didDetectInsertGestureAtIndex:">&ndash;&nbsp;textWidget:didDetectInsertGestureAtIndex:</a></code>
+		<span class="tooltip"><p>Called when an insert gesture is detected.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/textWidget:didDetectSingleTapAtPoint:">&ndash;&nbsp;textWidget:didDetectSingleTapAtPoint:</a></code>
+		<span class="tooltip"><p>Called when a single tap gesture is detected.</p>
+
+<p><p>
+The application may choose to take action when a single tap
+gesture is detected, in this case this callback shall return
+<code>YES</code> to indicate that it handled the event.
+<p>
+If this callback returns <code>NO</code>, then the single
+tap gesture is considered by the widget as a genuine dot and
+passed to the handwriting recognizer.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/textWidget:didDetectLongPressAtPoint:">&ndash;&nbsp;textWidget:didDetectLongPressAtPoint:</a></code>
+		<span class="tooltip"><p>Called when a long press gesture is detected.</p>
+
+<p><p>
+The application may choose to take action when a long press
+gesture is detected, in this case this callback shall return
+<code>YES</code> to indicate that it handled the event and the
+current stroke is cancelled.
+<p>
+If this callback returns <code>NO</code>, then the long
+press gesture is discarded by the widget and the widget resumes
+capturing the current stroke.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/textWidget:didDetectInsertGestureAtIndex:" title="textWidget:didDetectInsertGestureAtIndex:"></a>
+	<h3 class="subsubtitle method-title">textWidget:didDetectInsertGestureAtIndex:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when an insert gesture is detected.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)textWidget:(SLTWTextWidget *)<em>sender</em> didDetectInsertGestureAtIndex:(NSUInteger)<em>index</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sender</em></dt>
+			<dd><p>TextWidget.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>index</em></dt>
+			<dd><p>Character index before which insert gesture is detected.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SLTWTextWidgetDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/textWidget:didDetectJoinGestureAtIndex:" title="textWidget:didDetectJoinGestureAtIndex:"></a>
+	<h3 class="subsubtitle method-title">textWidget:didDetectJoinGestureAtIndex:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when a join gesture is detected.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)textWidget:(SLTWTextWidget *)<em>sender</em> didDetectJoinGestureAtIndex:(NSUInteger)<em>index</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sender</em></dt>
+			<dd><p>TextWidget.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>index</em></dt>
+			<dd><p>Character index before which join gesture is detected.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SLTWTextWidgetDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/textWidget:didDetectLongPressAtPoint:" title="textWidget:didDetectLongPressAtPoint:"></a>
+	<h3 class="subsubtitle method-title">textWidget:didDetectLongPressAtPoint:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when a long press gesture is detected.</p>
+
+<p><p>
+The application may choose to take action when a long press
+gesture is detected, in this case this callback shall return
+<code>YES</code> to indicate that it handled the event and the
+current stroke is cancelled.
+<p>
+If this callback returns <code>NO</code>, then the long
+press gesture is discarded by the widget and the widget resumes
+capturing the current stroke.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)textWidget:(SLTWTextWidget *)<em>sender</em> didDetectLongPressAtPoint:(CGPoint)<em>point</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sender</em></dt>
+			<dd><p>TextWidget</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>point</em></dt>
+			<dd><p>CGPoint position of the long press in widget coordinates.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SLTWTextWidgetDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/textWidget:didDetectReturnGestureAtIndex:" title="textWidget:didDetectReturnGestureAtIndex:"></a>
+	<h3 class="subsubtitle method-title">textWidget:didDetectReturnGestureAtIndex:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when a return gesture is detected.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)textWidget:(SLTWTextWidget *)<em>sender</em> didDetectReturnGestureAtIndex:(NSUInteger)<em>index</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sender</em></dt>
+			<dd><p>TextWidget.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>index</em></dt>
+			<dd><p>Character index before which return gesture is detected.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SLTWTextWidgetDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/textWidget:didDetectSingleTapAtIndex:" title="textWidget:didDetectSingleTapAtIndex:"></a>
+	<h3 class="subsubtitle method-title">textWidget:didDetectSingleTapAtIndex:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when a single tap gesture is detected.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)textWidget:(SLTWTextWidget *)<em>sender</em> didDetectSingleTapAtIndex:(NSUInteger)<em>index</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sender</em></dt>
+			<dd><p>TextWidget.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>index</em></dt>
+			<dd><p>Index of the character tapped by the user.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SLTWTextWidgetDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/textWidget:didDetectSingleTapAtPoint:" title="textWidget:didDetectSingleTapAtPoint:"></a>
+	<h3 class="subsubtitle method-title">textWidget:didDetectSingleTapAtPoint:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when a single tap gesture is detected.</p>
+
+<p><p>
+The application may choose to take action when a single tap
+gesture is detected, in this case this callback shall return
+<code>YES</code> to indicate that it handled the event.
+<p>
+If this callback returns <code>NO</code>, then the single
+tap gesture is considered by the widget as a genuine dot and
+passed to the handwriting recognizer.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)textWidget:(SLTWTextWidget *)<em>sender</em> didDetectSingleTapAtPoint:(CGPoint)<em>point</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sender</em></dt>
+			<dd><p>TextWidget</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>point</em></dt>
+			<dd><p>CGPoint position of the single tap in widget coordinates.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SLTWTextWidgetDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/textWidget:didSelectWordInRange:labels:selectedIndex:" title="textWidget:didSelectWordInRange:labels:selectedIndex:"></a>
+	<h3 class="subsubtitle method-title">textWidget:didSelectWordInRange:labels:selectedIndex:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when the text selection changes.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)textWidget:(SLTWTextWidget *)<em>sender</em> didSelectWordInRange:(NSRange)<em>range</em> labels:(NSArray *)<em>labels</em> selectedIndex:(NSUInteger)<em>selectedIndex</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sender</em></dt>
+			<dd><p>TextWidget.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>range</em></dt>
+			<dd><p>Characters indexs of the first character and the last character of the
+selection or -1 if selection is empty.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>labels</em></dt>
+			<dd><p>NSArray of candidate labels for this selection range or
+<code>null</code> if selection is empty.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>selectedIndex</em></dt>
+			<dd><p>Index of the currently selected candidate
+label or -1 if selection is empty.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SLTWTextWidgetDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/textWidget:didUpdateText:intermediate:" title="textWidget:didUpdateText:intermediate:"></a>
+	<h3 class="subsubtitle method-title">textWidget:didUpdateText:intermediate:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when the text changes.</p>
+
+<p><p>
+The text returned by this callback may be intermediate, which
+means that it can change again in the near future. Text is
+intermediate when there is some ink left in the writing area
+that has not been processed yet.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)textWidget:(SLTWTextWidget *)<em>sender</em> didUpdateText:(NSString *)<em>text</em> intermediate:(BOOL)<em>intermediate</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sender</em></dt>
+			<dd><p>TextWidget.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>text</em></dt>
+			<dd><p>String representation of the text.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>intermediate</em></dt>
+			<dd><p><code>true</code> if the text is an intermediate
+handwriting recognition result, <code>false</code> if the text is
+stable.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SLTWTextWidgetDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/textWidgetDidBeginConfiguration:" title="textWidgetDidBeginConfiguration:"></a>
+	<h3 class="subsubtitle method-title">textWidgetDidBeginConfiguration:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when configuration starts.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)textWidgetDidBeginConfiguration:(SLTWTextWidget *)<em>sender</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sender</em></dt>
+			<dd><p>TextWidget.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SLTWTextWidgetDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/textWidgetDidBeginRecognition:" title="textWidgetDidBeginRecognition:"></a>
+	<h3 class="subsubtitle method-title">textWidgetDidBeginRecognition:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when a recognition session starts.</p>
+
+<p><p>
+A recognition session starts when the user starts writing on the
+screen.
+<p>
+During a recognition session, the text may change as the user is
+writing and editing using gestures. A text changed events is
+triggered each time text is updated by the user.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)textWidgetDidBeginRecognition:(SLTWTextWidget *)<em>sender</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sender</em></dt>
+			<dd><p>TextWidget.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SLTWTextWidgetDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/textWidgetDidEndConfiguration:" title="textWidgetDidEndConfiguration:"></a>
+	<h3 class="subsubtitle method-title">textWidgetDidEndConfiguration:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when configuration ends.</p>
+
+<p><p>
+In case of failure, you may retrieve more information by calling
+{@link #(BOOL)failed}.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)textWidgetDidEndConfiguration:(SLTWTextWidget *)<em>sender</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sender</em></dt>
+			<dd><p>TextWidget.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SLTWTextWidgetDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/textWidgetDidEndRecognition:" title="textWidgetDidEndRecognition:"></a>
+	<h3 class="subsubtitle method-title">textWidgetDidEndRecognition:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when a recognition session ends.</p>
+
+<p><p>
+The text does not change anymore after a recognition session is
+finished.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)textWidgetDidEndRecognition:(SLTWTextWidget *)<em>sender</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sender</em></dt>
+			<dd><p>TextWidget.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SLTWTextWidgetDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2015 MyScript. All rights reserved. (Last updated: 2015-07-27)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+<link rel="icon" href="../images/favicon.ico" />
+
+<meta content="text/html; charset=utf-8" http-equiv="content-type">
+
+<title>MyScript ITC (iOS)</title>
+<link rel="stylesheet" href="../css/MySBuilder.css" type="text/css">
+
+<script src="../js/prism.js"></script>
+	</head>
+	<body>
+
+<h1>Interactive Text Component</h1>
+<p class="remark">To install and integrate the<strong> Interactive Text Component </strong>on iOS, you must be using the latest version of Xcode and iOS SDK. Minimum deployment target is 7.0.</p>
+
+<ul>
+<li><h2>Integration</h2>
+    <h3>Framework</h3>
+    <p>The Interactive Text Component for iOS is a framework that you add to your Xcode project. To do so, follow this process:</p>
+
+    <ul>
+      <li>Click on your project in the project navigator. (1)
+      </li>
+      <li>Choose the relevant target. (2)</li>
+      <li>Open the <b>Build Phase</b> tab. (3)</li>
+      <li>In the <b>Link Binary With Libraries</b> section, click on the <b>+</b> sign, then <b>Add Other…</b> (4)</li>
+    </ul>
+
+
+    <p align="center"><img src="../images/integration1.png"></p>
+
+    <ul>
+      <li>Click on the <b>+</b> sign and add the following frameworks and libraries:</li>
+      <ul><li>AtkItc.framework</li>
+      <li>Security.framework</li>
+      <li>SystemConfiguration.framework</li>
+      <li>libMyScript2D.a</li>
+      <li>libMyScriptAnalyzer.a</li>
+      <li>libMyScriptEngine.a</li>
+      <li>libMyScriptInkSearch.a</li>
+      <li>libMyScriptMath.a</li>
+      <li>libMyScriptPrediction.a</li>
+      <li>libMyScriptShape.a</li>
+      <li>libMyScriptText.a</li>
+      <li>libStylusCore.a</li>
+      </ul>
+    </ul>
+
+
+    <p>To understand why ITC needs to be linked to the UI frameworks, see the following section.</p>
+    <p align="center"><img src="../images/integration2.png"></p>
+    <ul>
+      
+      <li>In the <b>Build Settings</b> tab of your target, look for <b>Other Linker Flags</b> and add the following flags:<br>
+<ul>
+<li>-ObjC<br>
+<li>/usr/lib/libstdc++.dylib</li>
+<li>-Wl,-U,_MyScript2D</li>
+<li>-Wl,-U,_MyScriptAnalyzer</li>
+<li>-Wl,-U,_MyScriptDocument</li>
+<li>-Wl,-U,_MyScriptGesture</li>
+<li>-Wl,-U,_MyScriptInk</li>
+<li>-Wl,-U,_MyScriptInkSearch</li>
+<li>-Wl,-U,_MyScriptMath</li>
+<li>-Wl,-U,_MyScriptMusic</li>
+<li>-Wl,-U,_MyScriptPrediction</li>
+<li>-Wl,-U,_MyScriptShape</li>
+<li>-Wl,-U,_MyScriptText</li>
+<li>-Wl,-U,_MyScriptWriterAdaptation</li>
+</ul>
+</li>
+
+
+      <p align="center"><img src="../images/integration5.png" /></p>
+
+
+    <li>Modify your search path to link with <b>SDK</b> and <b>Stylus Core</b> libraries.<br><img src="../images/integration6.png">      </li>
+    </ul>
+        
+    <h3>UI Framework dependency</h3>
+    <p>The ITC is a UI-free component but in order to facilitate the integration of typeset text, we implemented a default CharBoxFactory. To do so, we had to link it with some UI frameworks:</p>
+    <ul>
+      <li><strong>UIKit</strong>: to set the UIFont you want for our default implementation of the CharBoxFactory.</li>
+      <li><strong>CoreGraphics</strong>: to obtain the return values of ITCCharboxFactoryProtocol.</li>
+      <li><strong>CoreText</strong>: to calculate the boxes depending on the typeset font you want.</li>
+    </ul>
+  </li>
+<h3>Handwriting recognition resources</h3>
+<p>Resources should include at least an AK type resource. More LK resources can be added as well, to improve and/or specialize the handwriting recognition.</p>
+<p>For example, in US English, resources should be at least:<br>
+<ul>
+  <li>en_US-ak-cur.lite.res</li>
+  <li>en_US-lk-text.lite.res</li>
+</ul>
+<li>
+  <h3>Code</h3>
+  
+  <p>To use the Interactive Text component in your app, add the following import instructions:</p>
+  
+  <pre class="language-objectivec"><code>#import &lt;AtkItc/ITC.h&gt;</code></pre>
+  <ul><h4>ITCPageInterpreter</h4>
+  <pre class="language-objectivec"><code>// Instantiate an ITCPageInterpreter
+ITCPageInterpreter* pageInterpreter = [ITCPageInterpreter pageInterpreter];
+
+// Get the resources from the bundle
+NSString *akCur = [[NSBundle mainBundle] pathForResource:@&quot;en_US-ak-cur.lite&quot; ofType:@&quot;res&quot;];
+NSString *lkText = [[NSBundle mainBundle] pathForResource:@&quot;en_US-lk-text.lite&quot; ofType:@&quot;res&quot;];
+NSArray *resources = @[akCur, lkText];
+
+// get valid certificate
+NSData *certificate = [NSData dataWithBytes:myCertificate.bytes length:myCertificate.length];
+
+// Configure for the recognition
+[pageInterpreter configurePageInterpreter:@&quot;en_US&quot; resources:resources lexicon:nil certificate:certificate density:dpi andFreezeTimeout:650];</code></pre>
+    <h4>ITCSmartPage</h4>
+    <p>The following lines allow you to have a page where you can add strokes and get recognition.</p>
+    <pre class="language-objectivec"><code>// Instantiate an ITCStrokeFactory and ITCWordFactory
+ITCStrokeFactory *strokeFactory = [ITCStrokeFactory strokeFactory:nil];
+ITCWordFactory *wordFactory = [ITCWordFactory wordFactory:strokeFactory wordUserParamFactory:nil];
+
+// Instantiate an ITCSmartPage
+ITCSmartPage *page = [ITCSmartPage smartPageWithWordFactory:wordFactory];
+
+// Register self as delegate to be notified for strokes/words added/removed and recognition
+[page setDelegate:self];
+[page setRecognitionDelegate:self];
+
+// Attach the page on the page interpreter<br>[pageInterpreter setPage:page];
+</code></pre>
+    <h4>Adding an ITCSmartStroke</h4>
+    <pre class="language-objectivec"><code>// Construct an array of x
+NSArray *x = @[@20.0F, @20.0F, @20.0F, @30.0F, @40.0F];
+
+// Construct an array of y
+NSArray *y = @[@20.0F, @35.0F, @50.0F, @40.0F, @50.0F];
+
+// Create the timestamps
+NSDate *date = [NSDate date];
+NSTimeInterval startTimestamp = [date timeIntervalSince1970];
+NSTimeInterval endTimestamp = [date timeIntervalSince1970];
+
+// Create the stroke
+ITCSmartStroke *stroke = [strokeFactory createStrokeWithX:x
+                                                        y:y
+                                           startTimestamp:startTimestamp
+                                             endTimestamp:endTimestamp
+                                               userParams:nil
+                                               strokeType:ITCStrokeTypeRecognitionStroke];
+
+// Add the stroke in the page
+[page addStroke:stroke];</p></code></pre>
+    </ul>
+</li>
+</ul>
+<ul>
+  <h3>Class sample</h3>
+  <p align="center"><img src="../images/class-sample.png">
+  </ul>
+<p>&nbsp;</p>
+	</body>
+</html>

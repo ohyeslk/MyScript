@@ -1,0 +1,146 @@
+// file: math-grm-standard.def
+// version: 1.0
+//
+// Provides a rather open grammar that can be used to recognized math
+// expressions.
+// _____________________________________________________________________________
+
+/*
+quick reminder about the syntax supported by MkEquationGrammar
+
+  . comments:
+    . whole line comments starting with //, # or " sign (up to end of line) 
+    . block comments delimited by /* */ (can be nested)
+    . inline comments are not supported
+
+  . terminal symbol definitions:
+    . terminal_name = terminal_str
+      . terminal_name is defined as: [-a-zA-Z_][-a-zA-Z_0-9]*
+      . terminal_str is defined as: ( ( !EOL . )+ | EOL space+ )+
+        . space is defined as ' ' | '\t'
+        . EOL is defined as '\r\n' | '\n' | '\r'
+    . terminal_ str is allowed to span multiple lines provided a "continuation
+      line" starts with a space, which allows you to pretty format long terminal
+      symbol definitions
+   
+  . rule definitions:
+    . non_terminal_name ::= rule (| rule)?
+      . non_terminal_name is defined as: [-a-zA-Z_][-a-zA-Z_0-9]*
+      . supported rules are:
+        . identity(source)
+        . hpair(left, right)
+        . fraction(numerator, denominator)
+        . sqrt(source)
+        . subscript(source, index)
+        . superscript(source, exponent)
+        . subsuperscript(source, index, exponent)
+        . underscript(source, bottom)
+        . overscript(source, top)
+        . underoverscript(source, bottom, top)
+      . rule continuations allow you to pretty format rule definitions by
+        avoiding repeating target non_terminal_name
+
+  . start symbol definition:
+    . start(non_terminal_name)
+
+apart from continuation lines, everything is pretty much space insensitive
+
+*/
+
+// terminal symbol definitions
+symbol1 = 0 1 2 3 4 5 6 7 8 9
+          A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+          a b c d e f g h i j k l m n o p q r s t u v w x y z
+          Γ Δ Θ Λ Ξ Π Σ Υ Φ Ω α β γ δ ε η ζ θ ι κ λ ν ξ π ρ σ τ υ φ χ ψ ω ϕ µ
+          ℂ ℕ ℚ ℝ ℤ
+          € $ £ ¥ ₩ ¢
+          ( ) < > [ ] { } ⟨ ⟩
+          ! # % & ? @ / \ | ∥ © ∂ ∅ ∇ ∞ ℏ ‰ ⊥ √
+          km hm dam dm cm mm µm
+          ha
+          hl dal dl cl ml µl
+          kg hg dag dg cg mg µg
+          ms µs
+          GHz MHz kHz Hz
+          dx dy dz dt
+          sin cos tan sinh cosh tanh arcsin arccos arctan asin acos atan cot coth
+          min max arg argmin argmax
+          inf sup lim liminf limsup
+          ln log
+
+symbol2 = + - ± × ÷ * ∘ · ' , . … : ; _
+          ← ↑ → ↓ ↔ ↕ ↖ ↗ ↘ ↙
+          ⇐ ⇑ ⇒ ⇓ ⇔ ⇕
+          ∃ ∄ ∈ ∉ ∋ ∌
+          ⊂ ⊃ ⊄ ⊅ ⊆ ⊈ ⊇ ⊉
+          ∼ ≃ ≠ ≡ ≢ ≒
+          ≤ ≥ ≪ ≫
+          ∀ ∝ ∠ ∧ ∨
+
+symbol3 = ∏ ∑ ∫ ∮ ∬ ∭ ∯ ∰ ⊕ ⊗ ⊖ ⊙ ∩ ∪ 
+
+symbol4 = ∏ ∑ ∫ ∮ ∬ ∭ ∯ ∰ ⊕ ⊗ ⊖ ⊙ ∩ ∪ 
+              min max arg argmin argmax
+              inf sup lim liminf limsup
+
+symbol5 = - ∧ ← → ↔
+
+symbol6 = ( [ { | ∥ ⟨
+symbol7 = ) ] } | ∥ ⟩
+
+symbolEqual = = ≃
+
+symbol8 = -
+
+// rule definitions
+
+sqrtTerm ::= sqrt(term)
+
+symbol2Equal ::= identity(symbol2)
+               | identity(symbolEqual)
+
+exponentiable ::= identity(symbol1)
+                | identity(sqrtTerm)
+                | presuperscript(sqrtTerm, term)
+                | overscript(term, symbol5)
+                | fence(term, symbol6, symbol7)
+
+term ::= identity(exponentiable)
+       | identity(symbol2)
+       | identity(symbol3)
+       | sqrt(term)
+       | hpair(term, term)
+       | fraction(term, term)
+       | subscript(exponentiable, term)
+       | superscript(exponentiable, term)
+       | subsuperscript(exponentiable, term, term)
+       | underscript(symbol4, term)
+       | overscript(symbol3, term)
+       | underoverscript(symbol3, term, term)
+       | underscript(symbol8, term)
+       | overscript(symbol8, term)  
+
+sqrtTermEqual ::= sqrt(termEqual)
+
+exponentiableEqual ::= identity(symbol1)
+                     | identity(sqrtTermEqual)
+                     | presuperscript(sqrtTermEqual, termEqual)
+                     | overscript(termEqual, symbol5)
+                     | fence(termEqual, symbol6, symbol7)
+
+termEqual ::= identity(exponentiableEqual)
+            | identity(symbol2Equal)
+            | identity(symbol3)
+            | hpair(termEqual, termEqual)
+            | fraction(termEqual, termEqual)
+            | subscript(exponentiableEqual, term)
+            | superscript(exponentiableEqual, term)
+            | subsuperscript(exponentiableEqual, term, term)
+            | underscript(symbol4, termEqual)
+            | overscript(symbol3, termEqual)
+            | underoverscript(symbol3, termEqual, termEqual)
+            | underscript(symbol8, termEqual)
+            | overscript(symbol8, termEqual)  
+
+// start symbol
+start(termEqual)

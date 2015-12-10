@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head><link rel="icon" href="../images/favicon.ico" />
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+<title>MyScript MAW (iOS)</title>
+    <link rel="stylesheet" href="../css/MySBuilder.css" type="text/css">
+    <script src="../js/prism.js"></script>
+
+  </head>
+  <body bgcolor="#FFFFFF" text="#000000">
+
+<h1>Math Widget</h1>
+<h2>Features</h2>
+<h3>Supported characters</h3>
+
+<p>See below a non-exhaustive list of supported characters. Default characters can be displayed in the <b>math-grm-maw.def</b> grammar definition file in the <b>maw-sample</b> project.</p>
+
+<table width="727" align="center">
+<thead>
+<tr>
+<th width="334">Type of item</th>
+<th width="383">Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Letters (Latin alphabet) </td>
+<td> a b c d e f g h i j k l m n o p q r s t u v w x y z <br />A B C D E F G H I J K L M N O P Q R S T U V W X Y Z </td>
+</tr>
+<tr>
+<td>Digits </td>
+<td> 0 1 2 3 4 5 6 7 8 9 </td>
+</tr>
+<tr>
+<td> Mathematical symbols (including operators) </td>
+<td> € $ £ ¥ ₩ ¢ ( ) &lt; > [ ] { }  ! # % &amp; ? @ / \ <notextile>|</notextile> ∥ © ∂∅ ∇ ∞ <br />ℂ ℕ ℚ ℝ ℤ <br />+ - ± × ÷ * ∘ · = &lsquo; , .  : ; _ <br />← ↑ → ↓ ↔ ↕ ↖ ↗ ↘ ↙ ⇐ ⇑ ⇒ ⇓ ⇔ ⇕ <br />∀ ∃ ∄ ∈ ∉ ∋ ∌ ∩ ∪ ⊂ ⊃ ⊄ ⊅ <br />∼ ≃ ≠ ≡ ≢ ≤ ≥ ≪ ≫ ∝ ∠ <br />∏ ∑ ∫∮∧ √ </td>
+</tr>
+<tr>
+<td> Greek symbols frequently used in mathematics </td>
+<td> Γ Δ Ω α β γ δ ε η θ λ ν π ρ σ τ φ χ ψ ω ϕ µ </td>
+</tr>
+</tbody>
+</table>
+
+<h3>Supported unit measures and functions</h3>
+<p>It is possible to recognize certain mathematical or scientific text-based terms, by attaching the default grammar provided (<b>math-grm-maw.res</b>). These obviously must use the characters supported by the <b>math-ak.res</b> resource. It is also possible to recognize others, if necessary, by using a custom grammar. Here are some examples of units, variables, etc. that are recognizable by the Math SDK using its default resources.</p>
+
+<table width="728" align="center">
+<thead>
+<tr>
+<th width="358">Type of item</th>
+<th width="386">Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> International convention units <br />(weight, length, frequency, luminosity, dosage, pressure, etc.) </td>
+<td> km hm dam dm cm mm µm <br /> ha <br /> hl dal dl cl ml µl <br /> kg hg dag dg cg mg µg <br /> ms µs <br /> GHz MHz kHz Hz </td>
+</tr>
+<tr>
+<td> Mathematical terms (ratios, functions, etc.) </td>
+<td> sin cos tan sinh cosh tanh arcsin arccos arctan cot coth <br /> min max arg argmin argmax <br /> inf sup lim liminf limsup <br /> ln log <br /> dx dy dz dt </td>
+</tr>
+</tbody>
+</table>
+
+
+<p>Please note that text items (for example: cos, sin, median etc.) can be written in a cursive  or printed style, ie. <img src="../images/curs_sin.png"> or <img src="../images/hpr_sin.png">.</p>
+
+<h3>Supported rules</h3>
+
+<p>Each grammar sets out a number of production rules for equations, namely:</p>
+<table align="center">
+  <thead>
+<tr>
+    <th width="160">Type of rule</th>
+    <th width="150">Written example</th>
+    <th width="130">LaTeX result</th>
+    </tr>
+  <tr>
+    <td>Horizontal pair <img src="../images/parse_horzpair.png"></td>
+    <td align="center"><img src="../images/rules_horzpair.png"></td>
+    <td align="center"><img src="../images/rules_horzpair_parsed.png"></td>
+    </tr>
+  <tr>
+    <td>Fence <img src="../images/parse_fence.png"></td>
+    <td align="center"><img src="../images/rules_fence.png"></td>
+    <td align="center"><img src="../images/rules_fence_parsed.png"></td>
+    </tr>
+  <tr>
+    <td>Square root <img src="../images/parse_sqrt.png"></td>
+    <td align="center"><img src="../images/rules_sqrt.png"></td>
+    <td align="center"><img src="../images/rules_sqrt_parsed.png"></td>
+    </tr>
+  <tr>
+    <td>Fraction <img src="../images/parse_fraction.png"></td>
+    <td align="center"><img src="../images/rules_fraction.png"></td>
+    <td align="center"><img src="../images/rules_fraction_parsed.png"></td>
+    </tr>
+  <tr>
+    <td>Subscript <img src="../images/parse_subscript.png"></td>
+   <td align="center"><img src="../images/rules_subscript.png"></td>
+    <td align="center"><img src="../images/rules_subscript_parsed.png"></td>
+    </tr>
+  <tr>
+    <td>Superscript <img src="../images/parse_superscript.png"></td>
+    <td align="center"><img src="../images/rules_superscript.png"></td>
+    <td align="center"><img src="../images/rules_superscript_parsed.png"></td>
+    </tr>
+  <tr>
+    <td>Subsuperscript <img src="../images/parse_subsuperscript.png"></td>
+    <td align="center"><img src="../images/rules_subsuperscript.png"></td>
+    <td align="center"><img src="../images/rules_subsuperscript_parsed.png"></td>
+  </tr>
+  <tr>
+    <td>Presuperscript <img src="../images/parse_presuperscript.png"></td>
+    <td align="center"><img src="../images/rules_presuperscript.png">
+      <p align="center">(for n<sup>th</sup> roots only)</p></td>
+    <td align="center"><img src="../images/rules_presuperscript_parsed.png"></td>
+  </tr>
+  <tr>
+    <td>Overscript <img src="../images/parse_over.png"></td>
+    <td align="center"><img src="../images/rules_over.png"></td>
+    <td align="center"><img src="../images/rules_over_parsed.png"></td>
+  </tr>
+  <tr>
+    <td>Underscript <img src="../images/parse_under.png"></td>
+    <td align="center"><img src="../images/rules_under.png"></td>
+    <td align="center"><img src="../images/rules_under_parsed.png"></td>
+  </tr>
+  <tr>
+    <td>Underoverscript <img src="../images/parse_underover.png"></td>
+    <td align="center"><img src="../images/rules_underover.png"></td>
+    <td align="center"><img src="../images/rules_underover_parsed.png"></td>
+  </tr>
+</table>
+<h3>Supported operations by the solver</h3>
+
+<p>The solver is activated only if the equation contains numbers and/or fractions and at least one of the following operators:</p>
+
+<p align="center"><img src="../images/tutorialsymbols.png"></p>
+
+<h3>Output formats</h3>
+
+<p>The Math Widget offers the possibility to export results in 5 different formats:</p>
+
+<ul><ul>
+  <li>Math Widget symbol list</li>
+  <li>Binary data</li>
+  <li>Image</li>
+  <li>LaTeX:</li>
+<pre class="language-objectivec"><code>\dfrac {-b\pm \sqrt {b^{2}-4ac}}{2a}</code></pre>
+<li>MathML:</li>
+<pre class="language-objectivec"><code>
+&lt;math xmlns='[http://www.w3.org/1998/Math/MathML'&gt](http://www.w3.org/1998/Math/MathML'&gt);
+  &lt;mfrac&gt;
+    &lt;mrow&gt;
+      &lt;mo&gt; - &lt;/mo&gt;
+      &lt;mi&gt; b &lt;/mi&gt;
+      &lt;mo&gt; &#x00B1; &lt;!-- plus-minus sign --&gt; &lt;/mo&gt;
+      &lt;msqrt&gt;
+        &lt;msup&gt;
+          &lt;mrow&gt;
+            &lt;mi&gt; b &lt;/mi&gt;
+          &lt;/mrow&gt;
+          &lt;mrow&gt;
+            &lt;mn&gt; 2 &lt;/mn&gt;
+          &lt;/mrow&gt;
+        &lt;/msup&gt;
+        &lt;mo&gt; - &lt;/mo&gt;
+        &lt;mn&gt; 4 &lt;/mn&gt;
+        &lt;mi&gt; a &lt;/mi&gt;
+        &lt;mi&gt; c &lt;/mi&gt;
+      &lt;/msqrt&gt;
+    &lt;/mrow&gt;
+    &lt;mrow&gt;
+      &lt;mn&gt; 2 &lt;/mn&gt;
+      &lt;mi&gt; a &lt;/mi&gt;
+    &lt;/mrow&gt;
+  &lt;/mfrac&gt;
+&lt;/math&gt;</code></pre>
+</ul></ul>
+
+
+<h3>Intput format</h3>
+
+<p>It is possible to reload a result into the Math Widget, using a symbol list or some binary data previously generated.</p>
+
+<h3>Display modes</h3>
+<ul><ul>
+<h4>No beautification</h4>
+<p>Characters stay handwritten until solving is activated manually if needed. Text is then typeset and solved at the same time.</p>
+<p align="center"><img src="../images/mode1.png"></p>
+<h4>Fontify</h4>
+<p>Characters are automatically typeset  after a short delay, using standard math fonts or custom fonts. If needed, solving has to be activated manually.</p>
+
+<p align="center"><img src="../images/mode2.png"></p>
+
+<h4>Fontify and solve</h4>
+
+<p>Characters are typeset after a short delay, using standard math fonts or custom fonts, and the whole operation is solved, provided that its characters are supported by the solver (see above).</p>
+<p align="center"><img src="../images/mode3.png"></p>
+</ul></ul>
+  </body>
+</html>

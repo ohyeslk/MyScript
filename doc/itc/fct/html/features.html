@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+ <head><link rel="icon" href="../images/favicon.ico" />
+  <meta content="text/html; charset=utf-8" http-equiv="content-type">
+  <title>MyScript ITC (iOS)</title>
+  <link rel="stylesheet" href="../css/MySBuilder.css" type="text/css">
+  <script src="../js/prism.js"></script>
+ </head>
+ <body bgcolor="#FFFFFF" text="#000000">
+
+   <h1>Interactive Text Component </h1>
+ <h2>Features</h2>
+<ul><h3>Real-time handwriting recognition</h3>
+<p>The recognition process operates on a page/note content. Recognition requests can have different types like adding/removing strokes or words. That is why it is important to have a model that will  build a well-formatted recognition request to deliver to the underlying recognition engine.<br>
+Besides when receiving a recognition result, the page/note model synchronization helps delivering recognition notifications for the integration code to behave properly.
+<h3>Gesture behavior</h3>
+<p>In your application, you have the possibility to enable or not specific gestures by calling: 
+<pre class="language-objectivec"><code>(void)setGesture:(ITCGestureType)gestureType enable:(BOOL)enabled</code></pre> 
+<p>You can then set their behavior (is default or not) by calling the following on the ITCPageInterpreter:<pre class="language-objectivec"><code>(void)setGesture:(ITCGestureType)gestureType defaultProcessing:(BOOL)defaultProcessing</code></pre><h3>Gesture detection</h3>
+<p>Editing gestures are detected by the component if enabled. A set of delegates is provided so that the component can take action when some of the gestures  are detected.</p>
+<p>The Interactive Text Component supports the below gestures. Each gesture can be associated with any action. See below a list of suggested actions for each of them.
+<table width="100%" border="1" align="center">
+  <tr>
+    <th scope="col"><div align="center">User action</div></th>
+    <th scope="col"><div align="center">Gesture</div></th>
+    <th scope="col"><div align="center">Description</div></th>
+    <th scope="col"><div align="center">Default action</div></th>
+    <th scope="col"><div align="center">Code sample</div></th>
+    </tr>
+    <tr>
+    <td><strong>Single tap</strong></td>
+    <td align="center"><img src="../images/gesture_tap.png"></td>
+    <td>Briefly touch a word</td>
+    <td><p>n/a</p></td>
+    <td><p>n/a</p></td>
+    </tr>
+    <tr>
+    <td><strong>Split</strong></td>
+    <td align="center"><img src="../images/gesture_split.png"></td>
+    <td>Draw a straight line from top to bottom</td>
+    <td>Add extra space</td>
+    <td>Add extra space</td>
+    </tr>
+  <tr>
+    <td><strong>Join</strong></td>
+    <td align="center"><img src="../images/gesture_join.png"></td>
+    <td><p>Draw a straight line from bottom to top </p>
+      <p>Draw a line from one word to the next one</p></td>
+    <td>Remove extra space</td>
+    <td>Remove extra space</td>
+    </tr>
+  <tr>
+    <td><strong>Return</strong></td>
+    <td align="center"><img src="../images/gesture_return.png"></td>
+    <td>Draw a line from top to bottom then to the left </td>
+    <td>Hard line break</td>
+    <td>n/a</td>
+    </tr>
+  <tr>
+    <td><strong>Strikethrough</strong></td>
+    <td align="center"><img src="../images/gesture_strikethrough.png"></td>
+    <td>Draw a line on a word</td>
+    <td>Erase</td>
+    <td>n/a</td>
+  </tr>
+  <tr>
+    <td><strong>Scratch-out</strong></td>
+    <td align="center"><img src="../images/gesture_scratch-out.png"></td>
+    <td>Scratch out a word</td>
+    <td>Erase</td>
+    <td>n/a</td>
+    </tr>
+  <tr>
+    <td><strong>Overwrite</strong></td>
+    <td align="center"><img src="../images/gesture_overwrite.png"></td>
+    <td>Write a letter on top of another</td>
+    <td>Overwrite</td>
+    <td>n/a</td>
+    </tr>
+    <tr>
+    <td><strong>Underline</strong></td>
+    <td align="center"><img src="../images/gesture_underline.png"></td>
+    <td>Draw a line under a word</td>
+    <td>n/a</td>
+    <td>The word is underlined.</td>
+    </tr>
+  <tr>
+    <td><strong>Circle</strong></td>
+    <td align="center"><img src="../images/gesture_selection.png"></td>
+    <td>Circle a word</td>
+    <td>n/a</td>
+    <td>The word can be typeset or switched with a candidate.</td>
+    </tr>
+</table>
+<h3>Notifications for ink modifications</h3>
+<p>The provided input ink may have been modified when receiving recognition results. This is often the  case with gestures, as previously inserted strokes disappear in case of erase gesture, and strokes may be moved after a split or join gesture. Those modifications are notified  so that the UI reflects the needed operations.</p>
+<h3>Handwriting recognition setup</h3>
+<p>The component simplifies the setup and reconfiguration of the handwriting recognition engine, in case of language change for example. As explained in the API documentation, you can use a simple configuration function to add the resources and the lexicon: This will guide the recognition process in a specific direction. Here are the different configuration parameters:</p>
+<ul>
+  <p><strong>locale</strong> - String representation of the handwriting recognition locale.<br>
+    <strong>resources</strong> - Array of paths to handwriting resource files.<br>
+    <strong>lexicon</strong> - Array of user lexicon entries. May be null.<br>
+    <strong>certificate</strong> - Byte array containing the handwriting recognition certificate.</p>
+</ul>
+<p>This function is non-blocking and performs configuration in the background to avoid blocking the UI thread. Listener callbacks are provided to monitor the beginning and end of the configuration process and update the UI accordingly.</p>
+<p>There are different types of resources:</p>
+<ul>
+  <li><strong>Alphabet Knowledge (AK)</strong>: Defines what sort of handwriting is recognized (isolated characters or cursive handwriting).</li>
+  <li><strong>Linguistic Knowledge (LK):</strong> Helps the recognizer identify specific words or meaningful text elements such as dates or addresses (i.e. the data format of what you are recognizing). These resources can be defined as lexicons or as lexical units using regular expressions or as a combination of both. </li>
+</ul>
+<h3>Possible smart UI behaviors</h3>
+<p>Once recognition has been performed, the recognized ink can be associated to smart  UI actions. Data formats like phone numbers, contact names, etc. can be identified  and highlighted as UI feedback. Besides, by selecting recognized ink, contextual  menu actions can be displayed to launch a search request for example.</p>
+<h3>Typeset</h3>
+<p>The typeset feature is used to represent text with a given font. There are three different possible ways to use this feature:</p>
+<ul>
+  <h4>Creating a typeset word from an ink word</h4>
+  <p>This is the most common use case.
+  <p>You write a word that you add to the page for recognition and you receive the recognition result notification. You can then call a WordFactory method to create a typeset word. You only have to give the original ink word and the position where you want the new typeset word to be created. This call triggers the CharBoxFactory: The suggested implementation of this interface is used to compute the default size of each character box of the recognized ink word. Information such as font, size of the text, etc. is requested by the protocol suggested by this interface.
+  <h4>Creating a typeset word from an ink word with computed character boxes</h4>
+<p> This use case is quite similar to the first one, except that the CharBoxFactory is not called to calculate the character boxes since every related info (size, position, etc.) is set as parameters.</p>
+<p align="center"><img src="../images/typeset1.png"></p>
+
+ <h4>Creating a typeset word from a string (import text/copy/cut/paste use case)</h4>
+ <p>In this use case, you can import typeset text from outside your application.</p>
+ <p>You call the WordFactory to create an array of words. You have to specify the locale of the text, the left abscissa and the baseline of words. The user parameter given is set to all characters of all words. The label is split with spaces, and the carriage return is replaced with a space as well.
+   This call triggers the CharBoxFactory: The suggested implementation of this interface is used to compute the size of each character box of the recognized ink word. Information such as font, size of the text, etc. is requested by the protocol suggested by this interface. </p></ul>
+<h3>User parameters</h3>
+   <ul> <h4>Overview</h4>
+      <p>The user parameters feature lets you associate any kind of meta data to a stroke or to a character.</p>
+<p>As an example, a stroke does not take into account any kind of graphical data such as ink width or color, the pressure associated to each point captured, etc. According to your integration of the Interactive Text Component, you may need to associate this information to a stroke. Besides, in case you are using the typeset feature, you may need to associate some data (such as a font, a style like bold, italic, etc.) to a character of a word.</p>
+<p>The user parameters feature is the way to deal with such information. It will also provide you with a convenient way to monitor the life cycle of the associated data through the different user parameters factories (stroke and word). </p>
+<h4>Stroke and word association</h4>
+<p>The simplest way to associate a user parameter to a stroke is to:
+<ul><li> instantiate one from your implementation of  the user parameter interface, and then</li>
+<li>pass it to the stroke through the stroke factory API creating a stroke from a list of coordinates.</li></ul>
+<p>Thus, the user parameter is associated to the stroke and can be retrieved at any time all along the stroke life cycle. The content of your user parameter can be modified at any time according to your needs. You can for example change the color of the stroke and update this change in the already associated user parameter object. Even if you add the stroke to the page and request its recognition, the user parameter remains associated to the stroke.
+  <h4>Life cycle</h4>
+  <p>As mentioned above, the life cycle of user parameters can be monitored through the stroke user parameter factory  and the word user parameter factory. Those factories have to be implemented on your side according to your needs.    There are different use cases where the factories are triggered (see below).
+  <h4>Page content edition through gestures</h4>
+  <p>Let's take a very simple example of editing gestures to show you how the factories behave.</p>
+    <p>
+    Let's say &quot;hello&quot; is written in one stroke (without lifting your pen or your finger from your device). Then an insertion gesture is done between the two &quot;l&quot;. If default processing is set for the    insertion gesture, the recognition engine will cut the &quot;hello&quot; stroke into two strokes: &quot;hel&quot; and &quot;lo&quot;. </p> 
+  <p>Since the split happened before the final recognition result (aka the end of recognition notification), the stroke user parameter factory is triggered through the API. Thus requesting the creation of a user parameter for a new stroke issued from an old one. In this case, the API will be triggered once for the &quot;hel&quot; stroke and a second time for the &quot;lo&quot; stroke. In default insertion gesture behavior, the &quot;lo&quot; part will shift to insert some space between the two resulting strokes. This will also trigger an API in the stroke user parameter factory requesting you to create a new user parameter for the shifted stroke &quot;lo&quot;.</p>
+    <p> Each editing gesture that modifies the current stroke triggers the stroke user parameter factory. In case of typeset feature, the word user parameter factory is triggered.<br>
+    <h4>Stroke and word creation through stroke and word factories</h4>
+    <p>In order to create a stroke or a word, you have to use the corresponding factories. When creating a stroke from a list of coordinates, the user parameter is given as parameter to the factory method. The user parameter remains associated to the stroke all along its life cycle. Almost all other factory methods do not provide such a parameter entry. The mechanism that will let you associate a new user parameter to the new stroke is the same one as described in our previous sample. Thus, when you want to create a sub stroke you will choose the appropriate method in the stroke factory. The execution of this method will trigger  the stroke user parameter    factory the same way as above. The same rules apply on the different factory methods available from the stroke user parameter factory.</p>
+    <p> Note that there is no stroke user parameter factory method for each stroke factory method. Indeed the background behavior of each stroke factory method can be factorized. For example, instantiating a stroke through the move, scale or transform factory methods triggers the transform callback in the stroke user parameter factory.<br>
+    </p>
+    <p>The word, word factory and word user parameter factory follow the same rules. The word user parameter factory is triggered for typeset word only.</p>
+    <h4>Serialization and de-serialization</h4>
+    <p>Dealing with user parameters when serializing/de-serializing is essential. Note that the page, word and stroke are serializable. When calling one of these objects serialization methods, the corresponding serialization method in your implementation of the user parameter interface is triggered. Besides, the stroke user parameter factory and the word user parameter factory both have a specific method for de-serialization. Besides, each time you create a page, word or stroke from serialized data, those methods are triggered.   </p>
+   </ul>
+   <h3>Languages</h3>
+  <p>The Interactive Text Component supports <a href="https://dev.myscript.com/language-list/?tab=atk-it" target="_blank">59 languages</a>.</p>
+ </ul>
+
+ </body>
+</html>

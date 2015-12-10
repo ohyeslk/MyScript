@@ -1,0 +1,3 @@
+// Copyright MyScript
+
+#define SINGLECHAR_WIDGET_VERSION_STRING      @"1.3.0.1503060064"

@@ -1,0 +1,2568 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>MLTWMultiLineView Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 961)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">MultiLineTextWidget </a></h1>
+				<a id="developerHome" href="../index.html">MyScript</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">MLTWMultiLineView Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/autoScrollDisabled">&nbsp;&nbsp;&nbsp;&nbsp;autoScrollDisabled</option>
+	
+	<option value="//api/name/autoScrollRatio">&nbsp;&nbsp;&nbsp;&nbsp;autoScrollRatio</option>
+	
+	<option value="//api/name/delegate">&nbsp;&nbsp;&nbsp;&nbsp;delegate</option>
+	
+	<option value="//api/name/emptyPage">&nbsp;&nbsp;&nbsp;&nbsp;emptyPage</option>
+	
+	<option value="//api/name/guidelineFirstPosition">&nbsp;&nbsp;&nbsp;&nbsp;guidelineFirstPosition</option>
+	
+	<option value="//api/name/guidelinesColor">&nbsp;&nbsp;&nbsp;&nbsp;guidelinesColor</option>
+	
+	<option value="//api/name/guidelinesHeight">&nbsp;&nbsp;&nbsp;&nbsp;guidelinesHeight</option>
+	
+	<option value="//api/name/guidelinesThickness">&nbsp;&nbsp;&nbsp;&nbsp;guidelinesThickness</option>
+	
+	<option value="//api/name/inkColor">&nbsp;&nbsp;&nbsp;&nbsp;inkColor</option>
+	
+	<option value="//api/name/inkColorHighlight">&nbsp;&nbsp;&nbsp;&nbsp;inkColorHighlight</option>
+	
+	<option value="//api/name/inkThickness">&nbsp;&nbsp;&nbsp;&nbsp;inkThickness</option>
+	
+	<option value="//api/name/inputViewBackgroundColor">&nbsp;&nbsp;&nbsp;&nbsp;inputViewBackgroundColor</option>
+	
+	<option value="//api/name/inputViewBackgroundImage">&nbsp;&nbsp;&nbsp;&nbsp;inputViewBackgroundImage</option>
+	
+	<option value="//api/name/inputViewHeight">&nbsp;&nbsp;&nbsp;&nbsp;inputViewHeight</option>
+	
+	<option value="//api/name/insertZoneColor">&nbsp;&nbsp;&nbsp;&nbsp;insertZoneColor</option>
+	
+	<option value="//api/name/save">&nbsp;&nbsp;&nbsp;&nbsp;save</option>
+	
+	<option value="//api/name/scrollBackgroundColor">&nbsp;&nbsp;&nbsp;&nbsp;scrollBackgroundColor</option>
+	
+	<option value="//api/name/scrollBackgroundImage">&nbsp;&nbsp;&nbsp;&nbsp;scrollBackgroundImage</option>
+	
+	<option value="//api/name/text">&nbsp;&nbsp;&nbsp;&nbsp;text</option>
+	
+	<option value="//api/name/words">&nbsp;&nbsp;&nbsp;&nbsp;words</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/versionString">&nbsp;&nbsp;&nbsp;&nbsp;+ versionString</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/addLineBreakForWord:atIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- addLineBreakForWord:atIndex:</option>
+	
+	<option value="//api/name/addSpaceWithWord:atIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- addSpaceWithWord:atIndex:</option>
+	
+	<option value="//api/name/clear">&nbsp;&nbsp;&nbsp;&nbsp;- clear</option>
+	
+	<option value="//api/name/configureWithLocale:resources:lexicon:certificate:density:">&nbsp;&nbsp;&nbsp;&nbsp;- configureWithLocale:resources:lexicon:certificate:density:</option>
+	
+	<option value="//api/name/exportAsImageWithBackground:exactHeight:">&nbsp;&nbsp;&nbsp;&nbsp;- exportAsImageWithBackground:exactHeight:</option>
+	
+	<option value="//api/name/isGestureEnable:">&nbsp;&nbsp;&nbsp;&nbsp;- isGestureEnable:</option>
+	
+	<option value="//api/name/load:">&nbsp;&nbsp;&nbsp;&nbsp;- load:</option>
+	
+	<option value="//api/name/reflow">&nbsp;&nbsp;&nbsp;&nbsp;- reflow</option>
+	
+	<option value="//api/name/removeSpaceWithWord:atIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- removeSpaceWithWord:atIndex:</option>
+	
+	<option value="//api/name/replaceWord:withNewText:">&nbsp;&nbsp;&nbsp;&nbsp;- replaceWord:withNewText:</option>
+	
+	<option value="//api/name/scrollWordToCenter:">&nbsp;&nbsp;&nbsp;&nbsp;- scrollWordToCenter:</option>
+	
+	<option value="//api/name/scrollWordToTop:">&nbsp;&nbsp;&nbsp;&nbsp;- scrollWordToTop:</option>
+	
+	<option value="//api/name/setCorrectionMode:">&nbsp;&nbsp;&nbsp;&nbsp;- setCorrectionMode:</option>
+	
+	<option value="//api/name/setGesture:enable:">&nbsp;&nbsp;&nbsp;&nbsp;- setGesture:enable:</option>
+	
+	<option value="//api/name/setInsertionMode:atIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- setInsertionMode:atIndex:</option>
+	
+	<option value="//api/name/setWritingMode">&nbsp;&nbsp;&nbsp;&nbsp;- setWritingMode</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Getting and Setting the Delegate">Getting and Setting the Delegate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Launching The Widget Configuration">Launching The Widget Configuration</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Clear Text">Clear Text</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Managing The Text">Managing The Text</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Handling The Gestures">Handling The Gestures</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Configuring Ink Properties">Configuring Ink Properties</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Configuring Insertion Zone">Configuring Insertion Zone</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Configuring Input View">Configuring Input View</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Configuring Scrolling">Configuring Scrolling</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Configuring Mode">Configuring Mode</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Word Management">Word Management</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Managing Serialization">Managing Serialization</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Managing Space">Managing Space</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Launch a Reflow">Launch a Reflow</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Configuring Guidelines">Configuring Guidelines</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Export">Export</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Utils">Utils</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Version">Version</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/autoScrollDisabled">autoScrollDisabled</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/autoScrollRatio">autoScrollRatio</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/delegate">delegate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/emptyPage">emptyPage</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/guidelineFirstPosition">guidelineFirstPosition</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/guidelinesColor">guidelinesColor</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/guidelinesHeight">guidelinesHeight</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/guidelinesThickness">guidelinesThickness</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/inkColor">inkColor</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/inkColorHighlight">inkColorHighlight</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/inkThickness">inkThickness</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/inputViewBackgroundColor">inputViewBackgroundColor</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/inputViewBackgroundImage">inputViewBackgroundImage</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/inputViewHeight">inputViewHeight</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/insertZoneColor">insertZoneColor</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/save">save</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/scrollBackgroundColor">scrollBackgroundColor</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/scrollBackgroundImage">scrollBackgroundImage</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/text">text</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/words">words</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/versionString">versionString</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addLineBreakForWord:atIndex:">addLineBreakForWord:atIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addSpaceWithWord:atIndex:">addSpaceWithWord:atIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/clear">clear</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/configureWithLocale:resources:lexicon:certificate:density:">configureWithLocale:resources:lexicon:certificate:density:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/exportAsImageWithBackground:exactHeight:">exportAsImageWithBackground:exactHeight:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isGestureEnable:">isGestureEnable:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/load:">load:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/reflow">reflow</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeSpaceWithWord:atIndex:">removeSpaceWithWord:atIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/replaceWord:withNewText:">replaceWord:withNewText:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/scrollWordToCenter:">scrollWordToCenter:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/scrollWordToTop:">scrollWordToTop:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setCorrectionMode:">setCorrectionMode:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setGesture:enable:">setGesture:enable:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setInsertionMode:atIndex:">setInsertionMode:atIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setWritingMode">setWritingMode</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="MLTWMultiLineView Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">MLTWMultiLineView Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">UIView</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">MLTWMultiLineView.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>This class is reponsible for all the calls to the widget. It describes the public API of the
+multi line <a href="#//api/name/text">text</a> widget.</p>
+
+<p>It&rsquo;s a subview, so you must add it to the layout via <code>[myView addSubView:MLTWMultiLineView]</code> or
+a storyboard.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Getting and Setting the Delegate" name="task_Getting and Setting the Delegate"></a>
+						<h3 class="subsubtitle task-title">Getting and Setting the Delegate</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Launching The Widget Configuration" name="task_Launching The Widget Configuration"></a>
+						<h3 class="subsubtitle task-title">Launching The Widget Configuration</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/configureWithLocale:resources:lexicon:certificate:density:">&ndash;&nbsp;configureWithLocale:resources:lexicon:certificate:density:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Clear Text" name="task_Clear Text"></a>
+						<h3 class="subsubtitle task-title">Clear Text</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/clear">&ndash;&nbsp;clear</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Managing The Text" name="task_Managing The Text"></a>
+						<h3 class="subsubtitle task-title">Managing The Text</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/text">&nbsp;&nbsp;text</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Handling The Gestures" name="task_Handling The Gestures"></a>
+						<h3 class="subsubtitle task-title">Handling The Gestures</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setGesture:enable:">&ndash;&nbsp;setGesture:enable:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isGestureEnable:">&ndash;&nbsp;isGestureEnable:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Configuring Ink Properties" name="task_Configuring Ink Properties"></a>
+						<h3 class="subsubtitle task-title">Configuring Ink Properties</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/inkThickness">&nbsp;&nbsp;inkThickness</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/inkColor">&nbsp;&nbsp;inkColor</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/inkColorHighlight">&nbsp;&nbsp;inkColorHighlight</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Configuring Insertion Zone" name="task_Configuring Insertion Zone"></a>
+						<h3 class="subsubtitle task-title">Configuring Insertion Zone</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/insertZoneColor">&nbsp;&nbsp;insertZoneColor</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Configuring Input View" name="task_Configuring Input View"></a>
+						<h3 class="subsubtitle task-title">Configuring Input View</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/inputViewBackgroundColor">&nbsp;&nbsp;inputViewBackgroundColor</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/inputViewBackgroundImage">&nbsp;&nbsp;inputViewBackgroundImage</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/inputViewHeight">&nbsp;&nbsp;inputViewHeight</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Configuring Scrolling" name="task_Configuring Scrolling"></a>
+						<h3 class="subsubtitle task-title">Configuring Scrolling</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/scrollBackgroundColor">&nbsp;&nbsp;scrollBackgroundColor</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/scrollBackgroundImage">&nbsp;&nbsp;scrollBackgroundImage</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/scrollWordToTop:">&ndash;&nbsp;scrollWordToTop:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/scrollWordToCenter:">&ndash;&nbsp;scrollWordToCenter:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/autoScrollRatio">&nbsp;&nbsp;autoScrollRatio</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/autoScrollDisabled">&nbsp;&nbsp;autoScrollDisabled</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Configuring Mode" name="task_Configuring Mode"></a>
+						<h3 class="subsubtitle task-title">Configuring Mode</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setInsertionMode:atIndex:">&ndash;&nbsp;setInsertionMode:atIndex:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setCorrectionMode:">&ndash;&nbsp;setCorrectionMode:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setWritingMode">&ndash;&nbsp;setWritingMode</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Word Management" name="task_Word Management"></a>
+						<h3 class="subsubtitle task-title">Word Management</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/replaceWord:withNewText:">&ndash;&nbsp;replaceWord:withNewText:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/words">&nbsp;&nbsp;words</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Managing Serialization" name="task_Managing Serialization"></a>
+						<h3 class="subsubtitle task-title">Managing Serialization</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/save">&nbsp;&nbsp;save</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/load:">&ndash;&nbsp;load:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Managing Space" name="task_Managing Space"></a>
+						<h3 class="subsubtitle task-title">Managing Space</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addSpaceWithWord:atIndex:">&ndash;&nbsp;addSpaceWithWord:atIndex:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeSpaceWithWord:atIndex:">&ndash;&nbsp;removeSpaceWithWord:atIndex:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addLineBreakForWord:atIndex:">&ndash;&nbsp;addLineBreakForWord:atIndex:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Launch a Reflow" name="task_Launch a Reflow"></a>
+						<h3 class="subsubtitle task-title">Launch a Reflow</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/reflow">&ndash;&nbsp;reflow</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Configuring Guidelines" name="task_Configuring Guidelines"></a>
+						<h3 class="subsubtitle task-title">Configuring Guidelines</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/guidelinesHeight">&nbsp;&nbsp;guidelinesHeight</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/guidelineFirstPosition">&nbsp;&nbsp;guidelineFirstPosition</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/guidelinesColor">&nbsp;&nbsp;guidelinesColor</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/guidelinesThickness">&nbsp;&nbsp;guidelinesThickness</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Export" name="task_Export"></a>
+						<h3 class="subsubtitle task-title">Export</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/exportAsImageWithBackground:exactHeight:">&ndash;&nbsp;exportAsImageWithBackground:exactHeight:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Utils" name="task_Utils"></a>
+						<h3 class="subsubtitle task-title">Utils</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/emptyPage">&nbsp;&nbsp;emptyPage</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Version" name="task_Version"></a>
+						<h3 class="subsubtitle task-title">Version</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/versionString">+&nbsp;versionString</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/autoScrollDisabled" title="autoScrollDisabled"></a>
+	<h3 class="subsubtitle method-title">autoScrollDisabled</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Disable the auto scroll used in writing mode which put the last word at the top of the page. This
+enable the user to write without scrolling himself.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, getter=isAutoScrollDisabled) BOOL autoScrollDisabled</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Do not disable auto scroll notification after a <a href="#//api/name/scrollWordToTop:"><code>scrollWordToTop:</code></a> or a <a href="#//api/name/scrollWordToCenter:"><code>scrollWordToCenter:</code></a>.
+Default value is <code>NO</code></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MLTWMultiLineView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/autoScrollRatio" title="autoScrollRatio"></a>
+	<h3 class="subsubtitle method-title">autoScrollRatio</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the auto scroll ratio. This is the ratio of the widget height that needs to be filled
+with <a href="#//api/name/text">text</a> before the widget scrolls down. The default value is 0.6.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGFloat autoScrollRatio</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The ratio value must be between 0. and 1.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MLTWMultiLineView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/delegate" title="delegate"></a>
+	<h3 class="subsubtitle method-title">delegate</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The receiver’s delegate or nil if it doesn’t have a delegate.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) id&lt;MLTWMultiLineViewDelegate&gt; delegate</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>See <a href="../Protocols/MLTWMultiLineViewDelegate.html">MLTWMultiLineViewDelegate</a> for the methods this delegate can implement.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MLTWMultiLineView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/emptyPage" title="emptyPage"></a>
+	<h3 class="subsubtitle method-title">emptyPage</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Checks if the widget contains any word/strokes.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (NS_NONATOMIC_IOSONLY, getter=isEmptyPage, readonly) BOOL emptyPage</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p><code>YES</code> if the widget does not contain any <a href="#//api/name/words">words</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MLTWMultiLineView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/guidelineFirstPosition" title="guidelineFirstPosition"></a>
+	<h3 class="subsubtitle method-title">guidelineFirstPosition</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the spacing of the first guideline.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGFloat guidelineFirstPosition</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The value cannot be &lt; 0 &amp;&amp; > <a href="#//api/name/inputViewHeight">inputViewHeight</a>. The default value is <code>150</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MLTWMultiLineView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/guidelinesColor" title="guidelinesColor"></a>
+	<h3 class="subsubtitle method-title">guidelinesColor</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the guidelines color.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) UIColor *guidelinesColor</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The default value is <code>[UIColor colorWithWhite:0 alpha:0.6]</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MLTWMultiLineView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/guidelinesHeight" title="guidelinesHeight"></a>
+	<h3 class="subsubtitle method-title">guidelinesHeight</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the spacing between guidelines.
+The guidelines are real lines drawn on the page for a better writing. If followed, the
+recognition will work better. Can also be used to help the
+user with the possible gestures.
+The value cannot be &lt; 0 &amp;&amp; > <a href="#//api/name/inputViewHeight">inputViewHeight</a>. The default value is <code>100</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGFloat guidelinesHeight</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MLTWMultiLineView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/guidelinesThickness" title="guidelinesThickness"></a>
+	<h3 class="subsubtitle method-title">guidelinesThickness</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the guidelines thickness.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGFloat guidelinesThickness</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The default value is <code>1.0</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MLTWMultiLineView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/inkColor" title="inkColor"></a>
+	<h3 class="subsubtitle method-title">inkColor</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the color of the ink used for no-highlight state, else use (<a href="#//api/name/inkColorHighlight"><code>inkColorHighlight</code></a>)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) UIColor *inkColor</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The no-highlight state is used for previously written <a href="#//api/name/words">words</a>.
+The default value <code>[UIColor blackColor]</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MLTWMultiLineView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/inkColorHighlight" title="inkColorHighlight"></a>
+	<h3 class="subsubtitle method-title">inkColorHighlight</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the color of the ink used for highlight state, else use (<a href="#//api/name/inkColor"><code>inkColor</code></a>)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) UIColor *inkColorHighlight</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The highlight state is used for the selected word or the current drawing.
+The default value <code>[UIColor blueColor]</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MLTWMultiLineView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/inkThickness" title="inkThickness"></a>
+	<h3 class="subsubtitle method-title">inkThickness</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the width of the ink in pixels.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (assign, nonatomic) CGFloat inkThickness</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The default value is <code>5.0</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MLTWMultiLineView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/inputViewBackgroundColor" title="inputViewBackgroundColor"></a>
+	<h3 class="subsubtitle method-title">inputViewBackgroundColor</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the background color of the input view.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) UIColor *inputViewBackgroundColor</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The default value is <code>[UIColor whiteColor]</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MLTWMultiLineView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/inputViewBackgroundImage" title="inputViewBackgroundImage"></a>
+	<h3 class="subsubtitle method-title">inputViewBackgroundImage</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the background image of the input view. The image is stretched according to the
+<a href="#//api/name/inputViewHeight">inputViewHeight</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) UIImage *inputViewBackgroundImage</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The default value is <code>nil</code>. Not used if not set.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MLTWMultiLineView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/inputViewHeight" title="inputViewHeight"></a>
+	<h3 class="subsubtitle method-title">inputViewHeight</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the height of the widget input view. The input view is made of the view capturing the ink as
+well as the one displaying the strokes/<a href="#//api/name/text">text</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGFloat inputViewHeight</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The value is in pixels</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MLTWMultiLineView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/insertZoneColor" title="insertZoneColor"></a>
+	<h3 class="subsubtitle method-title">insertZoneColor</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the color of the insert zone.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) UIColor *insertZoneColor</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The alpha is managed by the widget (0.15 for the background, 1.0 for the baseline).
+The default value is blue : <code>[UIColor colorWithRed:39 / 255.0f green:169 / 255.0f blue:225 /
+255.0f alpha:1.0f]</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MLTWMultiLineView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/save" title="save"></a>
+	<h3 class="subsubtitle method-title">save</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Serializes the widget content into a NSData;</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (NS_NONATOMIC_IOSONLY, readonly, copy) NSData *save</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A NSData representing the widget content model.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MLTWMultiLineView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/scrollBackgroundColor" title="scrollBackgroundColor"></a>
+	<h3 class="subsubtitle method-title">scrollBackgroundColor</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the background color of the scroll view.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) UIColor *scrollBackgroundColor</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The default value is <code>[UIColor clear]</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MLTWMultiLineView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/scrollBackgroundImage" title="scrollBackgroundImage"></a>
+	<h3 class="subsubtitle method-title">scrollBackgroundImage</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the background image of the scroll view. The image will be repeated as many times as needed
+to
+cover the full size of the scroll view.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) UIImage *scrollBackgroundImage</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The default value is <code>nil</code>. Not used if not set.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MLTWMultiLineView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/text" title="text"></a>
+	<h3 class="subsubtitle method-title">text</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The text of the full page.
+Updated just before the call to [delegate multiLineView:didChangeText:intermediate:]</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (strong, nonatomic, readonly) NSString *text</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MLTWMultiLineView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/words" title="words"></a>
+	<h3 class="subsubtitle method-title">words</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Retrieves all words of the widget. The output is a list of words, each containing the possible
+candidates.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (NS_NONATOMIC_IOSONLY, readonly, copy) NSArray *words</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A list of <a href="../Classes/MLTWWord.html"><code>MLTWWord</code></a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MLTWMultiLineView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/versionString" title="versionString"></a>
+	<h3 class="subsubtitle method-title">versionString</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The current version of MultiLineTextWidget</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSString *)versionString</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The current version of MultiLineTextWidget</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MLTWMultiLineView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/addLineBreakForWord:atIndex:" title="addLineBreakForWord:atIndex:"></a>
+	<h3 class="subsubtitle method-title">addLineBreakForWord:atIndex:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Inserts a line break at the given index.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)addLineBreakForWord:(MLTWWord *)<em>word</em> atIndex:(NSInteger)<em>characterIndex</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>word</em></dt>
+			<dd><p>The reference word of the line break insertion.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>characterIndex</em></dt>
+			<dd><p>Character index related to the line break insertion. If the characterIndex
+is <code>&lt; 0</code>, a line break before the word will be added. If >= word.<a href="#//api/name/text">text</a>.length, a line break
+after
+the word will
+be
+added. For any other a line break inside the word will be added.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MLTWMultiLineView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/addSpaceWithWord:atIndex:" title="addSpaceWithWord:atIndex:"></a>
+	<h3 class="subsubtitle method-title">addSpaceWithWord:atIndex:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Adds a space at the word index.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)addSpaceWithWord:(MLTWWord *)<em>word</em> atIndex:(NSInteger)<em>characterIndex</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>word</em></dt>
+			<dd><p>The word related to the space creation.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>characterIndex</em></dt>
+			<dd><p>The character index related to the space creation point inside the word. If
+the characterIndex
+is <code>&lt; 0</code>, a space before the word will be added. If >= word.<a href="#//api/name/text">text</a>.length, a space after the word
+will be
+added. For any other a space inside the word will be added.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Create writing space at the given index to enable the user to write inside already
+written <a href="#//api/name/text">text</a>. The application provides an index where a space is created.
+If the index is inside a word, the word is split in two by creating a small space (character
+width). Nothing else will be done otherwise.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MLTWMultiLineView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/clear" title="clear"></a>
+	<h3 class="subsubtitle method-title">clear</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Clears the page from all <a href="#//api/name/words">words</a>. Be careful as this will erase everything.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)clear</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MLTWMultiLineView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/configureWithLocale:resources:lexicon:certificate:density:" title="configureWithLocale:resources:lexicon:certificate:density:"></a>
+	<h3 class="subsubtitle method-title">configureWithLocale:resources:lexicon:certificate:density:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Configures the handwriting recognition engine.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)configureWithLocale:(NSString *)<em>locale</em> resources:(NSArray *)<em>resources</em> lexicon:(NSArray *)<em>lexicon</em> certificate:(NSData *)<em>certificate</em> density:(float)<em>dpi</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>locale</em></dt>
+			<dd><p>String representation of the handwriting recognition locale.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>resources</em></dt>
+			<dd><p>Array of paths (NSString) to handwriting resource files.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>lexicon</em></dt>
+			<dd><p>Array of user lexicon entries. May be <code>nil</code>.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>certificate</em></dt>
+			<dd><p>Data containing the handwriting recognition certificate.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>dpi</em></dt>
+			<dd><p>The coordinate resolution in dot per inch.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This function is non-blocking and returns immediately. Configuration is a lengthy
+process that may take up to several seconds, depending on the handwriting resources to be
+configured. It is recommended to setup the <a href="#//api/name/delegate">delegate</a> to detect the end of the
+configuration
+process. The configure method is the first one to be called before any action on the widget.
+A notification will be sent through the <a href="#//api/name/delegate">delegate</a>. If valid configuration
+<code>multiLineViewDidEndConfiguration:</code> or <code>multiLineView:didFailConfigurationWithError</code> if error
+during the configuration.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MLTWMultiLineView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/exportAsImageWithBackground:exactHeight:" title="exportAsImageWithBackground:exactHeight:"></a>
+	<h3 class="subsubtitle method-title">exportAsImageWithBackground:exactHeight:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Retrieves the content of the widget as a UIImage.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (UIImage *)exportAsImageWithBackground:(BOOL)<em>background</em> exactHeight:(BOOL)<em>exactHeight</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>background</em></dt>
+			<dd><p><code>YES</code> the current background will also be exported.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>exactHeight</em></dt>
+			<dd><p><code>YES</code> the UIImage will be sized to fit exactly the contained stroke or <a href="#//api/name/text">text</a>.
+Otherwise it will have the full size of the input view (set via <a href="#//api/name/inputViewHeight">setInputViewHeight:</a> )</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A UIImage representing the widget content.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MLTWMultiLineView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isGestureEnable:" title="isGestureEnable:"></a>
+	<h3 class="subsubtitle method-title">isGestureEnable:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>YES if the gesture is enabled, NO otherwise.
+By default all gestures are enabled.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)isGestureEnable:(MLTWGestureType)<em>gesture</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>gesture</em></dt>
+			<dd><p>The list of gestures can be found in  <a href="../Constants/MLTWGestureType.html"><code>MLTWGestureType</code></a> enum</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES if the gesture is enabled, NO otherwise.
+By default all gestures are enabled.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MLTWMultiLineView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/load:" title="load:"></a>
+	<h3 class="subsubtitle method-title">load:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Deserializes the given byte array into the widget content. This will trigger a
+<code>multiLineView:didChangeText:</code> event. A <a href="#//api/name/clear"><code>clear</code></a> will be triggered before the loading if
+the model is not nil.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)load:(NSData *)<em>model</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>model</em></dt>
+			<dd><p>A NSData representing the widget content model.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MLTWMultiLineView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/reflow" title="reflow"></a>
+	<h3 class="subsubtitle method-title">reflow</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Moves all the <a href="#//api/name/words">words</a> in the page to optimize the vertical writing space. Words will be reordered
+in
+lines in a way that removes all unused spaces.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)reflow</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MLTWMultiLineView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/removeSpaceWithWord:atIndex:" title="removeSpaceWithWord:atIndex:"></a>
+	<h3 class="subsubtitle method-title">removeSpaceWithWord:atIndex:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Removes a space at the word index.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)removeSpaceWithWord:(MLTWWord *)<em>word</em> atIndex:(NSInteger)<em>characterIndex</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>word</em></dt>
+			<dd><p>The word related to the space removal.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>characterIndex</em></dt>
+			<dd><p>The character index related to the space removal. If the characterIndex
+is <code>&lt; 0</code>, the space before the word will be removed. If >= word.<a href="#//api/name/text">text</a>.length, the space after
+the word will be
+removed. For any other value nothing will be done.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Removes writing space at the given index by joining the surrounding <a href="#//api/name/words">words</a>. The
+application provides an index where a space is removed. If there is no space at the given
+index, nothing happens.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MLTWMultiLineView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/replaceWord:withNewText:" title="replaceWord:withNewText:"></a>
+	<h3 class="subsubtitle method-title">replaceWord:withNewText:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Replaces a word in the <a href="#//api/name/text">text</a>.
+This function will do nothing if :
+The given word is nil or is not part of the widget <a href="#//api/name/text">text</a>.
+The given <a href="#//api/name/text">text</a> is nil or is not one of the word candidates.
+This function fire the delegate&rsquo;s method <code>multiLineView:didChangeText:</code></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)replaceWord:(MLTWWord *)<em>word</em> withNewText:(NSString *)<em>newText</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>word</em></dt>
+			<dd><p>The word to change</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>newText</em></dt>
+			<dd><p>The replacement <a href="#//api/name/text">text</a> string. The <a href="#//api/name/text">text</a> has to be one of the word&rsquo;s candidates.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MLTWMultiLineView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/scrollWordToCenter:" title="scrollWordToCenter:"></a>
+	<h3 class="subsubtitle method-title">scrollWordToCenter:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Moves the scrolled position of the widget around the given word, so that it is centered inside
+the
+widget.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)scrollWordToCenter:(MLTWWord *)<em>word</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>word</em></dt>
+			<dd><p>The word to scroll to.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If word is <code>nil</code> the widget will not scroll.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MLTWMultiLineView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/scrollWordToTop:" title="scrollWordToTop:"></a>
+	<h3 class="subsubtitle method-title">scrollWordToTop:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Moves the scrolled position of the widget around the given word, so that it is at the top of the
+widget.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)scrollWordToTop:(MLTWWord *)<em>word</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>word</em></dt>
+			<dd><p>The word to scroll to.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If word is <code>nil</code> the widget will scroll to the top of the view.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MLTWMultiLineView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setCorrectionMode:" title="setCorrectionMode:"></a>
+	<h3 class="subsubtitle method-title">setCorrectionMode:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Changes the widget edition mode to <code>MLTWMultilineModeCorrection</code> by selecting the given word.
+Correction mode is defined so that the user can correct <a href="#//api/name/words">words</a>. Therefore, there is always
+a selected
+and highlighted word around which the input view is automatically centered.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setCorrectionMode:(MLTWWord *)<em>word</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>word</em></dt>
+			<dd><p>The word to select. If the word is invalid, the selection will be cleared.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MLTWMultiLineView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setGesture:enable:" title="setGesture:enable:"></a>
+	<h3 class="subsubtitle method-title">setGesture:enable:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Enables or disables a gesture (see <a href="../Constants/MLTWGestureType.html"><code>MLTWGestureType</code></a>).</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setGesture:(MLTWGestureType)<em>gesture</em> enable:(BOOL)<em>enable</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>gesture</em></dt>
+			<dd><p>the gesture to enable or disable. The list of gestures can be found in
+<a href="../Constants/MLTWGestureType.html"><code>MLTWGestureType</code></a> enum</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>enable</em></dt>
+			<dd><p><code>YES</code> to enable the gesture, <code>NO</code> otherwise</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Enables/disables the management of a given gesture. By default all gestures are
+enabled. Detected gestures will trigger a call to the gesture delegate&rsquo;s method except for
+<code></code>MLTWGestureType<code>.MLTWGestureTypeErase</code> and <code></code>MLTWGestureType<code>.MLTWGestureTypeOverwrite</code> that are
+managed internally by the widget and thus don&rsquo;t trigger any delegate&rsquo;s methods to the top-level
+application.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MLTWMultiLineView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setInsertionMode:atIndex:" title="setInsertionMode:atIndex:"></a>
+	<h3 class="subsubtitle method-title">setInsertionMode:atIndex:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Changes the widget edition mode to <code>MLTWMultilineModeInsertion</code> by creating writing space at the
+given index.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setInsertionMode:(MLTWWord *)<em>word</em> atIndex:(NSInteger)<em>characterIndex</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>word</em></dt>
+			<dd><p>The reference word related of the insertion mode.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>characterIndex</em></dt>
+			<dd><p>The index of the character related to the insertion mode. If the
+characterIndex
+is <code>&lt; 0</code>, the insertion mode will be opened before the word. If >= word.<a href="#//api/name/text">text</a>.length, the
+insertion mode will be
+opened after
+the word. For any other value the insertion mode will be opened inside the word.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Insertion mode is defined so that the user can write inside already written <a href="#//api/name/text">text</a>. Therefore, no
+automatic scroll is triggered and the space created is highlighted. A large
+space is created before or after the word, pushing the following <a href="#//api/name/words">words</a> on the next line of the
+widget.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MLTWMultiLineView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setWritingMode" title="setWritingMode"></a>
+	<h3 class="subsubtitle method-title">setWritingMode</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Changes the widget edition mode to <code>MLTWMultilineModeWriting</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setWritingMode</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Writing mode is defined for the user to input <a href="#//api/name/text">text</a> continuously at the end of the widget.
+Therefore, if the auto-scroll ratio is matched, the input view automatically scrolls down after
+the user writing. No word is highlighted in the widget but the last written word is always
+automatically selected.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MLTWMultiLineView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2015 MyScript. All rights reserved. (Last updated: 2015-07-27)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

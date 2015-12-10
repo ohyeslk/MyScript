@@ -1,0 +1,1485 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>ITCPageInterpreter Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 961)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">InteractiveTextComponent </a></h1>
+				<a id="developerHome" href="../index.html">MyScript</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">ITCPageInterpreter Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/ITFDebug">&nbsp;&nbsp;&nbsp;&nbsp;ITFDebug</option>
+	
+	<option value="//api/name/delegate">&nbsp;&nbsp;&nbsp;&nbsp;delegate</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/enableDebug:">&nbsp;&nbsp;&nbsp;&nbsp;+ enableDebug:</option>
+	
+	<option value="//api/name/pageInterpreter">&nbsp;&nbsp;&nbsp;&nbsp;+ pageInterpreter</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/clearGuidelines">&nbsp;&nbsp;&nbsp;&nbsp;- clearGuidelines</option>
+	
+	<option value="//api/name/configurePageInterpreter:resources:lexicon:certificate:density:">&nbsp;&nbsp;&nbsp;&nbsp;- configurePageInterpreter:resources:lexicon:certificate:density:</option>
+	
+	<option value="//api/name/configurePageInterpreter:resources:lexicon:certificate:density:freezeTimeout:">&nbsp;&nbsp;&nbsp;&nbsp;- configurePageInterpreter:resources:lexicon:certificate:density:freezeTimeout:</option>
+	
+	<option value="//api/name/isGestureEnabled:">&nbsp;&nbsp;&nbsp;&nbsp;- isGestureEnabled:</option>
+	
+	<option value="//api/name/locale">&nbsp;&nbsp;&nbsp;&nbsp;- locale</option>
+	
+	<option value="//api/name/page">&nbsp;&nbsp;&nbsp;&nbsp;- page</option>
+	
+	<option value="//api/name/recognitionError">&nbsp;&nbsp;&nbsp;&nbsp;- recognitionError</option>
+	
+	<option value="//api/name/recognitionErrorString">&nbsp;&nbsp;&nbsp;&nbsp;- recognitionErrorString</option>
+	
+	<option value="//api/name/restoreConfigurationFromId:">&nbsp;&nbsp;&nbsp;&nbsp;- restoreConfigurationFromId:</option>
+	
+	<option value="//api/name/saveConfiguration">&nbsp;&nbsp;&nbsp;&nbsp;- saveConfiguration</option>
+	
+	<option value="//api/name/setEnableIntermediateRecognition:">&nbsp;&nbsp;&nbsp;&nbsp;- setEnableIntermediateRecognition:</option>
+	
+	<option value="//api/name/setGesture:defaultProcessing:">&nbsp;&nbsp;&nbsp;&nbsp;- setGesture:defaultProcessing:</option>
+	
+	<option value="//api/name/setGesture:enable:">&nbsp;&nbsp;&nbsp;&nbsp;- setGesture:enable:</option>
+	
+	<option value="//api/name/setGuidelines:gap:lineCount:">&nbsp;&nbsp;&nbsp;&nbsp;- setGuidelines:gap:lineCount:</option>
+	
+	<option value="//api/name/setPage:">&nbsp;&nbsp;&nbsp;&nbsp;- setPage:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Delegate">Delegate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Managing debug">Managing debug</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Creation">Creation</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Configuration">Configuration</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Page management">Page management</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Error management">Error management</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Guidelines management">Guidelines management</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Gesture management">Gesture management</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/ITFDebug">ITFDebug</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/delegate">delegate</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/enableDebug:">enableDebug:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pageInterpreter">pageInterpreter</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/clearGuidelines">clearGuidelines</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/configurePageInterpreter:resources:lexicon:certificate:density:">configurePageInterpreter:resources:lexicon:certificate:density:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/configurePageInterpreter:resources:lexicon:certificate:density:freezeTimeout:">configurePageInterpreter:resources:lexicon:certificate:density:freezeTimeout:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isGestureEnabled:">isGestureEnabled:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/locale">locale</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/page">page</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/recognitionError">recognitionError</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/recognitionErrorString">recognitionErrorString</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/restoreConfigurationFromId:">restoreConfigurationFromId:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/saveConfiguration">saveConfiguration</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setEnableIntermediateRecognition:">setEnableIntermediateRecognition:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setGesture:defaultProcessing:">setGesture:defaultProcessing:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setGesture:enable:">setGesture:enable:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setGuidelines:gap:lineCount:">setGuidelines:gap:lineCount:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setPage:">setPage:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="ITCPageInterpreter Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">ITCPageInterpreter Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">ITCPageInterpreter.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>The <code>ITCPageInterpreter</code> is the object in charge of configuration and the recognition of a <a href="#//api/name/page">page</a>.
+It can deal with only one <a href="#//api/name/page">page</a> at a time.</p>
+
+<p>Do not inherit.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Delegate" name="task_Delegate"></a>
+						<h3 class="subsubtitle task-title">Delegate</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Managing debug" name="task_Managing debug"></a>
+						<h3 class="subsubtitle task-title">Managing debug</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/ITFDebug">&nbsp;&nbsp;ITFDebug</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/enableDebug:">+&nbsp;enableDebug:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Creation" name="task_Creation"></a>
+						<h3 class="subsubtitle task-title">Creation</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/pageInterpreter">+&nbsp;pageInterpreter</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Configuration" name="task_Configuration"></a>
+						<h3 class="subsubtitle task-title">Configuration</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/configurePageInterpreter:resources:lexicon:certificate:density:">&ndash;&nbsp;configurePageInterpreter:resources:lexicon:certificate:density:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/configurePageInterpreter:resources:lexicon:certificate:density:freezeTimeout:">&ndash;&nbsp;configurePageInterpreter:resources:lexicon:certificate:density:freezeTimeout:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/saveConfiguration">&ndash;&nbsp;saveConfiguration</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/restoreConfigurationFromId:">&ndash;&nbsp;restoreConfigurationFromId:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/locale">&ndash;&nbsp;locale</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Page management" name="task_Page management"></a>
+						<h3 class="subsubtitle task-title">Page management</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setPage:">&ndash;&nbsp;setPage:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/page">&ndash;&nbsp;page</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Error management" name="task_Error management"></a>
+						<h3 class="subsubtitle task-title">Error management</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/recognitionErrorString">&ndash;&nbsp;recognitionErrorString</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/recognitionError">&ndash;&nbsp;recognitionError</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Guidelines management" name="task_Guidelines management"></a>
+						<h3 class="subsubtitle task-title">Guidelines management</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setGuidelines:gap:lineCount:">&ndash;&nbsp;setGuidelines:gap:lineCount:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/clearGuidelines">&ndash;&nbsp;clearGuidelines</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Gesture management" name="task_Gesture management"></a>
+						<h3 class="subsubtitle task-title">Gesture management</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setGesture:defaultProcessing:">&ndash;&nbsp;setGesture:defaultProcessing:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setGesture:enable:">&ndash;&nbsp;setGesture:enable:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isGestureEnabled:">&ndash;&nbsp;isGestureEnabled:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setEnableIntermediateRecognition:">&ndash;&nbsp;setEnableIntermediateRecognition:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/ITFDebug" title="ITFDebug"></a>
+	<h3 class="subsubtitle method-title">ITFDebug</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Set <code>YES</code> to save automatically ITF files in the document directory. By default the value is <code>NO</code>.
+It saves a new file each time a stroke/word is added.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL ITFDebug</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>ITF files can be used to replay same recognition for debugging purpose.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ITCPageInterpreter.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/delegate" title="delegate"></a>
+	<h3 class="subsubtitle method-title">delegate</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The receiver’s delegate or <code>nil</code> if it doesn’t have a delegate.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, weak) id&lt;ITCPageInterpreterDelegate&gt; delegate</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>See <a href="../Protocols/ITCPageInterpreterDelegate.html"><code>ITCPageInterpreterDelegate</code></a> for the methods this delegate can implement.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ITCPageInterpreter.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/enableDebug:" title="enableDebug:"></a>
+	<h3 class="subsubtitle method-title">enableDebug:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Enables or not the debug in ITC</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)enableDebug:(ITCDebugMode)<em>debugMode</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>debugMode</em></dt>
+			<dd><p>The level of debug you want</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ITCPageInterpreter.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/pageInterpreter" title="pageInterpreter"></a>
+	<h3 class="subsubtitle method-title">pageInterpreter</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a new ITCPageInterpreter.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (ITCPageInterpreter *)pageInterpreter</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The new ITCPageInterpreter</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ITCPageInterpreter.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/clearGuidelines" title="clearGuidelines"></a>
+	<h3 class="subsubtitle method-title">clearGuidelines</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Clears the guidelines</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)clearGuidelines</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ITCPageInterpreter.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/configurePageInterpreter:resources:lexicon:certificate:density:" title="configurePageInterpreter:resources:lexicon:certificate:density:"></a>
+	<h3 class="subsubtitle method-title">configurePageInterpreter:resources:lexicon:certificate:density:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Configures the handwriting recognition engine.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (ITCError *)configurePageInterpreter:(NSString *)<em>aLocale</em> resources:(NSArray *)<em>resources</em> lexicon:(NSArray *)<em>lexicon</em> certificate:(NSData *)<em>aCertificate</em> density:(float)<em>dpi</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>resources</em></dt>
+			<dd><p>Array of paths to handwriting resource files.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>lexicon</em></dt>
+			<dd><p>Array of user lexicon entries. May be <code>nil</code>.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>dpi</em></dt>
+			<dd><p>The coordinate resolution in dot per inch.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>locale</em></dt>
+			<dd><p>String representation of the handwriting recognition <a href="#//api/name/locale">locale</a>.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>certificate</em></dt>
+			<dd><p>Data containing the handwriting recognition certificate.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>an <a href="../Classes/ITCError.html">ITCError</a></p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This function is non-blocking and returns immediately. Configuration is a lengthy process that may take up to
+several seconds, depending on the handwriting resources to be configured. It is recommended to setup a configure
+listener to detect the end of the configuration process.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ITCPageInterpreter.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/configurePageInterpreter:resources:lexicon:certificate:density:freezeTimeout:" title="configurePageInterpreter:resources:lexicon:certificate:density:freezeTimeout:"></a>
+	<h3 class="subsubtitle method-title">configurePageInterpreter:resources:lexicon:certificate:density:freezeTimeout:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Configures the handwriting recognition engine.</p>
+
+<p><p>
+This function is non-blocking and returns immediately. Configuration is a lengthy process that may take up to
+several seconds, depending on the handwriting resources to be configured. It is recommended to setup a configure
+listener to detect the end of the configuration process.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (ITCError *)configurePageInterpreter:(NSString *)<em>aLocale</em> resources:(NSArray *)<em>resources</em> lexicon:(NSArray *)<em>lexicon</em> certificate:(NSData *)<em>aCertificate</em> density:(float)<em>dpi</em> freezeTimeout:(NSInteger)<em>freezeTimeout</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>resources</em></dt>
+			<dd><p>Array of paths to handwriting resource files.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>lexicon</em></dt>
+			<dd><p>Array of user lexicon entries. May be <code>null</code>.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>dpi</em></dt>
+			<dd><p>The coordinate resolution in dot per inch.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>freezeTimeout</em></dt>
+			<dd><p>The minimum freeze time before the launch of the recognition.
+It corresponds of the time between the last request and the launch of the recognition. Can be from 200 to 10000 ms. The default value is 650 ms.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>locale</em></dt>
+			<dd><p>String representation of the handwriting recognition <a href="#//api/name/locale">locale</a>.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>certificate</em></dt>
+			<dd><p>Byte array containing the handwriting recognition certificate.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>certificateByteCount</em></dt>
+			<dd><p>Size of the byte array</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>an <a href="../Classes/ITCError.html">ITCError</a></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ITCPageInterpreter.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isGestureEnabled:" title="isGestureEnabled:"></a>
+	<h3 class="subsubtitle method-title">isGestureEnabled:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Checks if a gesture is currently enabled.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)isGestureEnabled:(ITCGestureType)<em>gestureType</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>gestureType</em></dt>
+			<dd><p>Gesture type.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p><code>YES</code> if gesture detection is enabled, <code>NO</code> if disabled.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ITCPageInterpreter.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/locale" title="locale"></a>
+	<h3 class="subsubtitle method-title">locale</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Gets the locale of the <a href="#//api/name/page">page</a> interpreter.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)locale</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The current locale of the <a href="#//api/name/page">page</a> interpreter.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ITCPageInterpreter.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/page" title="page"></a>
+	<h3 class="subsubtitle method-title">page</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Gets the current page.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (ITCSmartPage *)page</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An <a href="../Classes/ITCSmartPage.html"><code>ITCSmartPage</code></a> object representing the current page.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ITCPageInterpreter.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/recognitionError" title="recognitionError"></a>
+	<h3 class="subsubtitle method-title">recognitionError</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The error associated to the last instruction concerning the configuration or the recognition.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (ITCError *)recognitionError</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The error associated to the last instruction concerning the configuration or the recognition.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ITCPageInterpreter.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/recognitionErrorString" title="recognitionErrorString"></a>
+	<h3 class="subsubtitle method-title">recognitionErrorString</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The error string of the last instruction concerning the configuration or the recognition.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)recognitionErrorString</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The error string of the last instruction concerning the configuration or the recognition.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ITCPageInterpreter.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/restoreConfigurationFromId:" title="restoreConfigurationFromId:"></a>
+	<h3 class="subsubtitle method-title">restoreConfigurationFromId:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Restores the configuration from the given id.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (ITCError *)restoreConfigurationFromId:(NSString *)<em>anId</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>anId</em></dt>
+			<dd><p>The id referencing the configuration backup.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An error if an error occured or nil.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ITCPageInterpreter.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/saveConfiguration" title="saveConfiguration"></a>
+	<h3 class="subsubtitle method-title">saveConfiguration</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This function saves the configuration of the recognition.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)saveConfiguration</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The id of the configuration backup.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<div class="warning"><p><strong>Warning:</strong> If you don&rsquo;t call <a href="#//api/name/restoreConfigurationFromId:"><code>restoreConfigurationFromId:</code></a> after, there will be a memory leak.</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ITCPageInterpreter.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setEnableIntermediateRecognition:" title="setEnableIntermediateRecognition:"></a>
+	<h3 class="subsubtitle method-title">setEnableIntermediateRecognition:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Setter to enable (<code>YES</code> by default) intermediate recognition</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setEnableIntermediateRecognition:(BOOL)<em>enableIntermediateRecognition</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>enableIntermediateRecognition</em></dt>
+			<dd><p><code>YES</code> to enable intermediate recognition, <code>NO</code> otherwise</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ITCPageInterpreter.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setGesture:defaultProcessing:" title="setGesture:defaultProcessing:"></a>
+	<h3 class="subsubtitle method-title">setGesture:defaultProcessing:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the processing for the current gesture. The default processing is the default mecanism
+used to act according to the gesture. Else, it will be done in the implementation of
+gestures notifications (see SmartPage->setGestureDelegate)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setGesture:(ITCGestureType)<em>gestureType</em> defaultProcessing:(BOOL)<em>defaultProcessing</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>gestureType</em></dt>
+			<dd><p>The current gesture (see <a href="../Constants/ITCGestureType.html">ITCGestureType</a> enum)</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>defaultProcessing</em></dt>
+			<dd><p><code>YES</code> if you want the <a href="#//api/name/page">page</a> interpreter to handle default processing of the detected gesture, <code>NO</code> if you want the <a href="#//api/name/page">page</a> interpreter to <a href="#//api/name/delegate">delegate</a> gesture processing to the application.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ITCPageInterpreter.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setGesture:enable:" title="setGesture:enable:"></a>
+	<h3 class="subsubtitle method-title">setGesture:enable:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Enables or disables the current gesture</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setGesture:(ITCGestureType)<em>gestureType</em> enable:(BOOL)<em>enabled</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>gestureType</em></dt>
+			<dd><p>The current gesture (see <a href="../Constants/ITCGestureType.html">ITCGestureType</a> enum)</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>enabled</em></dt>
+			<dd><p><code>YES</code> if the gesture is enabled, <code>NO</code> otherwise</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ITCPageInterpreter.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setGuidelines:gap:lineCount:" title="setGuidelines:gap:lineCount:"></a>
+	<h3 class="subsubtitle method-title">setGuidelines:gap:lineCount:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Assigns the guidelines</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (ITCError *)setGuidelines:(float)<em>firstLinePosition</em> gap:(float)<em>gap</em> lineCount:(NSInteger)<em>lineCount</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>firstLinePosition</em></dt>
+			<dd><p>The position of the first line</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>gap</em></dt>
+			<dd><p>The gap between two lines</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>lineCount</em></dt>
+			<dd><p>The number of lines displayed</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>a <a href="../Classes/ITCError.html">ITCError</a>, nil if no error</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ITCPageInterpreter.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setPage:" title="setPage:"></a>
+	<h3 class="subsubtitle method-title">setPage:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the current <a href="#//api/name/page">page</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setPage:(ITCSmartPage *)<em>aSmartPage</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The behavior is not defined if the <a href="#//api/name/page">page</a> is nil.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ITCPageInterpreter.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2015 MyScript. All rights reserved. (Last updated: 2015-07-27)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

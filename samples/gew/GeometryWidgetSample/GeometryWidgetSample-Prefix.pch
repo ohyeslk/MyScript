@@ -1,0 +1,39 @@
+//
+// Prefix header for all source files of the 'GeometryWidgetSample' target in the 'GeometryWidgetSample' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+
+#include <sys/types.h>
+#include <sys/sysctl.h>
+
+    CG_INLINE BOOL isPadMini()
+    {
+    #ifdef UI_USER_INTERFACE_IDIOM
+        {
+            if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+            {
+                size_t size;
+                sysctlbyname("hw.machine", NULL, &size, NULL, 0);
+                char *machine = (char*) malloc(size);
+                sysctlbyname("hw.machine", machine, &size, NULL, 0);
+                NSString *platform = [NSString stringWithCString:machine encoding:NSUTF8StringEncoding];
+                free(machine);
+                if ([platform isEqualToString:@"iPad2,5"] || [platform isEqualToString:@"iPad2,6"])
+                    return YES;
+            }
+            return NO;
+        }
+    #else
+        return NO;
+    #endif
+    }
+#endif

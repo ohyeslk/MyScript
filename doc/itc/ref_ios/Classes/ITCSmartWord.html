@@ -1,0 +1,1643 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>ITCSmartWord Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 961)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">InteractiveTextComponent </a></h1>
+				<a id="developerHome" href="../index.html">MyScript</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">ITCSmartWord Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/baseLine">&nbsp;&nbsp;&nbsp;&nbsp;- baseLine</option>
+	
+	<option value="//api/name/boundingRect">&nbsp;&nbsp;&nbsp;&nbsp;- boundingRect</option>
+	
+	<option value="//api/name/candidates">&nbsp;&nbsp;&nbsp;&nbsp;- candidates</option>
+	
+	<option value="//api/name/charBoxForCharIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- charBoxForCharIndex:</option>
+	
+	<option value="//api/name/charBoxes">&nbsp;&nbsp;&nbsp;&nbsp;- charBoxes</option>
+	
+	<option value="//api/name/charCandidatesWithCharIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- charCandidatesWithCharIndex:</option>
+	
+	<option value="//api/name/charLabels">&nbsp;&nbsp;&nbsp;&nbsp;- charLabels</option>
+	
+	<option value="//api/name/charSelectedCandidateWithCharIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- charSelectedCandidateWithCharIndex:</option>
+	
+	<option value="//api/name/charTypes">&nbsp;&nbsp;&nbsp;&nbsp;- charTypes</option>
+	
+	<option value="//api/name/data">&nbsp;&nbsp;&nbsp;&nbsp;- data</option>
+	
+	<option value="//api/name/endTimeStamp">&nbsp;&nbsp;&nbsp;&nbsp;- endTimeStamp</option>
+	
+	<option value="//api/name/isEmpty">&nbsp;&nbsp;&nbsp;&nbsp;- isEmpty</option>
+	
+	<option value="//api/name/isOutdatedTypeset">&nbsp;&nbsp;&nbsp;&nbsp;- isOutdatedTypeset</option>
+	
+	<option value="//api/name/labelCharSize">&nbsp;&nbsp;&nbsp;&nbsp;- labelCharSize</option>
+	
+	<option value="//api/name/leftBound">&nbsp;&nbsp;&nbsp;&nbsp;- leftBound</option>
+	
+	<option value="//api/name/locale">&nbsp;&nbsp;&nbsp;&nbsp;- locale</option>
+	
+	<option value="//api/name/midlineShift">&nbsp;&nbsp;&nbsp;&nbsp;- midlineShift</option>
+	
+	<option value="//api/name/rightBound">&nbsp;&nbsp;&nbsp;&nbsp;- rightBound</option>
+	
+	<option value="//api/name/selectedCandidate">&nbsp;&nbsp;&nbsp;&nbsp;- selectedCandidate</option>
+	
+	<option value="//api/name/selectedCandidateIndex">&nbsp;&nbsp;&nbsp;&nbsp;- selectedCandidateIndex</option>
+	
+	<option value="//api/name/spaceBefore">&nbsp;&nbsp;&nbsp;&nbsp;- spaceBefore</option>
+	
+	<option value="//api/name/startTimeStamp">&nbsp;&nbsp;&nbsp;&nbsp;- startTimeStamp</option>
+	
+	<option value="//api/name/strokes">&nbsp;&nbsp;&nbsp;&nbsp;- strokes</option>
+	
+	<option value="//api/name/type">&nbsp;&nbsp;&nbsp;&nbsp;- type</option>
+	
+	<option value="//api/name/userParamsForCharacterAtIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- userParamsForCharacterAtIndex:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Candidates and labels">Candidates and labels</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Geometric and content">Geometric and content</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Type">Type</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Strokes">Strokes</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_User params">User params</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Serialization">Serialization</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Locale">Locale</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Utils">Utils</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/baseLine">baseLine</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/boundingRect">boundingRect</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/candidates">candidates</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/charBoxForCharIndex:">charBoxForCharIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/charBoxes">charBoxes</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/charCandidatesWithCharIndex:">charCandidatesWithCharIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/charLabels">charLabels</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/charSelectedCandidateWithCharIndex:">charSelectedCandidateWithCharIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/charTypes">charTypes</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/data">data</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/endTimeStamp">endTimeStamp</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isEmpty">isEmpty</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isOutdatedTypeset">isOutdatedTypeset</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/labelCharSize">labelCharSize</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/leftBound">leftBound</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/locale">locale</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/midlineShift">midlineShift</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/rightBound">rightBound</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/selectedCandidate">selectedCandidate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/selectedCandidateIndex">selectedCandidateIndex</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/spaceBefore">spaceBefore</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/startTimeStamp">startTimeStamp</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/strokes">strokes</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/type">type</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/userParamsForCharacterAtIndex:">userParamsForCharacterAtIndex:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="ITCSmartWord Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">ITCSmartWord Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">ITCSmartWord.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<ul>
+<li><p>This class is the representation of the word in Interactive Text Component.</p></li>
+<li><p>Do not inherit</p></li>
+</ul>
+
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Candidates and labels" name="task_Candidates and labels"></a>
+						<h3 class="subsubtitle task-title">Candidates and labels</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/candidates">&ndash;&nbsp;candidates</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/selectedCandidateIndex">&ndash;&nbsp;selectedCandidateIndex</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/selectedCandidate">&ndash;&nbsp;selectedCandidate</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/charCandidatesWithCharIndex:">&ndash;&nbsp;charCandidatesWithCharIndex:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/charSelectedCandidateWithCharIndex:">&ndash;&nbsp;charSelectedCandidateWithCharIndex:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/charLabels">&ndash;&nbsp;charLabels</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/labelCharSize">&ndash;&nbsp;labelCharSize</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Geometric and content" name="task_Geometric and content"></a>
+						<h3 class="subsubtitle task-title">Geometric and content</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/charBoxes">&ndash;&nbsp;charBoxes</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/charBoxForCharIndex:">&ndash;&nbsp;charBoxForCharIndex:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/midlineShift">&ndash;&nbsp;midlineShift</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/baseLine">&ndash;&nbsp;baseLine</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/leftBound">&ndash;&nbsp;leftBound</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/rightBound">&ndash;&nbsp;rightBound</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/boundingRect">&ndash;&nbsp;boundingRect</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Type" name="task_Type"></a>
+						<h3 class="subsubtitle task-title">Type</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/type">&ndash;&nbsp;type</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/charTypes">&ndash;&nbsp;charTypes</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/spaceBefore">&ndash;&nbsp;spaceBefore</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Strokes" name="task_Strokes"></a>
+						<h3 class="subsubtitle task-title">Strokes</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/strokes">&ndash;&nbsp;strokes</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="User params" name="task_User params"></a>
+						<h3 class="subsubtitle task-title">User params</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/userParamsForCharacterAtIndex:">&ndash;&nbsp;userParamsForCharacterAtIndex:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Serialization" name="task_Serialization"></a>
+						<h3 class="subsubtitle task-title">Serialization</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/data">&ndash;&nbsp;data</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Locale" name="task_Locale"></a>
+						<h3 class="subsubtitle task-title">Locale</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/locale">&ndash;&nbsp;locale</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Utils" name="task_Utils"></a>
+						<h3 class="subsubtitle task-title">Utils</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isEmpty">&ndash;&nbsp;isEmpty</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isOutdatedTypeset">&ndash;&nbsp;isOutdatedTypeset</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/startTimeStamp">&ndash;&nbsp;startTimeStamp</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/endTimeStamp">&ndash;&nbsp;endTimeStamp</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/baseLine" title="baseLine"></a>
+	<h3 class="subsubtitle method-title">baseLine</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The word baseline position.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (float)baseLine</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The word baseline position.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ITCSmartWord.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/boundingRect" title="boundingRect"></a>
+	<h3 class="subsubtitle method-title">boundingRect</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The bounding rectangle of this word.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (ITCRect *)boundingRect</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The bounding rectangle of this word.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ITCSmartWord.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/candidates" title="candidates"></a>
+	<h3 class="subsubtitle method-title">candidates</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A list of candidates labels (<code>NSString</code>) for this word.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)candidates</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A list of candidates labels (<code>NSString</code>) for this word.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ITCSmartWord.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/charBoxForCharIndex:" title="charBoxForCharIndex:"></a>
+	<h3 class="subsubtitle method-title">charBoxForCharIndex:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The word midline shift value.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (ITCRect *)charBoxForCharIndex:(NSInteger)<em>index</em></code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The word midline shift value.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ITCSmartWord.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/charBoxes" title="charBoxes"></a>
+	<h3 class="subsubtitle method-title">charBoxes</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a list of rectangular boxes (<a href="../Classes/ITCRect.html"><code>ITCRect</code></a>) corresponding to the word characters.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)charBoxes</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The list of word character boxes.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ITCSmartWord.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/charCandidatesWithCharIndex:" title="charCandidatesWithCharIndex:"></a>
+	<h3 class="subsubtitle method-title">charCandidatesWithCharIndex:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Character index in the word.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)charCandidatesWithCharIndex:(NSInteger)<em>charIndex</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>charIndex</em></dt>
+			<dd><p>Character index in the word.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A list of <a href="#//api/name/candidates">candidates</a> labels (<code>NSString</code>) for the character at the
+given index in this word.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ITCSmartWord.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/charLabels" title="charLabels"></a>
+	<h3 class="subsubtitle method-title">charLabels</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a list of strings representing the character labels of this word. This can have a different size than the word label.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)charLabels</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The list of character labels.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ITCSmartWord.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/charSelectedCandidateWithCharIndex:" title="charSelectedCandidateWithCharIndex:"></a>
+	<h3 class="subsubtitle method-title">charSelectedCandidateWithCharIndex:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the string of the selected candidate for the character at the given index in this word.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)charSelectedCandidateWithCharIndex:(NSInteger)<em>charIndex</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>charIndex</em></dt>
+			<dd><p>The character index in the word.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The string of the selected candidate.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ITCSmartWord.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/charTypes" title="charTypes"></a>
+	<h3 class="subsubtitle method-title">charTypes</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a array of <a href="../Constants/ITCWordType.html"><code>ITCWordType</code></a> as int value inside a <code>NSArray</code></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)charTypes</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The charType list that can be either a Typeset character or a Raw character</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ITCSmartWord.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/data" title="data"></a>
+	<h3 class="subsubtitle method-title">data</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a data object from the stroke</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSData *)data</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The serialized data from the stroke.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ITCSmartWord.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/endTimeStamp" title="endTimeStamp"></a>
+	<h3 class="subsubtitle method-title">endTimeStamp</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the date of the end of this word.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSDate *)endTimeStamp</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Returns the date of the end of this word.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ITCSmartWord.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isEmpty" title="isEmpty"></a>
+	<h3 class="subsubtitle method-title">isEmpty</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p><code>YES</code> if the smartword is empty</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)isEmpty</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p><code>YES</code> if the smartword is empty</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ITCSmartWord.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isOutdatedTypeset" title="isOutdatedTypeset"></a>
+	<h3 class="subsubtitle method-title">isOutdatedTypeset</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>YES if need to redraw the typeset (only for TYPESET or MIX word),
+false otherwise.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)isOutdatedTypeset</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES if need to redraw the typeset (only for TYPESET or MIX word),
+false otherwise.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ITCSmartWord.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/labelCharSize" title="labelCharSize"></a>
+	<h3 class="subsubtitle method-title">labelCharSize</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the number of char in the word label.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSInteger)labelCharSize</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The char count</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ITCSmartWord.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/leftBound" title="leftBound"></a>
+	<h3 class="subsubtitle method-title">leftBound</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The X coordinate of the left bound of this word.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (float)leftBound</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The X coordinate of the left bound of this word.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ITCSmartWord.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/locale" title="locale"></a>
+	<h3 class="subsubtitle method-title">locale</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The string representing the locale of the word.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)locale</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The string representing the locale of the word.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ITCSmartWord.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/midlineShift" title="midlineShift"></a>
+	<h3 class="subsubtitle method-title">midlineShift</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The midline shift of this word.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (float)midlineShift</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The midline shift of this word.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ITCSmartWord.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/rightBound" title="rightBound"></a>
+	<h3 class="subsubtitle method-title">rightBound</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The X coordinate of the right bound of this word.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (float)rightBound</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The X coordinate of the right bound of this word.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ITCSmartWord.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/selectedCandidate" title="selectedCandidate"></a>
+	<h3 class="subsubtitle method-title">selectedCandidate</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The string of the selected candidate.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)selectedCandidate</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The string of the selected candidate.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ITCSmartWord.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/selectedCandidateIndex" title="selectedCandidateIndex"></a>
+	<h3 class="subsubtitle method-title">selectedCandidateIndex</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The index of the selected candidate in <a href="#//api/name/candidates">candidates</a> list</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSInteger)selectedCandidateIndex</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The index of the selected candidate in <a href="#//api/name/candidates">candidates</a> list</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ITCSmartWord.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/spaceBefore" title="spaceBefore"></a>
+	<h3 class="subsubtitle method-title">spaceBefore</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The number of spaces before this word.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSInteger)spaceBefore</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The number of spaces before this word.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ITCSmartWord.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/startTimeStamp" title="startTimeStamp"></a>
+	<h3 class="subsubtitle method-title">startTimeStamp</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the date of the start of this word.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSDate *)startTimeStamp</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Returns the date of the start of this word.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ITCSmartWord.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/strokes" title="strokes"></a>
+	<h3 class="subsubtitle method-title">strokes</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The strokes (<a href="../Classes/ITCSmartStroke.html"><code>ITCSmartStroke</code></a>) associated to this word or nothing if this word has been typeset</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)strokes</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The strokes (<a href="../Classes/ITCSmartStroke.html"><code>ITCSmartStroke</code></a>) associated to this word or nothing if this word has been typeset</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ITCSmartWord.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/type" title="type"></a>
+	<h3 class="subsubtitle method-title">type</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The wordType can be either a Typeset word, a Raw word is a Mix word</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (ITCWordType)type</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The wordType can be either a Typeset word, a Raw word is a Mix word</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ITCSmartWord.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/userParamsForCharacterAtIndex:" title="userParamsForCharacterAtIndex:"></a>
+	<h3 class="subsubtitle method-title">userParamsForCharacterAtIndex:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the user parameters associated to this given word character index.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id&lt;ITCUserParams&gt;)userParamsForCharacterAtIndex:(NSInteger)<em>aCharacterIndex</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>charIndex</em></dt>
+			<dd><p>The character index</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>User parameters of the given character.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ITCSmartWord.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2015 MyScript. All rights reserved. (Last updated: 2015-07-27)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

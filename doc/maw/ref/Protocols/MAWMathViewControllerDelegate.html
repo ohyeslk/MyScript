@@ -1,0 +1,967 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>MAWMathViewControllerDelegate Protocol Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 961)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">MathWidget </a></h1>
+				<a id="developerHome" href="../index.html">MyScript</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">MAWMathViewControllerDelegate Protocol Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/mathViewController:didChangeUsingAngleUnit:">&nbsp;&nbsp;&nbsp;&nbsp;- mathViewController:didChangeUsingAngleUnit:</option>
+	
+	<option value="//api/name/mathViewController:didFailConfigurationWithError:">&nbsp;&nbsp;&nbsp;&nbsp;- mathViewController:didFailConfigurationWithError:</option>
+	
+	<option value="//api/name/mathViewController:didPerformEraseGesture:">&nbsp;&nbsp;&nbsp;&nbsp;- mathViewController:didPerformEraseGesture:</option>
+	
+	<option value="//api/name/mathViewControllerDidBeginConfiguration:">&nbsp;&nbsp;&nbsp;&nbsp;- mathViewControllerDidBeginConfiguration:</option>
+	
+	<option value="//api/name/mathViewControllerDidBeginRecognition:">&nbsp;&nbsp;&nbsp;&nbsp;- mathViewControllerDidBeginRecognition:</option>
+	
+	<option value="//api/name/mathViewControllerDidBeginWriting:">&nbsp;&nbsp;&nbsp;&nbsp;- mathViewControllerDidBeginWriting:</option>
+	
+	<option value="//api/name/mathViewControllerDidChangeUndoRedoState:">&nbsp;&nbsp;&nbsp;&nbsp;- mathViewControllerDidChangeUndoRedoState:</option>
+	
+	<option value="//api/name/mathViewControllerDidEndConfiguration:">&nbsp;&nbsp;&nbsp;&nbsp;- mathViewControllerDidEndConfiguration:</option>
+	
+	<option value="//api/name/mathViewControllerDidEndRecognition:">&nbsp;&nbsp;&nbsp;&nbsp;- mathViewControllerDidEndRecognition:</option>
+	
+	<option value="//api/name/mathViewControllerDidEndWriting:">&nbsp;&nbsp;&nbsp;&nbsp;- mathViewControllerDidEndWriting:</option>
+	
+	<option value="//api/name/mathViewControllerDidReachRecognitionTimeout:">&nbsp;&nbsp;&nbsp;&nbsp;- mathViewControllerDidReachRecognitionTimeout:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Monitoring Configuration">Monitoring Configuration</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Monitoring Recognition Progress">Monitoring Recognition Progress</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Monitoring Changes in Undo Redo Stack">Monitoring Changes in Undo Redo Stack</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Handling Gestures">Handling Gestures</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Monitoring Solver Changes">Monitoring Solver Changes</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Handling Long Recognition">Handling Long Recognition</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Monitoring User Input">Monitoring User Input</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/mathViewController:didChangeUsingAngleUnit:">mathViewController:didChangeUsingAngleUnit:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/mathViewController:didFailConfigurationWithError:">mathViewController:didFailConfigurationWithError:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/mathViewController:didPerformEraseGesture:">mathViewController:didPerformEraseGesture:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/mathViewControllerDidBeginConfiguration:">mathViewControllerDidBeginConfiguration:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/mathViewControllerDidBeginRecognition:">mathViewControllerDidBeginRecognition:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/mathViewControllerDidBeginWriting:">mathViewControllerDidBeginWriting:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/mathViewControllerDidChangeUndoRedoState:">mathViewControllerDidChangeUndoRedoState:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/mathViewControllerDidEndConfiguration:">mathViewControllerDidEndConfiguration:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/mathViewControllerDidEndRecognition:">mathViewControllerDidEndRecognition:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/mathViewControllerDidEndWriting:">mathViewControllerDidEndWriting:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/mathViewControllerDidReachRecognitionTimeout:">mathViewControllerDidReachRecognitionTimeout:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="MAWMathViewControllerDelegate Protocol Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">MAWMathViewControllerDelegate Protocol Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">MAWMathViewController.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>The MAWMathViewControllerDelegate protocol defines the methods you can implement to be notified of
+the activity of a <a href="../Classes/MAWMathViewController.html">MAWMathViewController</a> object.
+These methods allow to monitor events such as configuration, recognition or a change in the Undo
+Redo stack.</p>
+
+<p>All of the methods in this protocol are optional.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Monitoring Configuration" name="task_Monitoring Configuration"></a>
+						<h3 class="subsubtitle task-title">Monitoring Configuration</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/mathViewControllerDidBeginConfiguration:">&ndash;&nbsp;mathViewControllerDidBeginConfiguration:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/mathViewControllerDidEndConfiguration:">&ndash;&nbsp;mathViewControllerDidEndConfiguration:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/mathViewController:didFailConfigurationWithError:">&ndash;&nbsp;mathViewController:didFailConfigurationWithError:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Monitoring Recognition Progress" name="task_Monitoring Recognition Progress"></a>
+						<h3 class="subsubtitle task-title">Monitoring Recognition Progress</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/mathViewControllerDidBeginRecognition:">&ndash;&nbsp;mathViewControllerDidBeginRecognition:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/mathViewControllerDidEndRecognition:">&ndash;&nbsp;mathViewControllerDidEndRecognition:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Monitoring Changes in Undo Redo Stack" name="task_Monitoring Changes in Undo Redo Stack"></a>
+						<h3 class="subsubtitle task-title">Monitoring Changes in Undo Redo Stack</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/mathViewControllerDidChangeUndoRedoState:">&ndash;&nbsp;mathViewControllerDidChangeUndoRedoState:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Handling Gestures" name="task_Handling Gestures"></a>
+						<h3 class="subsubtitle task-title">Handling Gestures</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/mathViewController:didPerformEraseGesture:">&ndash;&nbsp;mathViewController:didPerformEraseGesture:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Monitoring Solver Changes" name="task_Monitoring Solver Changes"></a>
+						<h3 class="subsubtitle task-title">Monitoring Solver Changes</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/mathViewController:didChangeUsingAngleUnit:">&ndash;&nbsp;mathViewController:didChangeUsingAngleUnit:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Handling Long Recognition" name="task_Handling Long Recognition"></a>
+						<h3 class="subsubtitle task-title">Handling Long Recognition</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/mathViewControllerDidReachRecognitionTimeout:">&ndash;&nbsp;mathViewControllerDidReachRecognitionTimeout:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Monitoring User Input" name="task_Monitoring User Input"></a>
+						<h3 class="subsubtitle task-title">Monitoring User Input</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/mathViewControllerDidBeginWriting:">&ndash;&nbsp;mathViewControllerDidBeginWriting:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/mathViewControllerDidEndWriting:">&ndash;&nbsp;mathViewControllerDidEndWriting:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/mathViewController:didChangeUsingAngleUnit:" title="mathViewController:didChangeUsingAngleUnit:"></a>
+	<h3 class="subsubtitle method-title">mathViewController:didChangeUsingAngleUnit:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Tells the delegate that the Math Widget has started or has stopped using an angle unit.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)mathViewController:(MAWMathViewController *)<em>mathViewController</em> didChangeUsingAngleUnit:(BOOL)<em>used</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>mathViewController</em></dt>
+			<dd><p>The math view controller that has started or has stopped using
+an angle unit.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>used</em></dt>
+			<dd><p><code>YES</code> if the current operation is using an angle unit; otherwise, <code>NO</code>.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MAWMathViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/mathViewController:didFailConfigurationWithError:" title="mathViewController:didFailConfigurationWithError:"></a>
+	<h3 class="subsubtitle method-title">mathViewController:didFailConfigurationWithError:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Tells the delegate that the Math Widget has failed its configuration.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)mathViewController:(MAWMathViewController *)<em>mathViewController</em> didFailConfigurationWithError:(NSError *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>mathViewController</em></dt>
+			<dd><p>The math view controller that has failed its configuration.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p>An NSError object that encapsulates information why configuration
+failed.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MAWMathViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/mathViewController:didPerformEraseGesture:" title="mathViewController:didPerformEraseGesture:"></a>
+	<h3 class="subsubtitle method-title">mathViewController:didPerformEraseGesture:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Tells the delegate that the Math Widget has detected an erase gesture.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)mathViewController:(MAWMathViewController *)<em>mathViewController</em> didPerformEraseGesture:(BOOL)<em>partial</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>mathViewController</em></dt>
+			<dd><p>The math view controller that has detected an erase gesture.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>partial</em></dt>
+			<dd><p><code>YES</code> if the all the equation was deleted; otherwise, <code>NO</code>.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MAWMathViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/mathViewControllerDidBeginConfiguration:" title="mathViewControllerDidBeginConfiguration:"></a>
+	<h3 class="subsubtitle method-title">mathViewControllerDidBeginConfiguration:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Tells the delegate that the Math Widget has started its configuration.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)mathViewControllerDidBeginConfiguration:(MAWMathViewController *)<em>mathViewController</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>mathViewController</em></dt>
+			<dd><p>The math view controller that has started its configuration.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MAWMathViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/mathViewControllerDidBeginRecognition:" title="mathViewControllerDidBeginRecognition:"></a>
+	<h3 class="subsubtitle method-title">mathViewControllerDidBeginRecognition:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Tells the delegate that the Math Widget has begun a recognition session.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)mathViewControllerDidBeginRecognition:(MAWMathViewController *)<em>mathViewController</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>mathViewController</em></dt>
+			<dd><p>The math view controller that has begun a recognition process.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A recognition session starts when the user starts writing on the screen.
+The session can also start after an undo or redo or a after any context restoration
+such as screen rotation.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MAWMathViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/mathViewControllerDidBeginWriting:" title="mathViewControllerDidBeginWriting:"></a>
+	<h3 class="subsubtitle method-title">mathViewControllerDidBeginWriting:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Tells the delegate that the user has started touching the screen.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)mathViewControllerDidBeginWriting:(MAWMathViewController *)<em>mathViewController</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>mathViewController</em></dt>
+			<dd><p>The math view controller receiving touches.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MAWMathViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/mathViewControllerDidChangeUndoRedoState:" title="mathViewControllerDidChangeUndoRedoState:"></a>
+	<h3 class="subsubtitle method-title">mathViewControllerDidChangeUndoRedoState:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Tells the delegate that the Math Widget Undo/Redo stack has changed.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)mathViewControllerDidChangeUndoRedoState:(MAWMathViewController *)<em>mathViewController</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>mathViewController</em></dt>
+			<dd><p>The math view controller whose Undo/Redo stack has changed.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MAWMathViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/mathViewControllerDidEndConfiguration:" title="mathViewControllerDidEndConfiguration:"></a>
+	<h3 class="subsubtitle method-title">mathViewControllerDidEndConfiguration:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Tells the delegate that the Math Widget has end its configuration with success.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)mathViewControllerDidEndConfiguration:(MAWMathViewController *)<em>mathViewController</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>mathViewController</em></dt>
+			<dd><p>The math view controller that has ended its configuration.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MAWMathViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/mathViewControllerDidEndRecognition:" title="mathViewControllerDidEndRecognition:"></a>
+	<h3 class="subsubtitle method-title">mathViewControllerDidEndRecognition:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Tells the delegate that the Math Widget has ended a recognition process.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)mathViewControllerDidEndRecognition:(MAWMathViewController *)<em>mathViewController</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>mathViewController</em></dt>
+			<dd><p>The math view controller that has ended a recognition process.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MAWMathViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/mathViewControllerDidEndWriting:" title="mathViewControllerDidEndWriting:"></a>
+	<h3 class="subsubtitle method-title">mathViewControllerDidEndWriting:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Tells the delegate that the user has ending touching the screen.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)mathViewControllerDidEndWriting:(MAWMathViewController *)<em>mathViewController</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>mathViewController</em></dt>
+			<dd><p>The math view controller that has stopped receiving touches.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MAWMathViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/mathViewControllerDidReachRecognitionTimeout:" title="mathViewControllerDidReachRecognitionTimeout:"></a>
+	<h3 class="subsubtitle method-title">mathViewControllerDidReachRecognitionTimeout:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Tells the delegate that the recognizer is still busy after a timeout set using
+<a href="../Classes/MAWMathViewController.html#//api/name/recognitionTimeout">[MAWMathViewController recognitionTimeout]</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)mathViewControllerDidReachRecognitionTimeout:(MAWMathViewController *)<em>mathViewController</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>mathViewController</em></dt>
+			<dd><p>The math view controller whose is performing the recognition.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MAWMathViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2015 MyScript. All rights reserved. (Last updated: 2015-07-27)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

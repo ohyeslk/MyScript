@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head><link rel="icon" href="../images/favicon.ico" />
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+<title>MyScript GEW (iOS)</title>
+<link rel="stylesheet" href="../css/MySBuilder.css" type="text/css">
+  </head>
+  <body bgcolor="#FFFFFF" text="#000000">
+      <h1>Geometry Widget</h1>
+      <h2>Recommendations</h2>
+
+  <p class="remark">The default settings provided in the code sample have been defined to provide the best user experience related to geometry exercises for middle school level.
+Feel free to adapt those settings according to your use case, as your app may have other requirements.</p>
+  <h3>Small strokes rejection</h3>
+
+<p>This value  is set to avoid small strokes. It means that strokes smaller than the defined value will be recognized as dots.<br>
+  If you increase the value, you will detect more dots. If you decrease it, you will detect smaller strokes, but dot input will be harder.</p>
+<h3>Ellipse and circle recognition</h3>
+<p>This value is set to ease the drawing of large circles, but  can be updated according to your needs. The higher the value is, the more likely the widget will recognize circles rather than ellipses. The lower the value is, the more the widget will give accurate recognition of all kinds of ellipses and circles.</p>
+
+  <p align="center"><img src="../images/circle_ratio.png"></p>
+
+<h3>Detection and display for implicit and explicit constraints</h3>
+<p>Both implicit and explicit constraints' detection and display features can be enabled or disabled. The default values are set to:</p>
+<ul><ul>
+  <li>ease the recognition of geometric properties and  help the user to draw right angles, parallels, same-length segments, freehand or by using explicit gestures.</li>
+  <li>help the user to learn gestures.</li>
+  <li>avoid a visual overload of the canvas with explicit constraints.</li>
+</ul>
+  <p>Implicit constraints are mainly a drawing assistance. They are automatically detected by the widget and quickly fade out. We recommend to make implicit constraints fade out because they can be confused with explicit constraints.  They do have the same graphic design but not the same behavior. We also suggest you add a button to let the user display implicit constraints on demand.</p>
+<p> Explicit constraints are to be manually set and have priority over implicit constraints.  New explicit constraints have priority over previous constraints.</p>
+</ul>
+<ul>
+  <p>You can also choose to disable the implicit constraints' detection and display features.</p>
+  <p class="remark">To erase an explicit constraint, the display feature for explicit constraints has to be enabled.</p>
+  <p>In the below figures, you can see examples of detection and display feature for implicit constraints.</p>
+</ul>
+<p align="center"><img src="../images/constraints1.png"></p>
+<p align="center"><i>Fig.01: Detection and display are disabled</i>.</p>
+<p align="center"><img src="../images/constraints2.png"></p>
+<p align="center"><i>Fig.02: Detection is enabled but display is not.</i></p>
+<p align="center"><img src="../images/constraints3.png"></p>
+<p align="center"><i>Fig.03: Both detection and display are enabled.</i></p>
+<ul>
+</ul>
+<p class="remark">All constraint types can be enabled or disabled independently of each other.</p>
+<h3>Point size</h3>
+<p>The point size value is set to be visible:</p>
+<ul><ul>
+  <li>on lines crossing.</li>
+
+  <li>on large lines (up to 3pt).</li>
+
+  <li>on explicit constraints.</li>
+</ul></ul>
+  <p align="center"><img src="../images/point_size.png"></p>
+
+<h3>Adjacent angle marker</h3>
+<p>This value is set to offer a graphic rendering that is visible with adjacent angles and clearly differentiated from the drawing.</p>
+<p align="center"><img src="../images/angle_marker.png"></p>
+<h3>Equality of length</h3>
+  <p>This value is set to offer a graphic rendering that is visible over lines and clearly differentiated from the drawing.</p>
+  <p align="center"><img src="../images/same_length2.png"></li>
+<p class="remark">We recommend against setting the value too high.</p>
+
+  <h3>Set of colors</h3>
+
+  <p>The defined set of colors is set to:</p>
+<ul><ul>
+  <li>be differentiated from each other.</li>
+  <p align="center"><img src="../images/colour1.png"><br><img src="../images/colour2.png"><br></p>
+  <li>be distinguished by color-blind people (Deuteranopia,Protanopia, Tritanopia).</li>
+<p align="center"><img src="../images/colour3.png"></p>
+</ul>
+</ul>
+  <p class="remark">We strongly recommend against modifying those colors</strong>.</p>
+  <h3>Stroke display</h3>
+
+<p>The stroke display value is set to:</p>
+<ul><ul>
+  <li>keep a clean and precise drawing with light thickness.</li>
+  <p align="center"><img src="../images/stroke_display1.png"></p>
+</ul>
+<ul>
+  <li>be distinguishable from implicit and explicit constraints, as it is defined in a different neutral color.</li></ul>
+</ul>
+ <p align="center"><img src="../images/stroke_display2.png"></p>
+ <p class="remark">If you want to allow the user to draw with different colors, be careful to keep their constraints visible and understandable.</li> 
+</body>
+</html>

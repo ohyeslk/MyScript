@@ -1,0 +1,32 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import <AtkItc/ITC.h>
+
+    #define APP_BACKGROUND_COLOR [UIColor whiteColor]
+    #define ITC_GUIDELINE_SPACING 75
+    #define ITC_GUIDELINE_MARGIN_TOP 80
+    #define ITC_GUIDELINE_COLOR [UIColor colorWithRed:0.741 green:0.761 blue:0.776 alpha:1]
+    #define ITC_RECOGNIZED_COLOR [UIColor colorWithRed:0.32 green:0.42 blue:0.65 alpha:1.00]
+    #define ITC_UNDERLINE_COLOR [UIColor colorWithRed:0.345 green:0.733 blue:0.851 alpha:1]
+    #define ITC_SELECTION_BACKGROUND_COLOR [UIColor colorWithRed:0.32 green:0.47 blue:0.95 alpha:0.3]
+    #define ITC_DRAWING_COLOR [UIColor grayColor]
+    #define TINT_COLOR [UIColor colorWithRed:0.345 green:0.733 blue:0.851 alpha:1]
+    #define TOOLBAR_TINT_COLOR [UIColor colorWithRed:0.357 green:0.404 blue:0.439 alpha:1]
+
+    #define DEFAULT_FONT_SIZE 60
+    #define FREEZE_TIMEOUT 850
+
+#endif
